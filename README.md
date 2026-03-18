@@ -1,111 +1,96 @@
-# ORB-SLAM3 ROS2 Wrapper
+# SLAM para Câmara RealSense
 
-ROS2 wrapper for ORB-SLAM3, supporting Monocular, Stereo, RGB-D, Monocular-Inertial, and Stereo-Inertial SLAM modes.
+## 1. Instalação do ORB-SLAM3 e Wrapper ROS2 para Ubuntu 24.04
 
-## Supported ROS2 Distributions
+Este documento descreve a sequência de instalação do ORB-SLAM3 e do seu wrapper ROS2 em Ubuntu 24.04.
 
-- **ROS2 Humble** (Ubuntu 22.04)
-- **ROS2 Jazzy** (Ubuntu 24.04)
+### 1.1 Passo 1: Clonar e Instalar ORB-SLAM3
 
-## Prerequisites
+Clonar o repositório ORB-SLAM3 e seguir as instruções presentes em:
 
-### 1. ORB-SLAM3 Installation
+**Repositório:** https://github.com/AeroTec-ATLAS/ORB-SLAM3-STEREO-FIXED-for-ubuntu-24.04-LTS
 
-This wrapper requires ORB-SLAM3 to be installed first. Follow the installation instructions from:
-
-**https://github.com/pedroMVicente/ORB-SLAM3-STEREO-FIXED-for-ubuntu-24.04-LTS**
-
-Make sure you have:
-- ORB-SLAM3 compiled successfully
-- Pangolin installed
-- Sophus installed globally (`sudo make install`)
-- `ORB_SLAM3_ROOT_PATH` environment variable set
-
-### 2. ROS2 Installation
-
-Install ROS2 Humble (Ubuntu 22.04) or Jazzy (Ubuntu 24.04) following the [official ROS2 documentation](https://docs.ros.org/en/jazzy/Installation.html).
-
-Ensure ROS2 is sourced in your `~/.bashrc`:
 ```bash
-# For Humble
-source /opt/ros/humble/setup.bash
+cd ~
+git clone https://github.com/AeroTec-ATLAS/ORB-SLAM3-STEREO-FIXED-for-ubuntu-24.04-LTS
+cd ORB-SLAM3-STEREO-FIXED-for-ubuntu-24.04-LTS
 
-# For Jazzy  
+chmod +x build.sh
+./build.sh
+```
+
+### 1.2 Passo 2: Instalação Global do Sophus
+
+**Importante:** Este passo é obrigatório para a integração com ROS2 e não está documentado no repositório anterior.
+
+```bash
+cd $ORB_SLAM3_ROOT_PATH/ORB-SLAM3/Thirdparty/Sophus/build
+sudo make install
+```
+
+**Para remover posteriormente, caso necessário:**
+
+```bash
+sudo rm -rf /usr/local/include/sophus
+sudo rm -rf /usr/local/share/sophus
+```
+
+### 1.3 Passo 3: Clonar e Instalar Wrapper ROS2
+
+**Repositório:** https://github.com/AeroTec-ATLAS/ORB_SLAM3_ROS2
+
+```bash
+cd ~
+git clone https://github.com/AeroTec-ATLAS/ORB_SLAM3_ROS2
+# Seguir as instruções do README do repositório
+```
+
+### 1.4 Passo 4: Configuração Adicional de Variáveis de Ambiente
+
+Adicionar as seguintes linhas ao ficheiro `~/.bashrc`:
+
+```bash
+# Carregar ambiente ROS2 Jazzy
 source /opt/ros/jazzy/setup.bash
-```
 
-### 3. Install Dependencies
+# Carregar workspace ORB-SLAM3 ROS2
+if [ -f "$ORB_SLAM3_ROOT_PATH/ROS2_ORB_SLAM3/install/setup.bash" ]; then
+    source "$ORB_SLAM3_ROOT_PATH/ROS2_ORB_SLAM3/install/setup.bash"
+fi
 
-```bash
-# Install required ROS2 packages
-sudo apt install -y \
-    ros-${ROS_DISTRO}-cv-bridge \
-    ros-${ROS_DISTRO}-message-filters
-
-# Install Python package
-pip install catkin_pkg --break-system-packages
-```
-
-## Installation
-
-### 1. Clone Repository
-
-```bash
-cd $ORB_SLAM3_ROOT_PATH
-mkdir -p ROS2_ORB_SLAM3/src
-cd ROS2_ORB_SLAM3/src
-
-git clone https://github.com/AeroTec-ATLAS/ORB_SLAM3_ROS2.git orbslam3_ros2
-```
-
-### 2. Build
-
-```bash
-cd $ORB_SLAM3_ROOT_PATH/ROS2_ORB_SLAM3
-colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release
-```
-
-**Note:** Warnings about deprecated functions are normal and don't affect functionality.
-
-### 3. Setup Environment
-
-Add to `~/.bashrc`:
-
-```bash
-# Source ROS2 workspace
-source $ORB_SLAM3_ROOT_PATH/ROS2_ORB_SLAM3/install/setup.bash
-
-# Add library paths
+# Configurar caminhos das bibliotecas dinâmicas
 export LD_LIBRARY_PATH="$ORB_SLAM3_ROOT_PATH/ORB-SLAM3/lib:$LD_LIBRARY_PATH"
 export LD_LIBRARY_PATH="$ORB_SLAM3_ROOT_PATH/Pangolin/build:$LD_LIBRARY_PATH"
 ```
 
-Then reload:
+**Aplicar as alterações:**
+
 ```bash
 source ~/.bashrc
 ```
 
-## Verification
+### 1.5 Verificação da Instalação
 
 ```bash
-# Check package installation
+# Verificar se o pacote foi instalado
 ros2 pkg list | grep orbslam3
 
-# List available nodes
+# Listar executáveis disponíveis
 ros2 pkg executables orbslam3
 ```
 
-Expected output:
-```
-orbslam3 mono
-orbslam3 rgbd
-orbslam3 stereo
-orbslam3 stereo-inertial
-```
+**Deverá ver os seguintes executáveis disponíveis:**
 
-## Usage
+- `orbslam3 mono`
+- `orbslam3 rgbd`
+- `orbslam3 stereo`
+- `orbslam3 stereo-inertial`
 
-### Monocular
+---
+
+## 2. Exemplos de Utilização
+
+### 2.1 Modo Monocular
 
 ```bash
 ros2 run orbslam3 mono \
@@ -113,10 +98,10 @@ ros2 run orbslam3 mono \
     $ORB_SLAM3_ROOT_PATH/ORB-SLAM3/Examples/Monocular/TUM1.yaml
 ```
 
-**Subscribed Topics:**
+**Tópicos subscritos:**
 - `/camera/image_raw` (sensor_msgs/Image)
 
-### Stereo
+### 2.2 Modo Estéreo
 
 ```bash
 ros2 run orbslam3 stereo \
@@ -125,11 +110,11 @@ ros2 run orbslam3 stereo \
     false
 ```
 
-**Subscribed Topics:**
+**Tópicos subscritos:**
 - `/camera/left/image_raw` (sensor_msgs/Image)
 - `/camera/right/image_raw` (sensor_msgs/Image)
 
-### RGB-D
+### 2.3 Modo RGB-D
 
 ```bash
 ros2 run orbslam3 rgbd \
@@ -137,11 +122,11 @@ ros2 run orbslam3 rgbd \
     $ORB_SLAM3_ROOT_PATH/ORB-SLAM3/Examples/RGB-D/TUM1.yaml
 ```
 
-**Subscribed Topics:**
+**Tópicos subscritos:**
 - `/camera/rgb/image_raw` (sensor_msgs/Image)
 - `/camera/depth_registered/image_raw` (sensor_msgs/Image)
 
-### Stereo-Inertial
+### 2.4 Modo Estéreo-Inercial
 
 ```bash
 ros2 run orbslam3 stereo-inertial \
@@ -150,110 +135,329 @@ ros2 run orbslam3 stereo-inertial \
     false
 ```
 
-**Subscribed Topics:**
+**Tópicos subscritos:**
 - `/camera/left/image_raw` (sensor_msgs/Image)
 - `/camera/right/image_raw` (sensor_msgs/Image)
 - `/imu` (sensor_msgs/Imu)
 
-## Example: Intel RealSense D435i
+---
 
-### Install RealSense ROS2 Wrapper
+## 3. Exemplos Práticos
 
-```bash
-sudo apt install ros-${ROS_DISTRO}-realsense2-camera
-```
+### 3.1 Exemplo com Intel RealSense D435
 
-### Launch RealSense Camera
+**Terminal 1: Lançar o nó completo (câmara + SLAM)**
 
 ```bash
-ros2 launch realsense2_camera rs_launch.py
+ros2 launch orbslam3 stereo_realsense.launch.py
 ```
 
-### Run ORB-SLAM3 Stereo
+Este launch file inicia automaticamente:
+- O driver da RealSense (`realsense2_camera_node`)
+- O nó de SLAM estéreo (`orbslam3_stereo`)
+- Os transforms estáticos (`base_link` → `camera_link`)
+
+**Terminal 2 (opcional): Lançar apenas a câmara separadamente**
+
+```bash
+ros2 launch realsense2_camera rs_launch.py \
+    enable_infra1:=true \
+    enable_infra2:=true \
+    enable_depth:=false \
+    enable_color:=false \
+    infra_width:=848 \
+    infra_height:=480 \
+    infra_fps:=30.0 \
+    enable_sync:=true \
+    emitter_enabled:=0
+```
+
+**Terminal 3 (opcional): Lançar apenas o SLAM separadamente**
 
 ```bash
 ros2 run orbslam3 stereo \
     $ORB_SLAM3_ROOT_PATH/ORB-SLAM3/Vocabulary/ORBvoc.txt \
-    $ORB_SLAM3_ROOT_PATH/ORB-SLAM3/Examples/Stereo/RealSense_D435i.yaml \
-    false
+    /caminho/para/cameraParameters.yml \
+    true \
+    --ros-args \
+    -r camera/left:=/camera/infra1/image_rect_raw \
+    -r camera/right:=/camera/infra2/image_rect_raw
 ```
 
-**Note:** You may need to remap topics to match your camera's output. Use:
+### 3.2 Teste com ROS2 Bag
+
+**Download de bag de teste:**
+
 ```bash
-ros2 run orbslam3 stereo ... --ros-args \
-    -r /camera/left/image_raw:=/camera/infra1/image_rect_raw \
-    -r /camera/right/image_raw:=/camera/infra2/image_rect_raw
+cd $ORB_SLAM3_ROOT_PATH
+pip install gdown --break-system-packages
+gdown --folder https://drive.google.com/drive/folders/1NY4KEW2qpfKlzR-674E-DFNkUEfDkJsC
 ```
 
-## Troubleshooting
+**Terminal 1: Executar ORB-SLAM3**
 
-### Build Errors
-
-**Problem:** `Could NOT find ORB_SLAM3`  
-**Solution:** Ensure `ORB_SLAM3_ROOT_PATH` is set correctly and ORB-SLAM3 is built.
-
-**Problem:** `cv_bridge.h: No such file or directory`  
-**Solution:** Already fixed in this repository. Ensure you're using the latest version.
-
-### Runtime Errors
-
-**Problem:** No image received  
-**Solution:** Check topic names with `ros2 topic list` and remap if necessary.
-
-**Problem:** Segmentation fault  
-**Solution:** Verify vocabulary file exists and is uncompressed:
 ```bash
-ls -lh $ORB_SLAM3_ROOT_PATH/ORB-SLAM3/Vocabulary/ORBvoc.txt
+ros2 run orbslam3 mono \
+    $ORB_SLAM3_ROOT_PATH/ORB-SLAM3/Vocabulary/ORBvoc.txt \
+    $ORB_SLAM3_ROOT_PATH/ORB-SLAM3/Examples/Monocular/TUM1.yaml
 ```
 
-**Problem:** Poor tracking performance  
-**Solution:** 
-- Ensure adequate lighting
-- Avoid pointing at blank walls
-- Move camera slowly during initialization
-- Check camera calibration parameters in YAML files
+**Terminal 2: Reproduzir bag**
 
-## Configuration Files
-
-Configuration YAML files are located in `$ORB_SLAM3_ROOT_PATH/ORB-SLAM3/Examples/`.
-
-Key parameters to adjust for your camera:
-- Camera intrinsics (fx, fy, cx, cy)
-- Distortion coefficients (k1, k2, p1, p2, k3)
-- Camera resolution
-- FPS
-- Stereo baseline (for stereo cameras)
-
-## Citation
-
-If you use ORB-SLAM3 in your research, please cite:
-
-```bibtex
-@article{ORBSLAM3_TRO,
-  title={{ORB-SLAM3}: An Accurate Open-Source Library for Visual, Visual-Inertial 
-         and Multi-Map {SLAM}},
-  author={Campos, Carlos AND Elvira, Richard AND Rodriguez, Juan J. G\'omez AND 
-          Montiel, Jos\'e M. M. AND Tard\'os, Juan D.},
-  journal={IEEE Transactions on Robotics}, 
-  volume={37},
-  number={6},
-  pages={1874-1890},
-  year={2021}
-}
+```bash
+ros2 bag play my_camera_bag
 ```
 
-## License
+### 3.3 Teste com Webcam USB
 
-This wrapper follows the same GPLv3 license as ORB-SLAM3.
+```bash
+sudo apt install ros-${ROS_DISTRO}-v4l2-camera
+sudo apt install ros-${ROS_DISTRO}-rqt-image-view
+```
 
-## Acknowledgments
+**Terminal 1: Lançar câmara**
 
-- Original ORB-SLAM3: Carlos Campos et al.
-- ROS2 wrapper base: zang09
-- Ubuntu 24.04 compatibility: pedroMVicente
+```bash
+ros2 run v4l2_camera v4l2_camera_node \
+    --ros-args -r /image_raw:=/camera
+```
 
-## Related Repositories
+**Terminal 2 (opcional): Visualizar imagem**
 
-- [ORB-SLAM3 (Ubuntu 24.04 compatible)](https://github.com/pedroMVicente/ORB-SLAM3-STEREO-FIXED-for-ubuntu-24.04-LTS)
-- [Original ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3)
-- [Original ROS2 Wrapper](https://github.com/zang09/ORB_SLAM3_ROS2)
+```bash
+ros2 run rqt_image_view rqt_image_view
+```
+
+**Terminal 3: Executar SLAM**
+
+```bash
+ros2 run orbslam3 mono \
+    $ORB_SLAM3_ROOT_PATH/ORB-SLAM3/Vocabulary/ORBvoc.txt \
+    $ORB_SLAM3_ROOT_PATH/ORB-SLAM3/Examples/Monocular/TUM1.yaml
+```
+
+---
+
+## 4. Teste e Monitorização dos Nós
+
+Esta secção descreve como verificar que os nós estão a funcionar correctamente após o arranque.
+
+### 4.1 Verificar Tópicos Publicados
+
+Após lançar o sistema, confirmar que todos os tópicos esperados estão activos:
+
+```bash
+ros2 topic list | grep orb_slam3
+```
+
+Deverão aparecer os seguintes tópicos:
+
+```
+/orb_slam3/camera_pose
+/orb_slam3/odometry
+/orb_slam3/map_points
+/orb_slam3/tracking_state
+```
+
+### 4.2 Monitorizar a Pose em Tempo Real
+
+```bash
+# Pose simples (PoseStamped)
+ros2 topic echo /orb_slam3/camera_pose
+
+# Odometria com covariância (Odometry)
+ros2 topic echo /orb_slam3/odometry
+
+# Apenas posição x, y, z
+ros2 topic echo /orb_slam3/camera_pose --field pose.position
+```
+
+### 4.3 Monitorizar o Estado de Tracking
+
+```bash
+ros2 topic echo /orb_slam3/tracking_state
+```
+
+**Mapeamento dos valores:**
+
+| Valor | Estado           | Descrição                                  |
+|-------|------------------|--------------------------------------------|
+| 0     | NO_IMAGES_YET    | Nenhuma imagem recebida ainda              |
+| 1     | NOT_INITIALIZED  | A aguardar inicialização                   |
+| 2     | OK               | Tracking a funcionar correctamente         |
+| 3     | RECENTLY_LOST    | Perdido recentemente, a usar modelo de movimento |
+| 4     | LOST             | Tracking perdido                           |
+
+### 4.4 Verificar a Taxa de Publicação
+
+```bash
+# Taxa de publicação da pose (deve ser ~30 Hz)
+ros2 topic hz /orb_slam3/camera_pose
+
+# Taxa da odometria
+ros2 topic hz /orb_slam3/odometry
+
+# Taxa dos pontos do mapa
+ros2 topic hz /orb_slam3/map_points
+
+# Verificar latência (delay entre timestamp da mensagem e hora actual)
+ros2 topic delay /orb_slam3/camera_pose
+```
+
+### 4.5 Verificar a Árvore de TF
+
+```bash
+# Ver todos os transforms activos
+ros2 run tf2_tools view_frames
+
+# Verificar transform específico map -> camera_link
+ros2 run tf2_ros tf2_echo map camera_link
+
+# Verificar se o transform está a ser publicado
+ros2 topic echo /tf --no-arr
+```
+
+O comando `view_frames` gera um ficheiro `frames.pdf` com o diagrama completo da árvore de TF. A estrutura esperada é:
+
+```
+map
+└── odom
+    └── base_link
+        └── camera_link
+```
+
+### 4.6 Visualização no RViz2
+
+```bash
+ros2 run rviz2 rviz2
+```
+
+**Configuração recomendada no RViz2:**
+
+1. Definir `Fixed Frame` para `map`
+2. Adicionar display `PoseStamped` → tópico `/orb_slam3/camera_pose`
+3. Adicionar display `Odometry` → tópico `/orb_slam3/odometry`
+4. Adicionar display `PointCloud2` → tópico `/orb_slam3/map_points`
+5. Adicionar display `TF` para visualizar a árvore de transforms
+
+### 4.7 Reset Manual do SLAM
+
+Caso o tracking seja perdido e seja necessário reiniciar o ORB-SLAM3 sem reiniciar o nó:
+
+```bash
+ros2 service call /orb_slam3/reset std_srvs/srv/Trigger
+```
+
+**Resposta esperada:**
+
+```
+response:
+  success: True
+  message: ORB-SLAM3 reset successfully
+```
+
+### 4.8 Verificar os Diagnósticos do Nó
+
+O nó publica automaticamente um resumo de diagnóstico no log a 1 Hz. Para visualizar:
+
+```bash
+ros2 topic echo /rosout | grep Diag
+```
+
+Ou directamente nos logs do nó:
+
+```bash
+# Ver logs em tempo real (substituir <node_name> pelo nome do nó)
+ros2 node info /ORB_SLAM3_ROS2
+
+# Ver logs com nível de detalhe
+ros2 run orbslam3 stereo ... --ros-args --log-level debug
+```
+
+**Exemplo de saída de diagnóstico esperada:**
+
+```
+[INFO] [ORB_SLAM3_ROS2]: [Diag] State: OK | Frames: 450 total / 448 published | Map pts: 1203 | Lost streak: 0
+```
+
+### 4.9 Verificar Desempenho do Sistema
+
+```bash
+# Verificar carga do CPU e memória
+htop
+
+# Verificar estatísticas dos tópicos ROS2
+ros2 topic bw /orb_slam3/map_points
+
+# Verificar informação do nó
+ros2 node info /ORB_SLAM3_ROS2
+```
+
+---
+
+## 5. Resolução de Problemas Comuns
+
+### 5.1 Erro: "Library not found"
+
+```bash
+echo $LD_LIBRARY_PATH
+source ~/.bashrc
+```
+
+### 5.2 ORB-SLAM3 não inicializa
+
+- Verificar se há movimento suficiente da câmara
+- Garantir que a cena tem textura adequada
+- Verificar se os tópicos estão a publicar dados:
+
+```bash
+ros2 topic list
+ros2 topic echo /camera/infra1/image_rect_raw --no-arr
+ros2 topic hz /camera/infra1/image_rect_raw
+```
+
+### 5.3 Tópico `/orb_slam3/camera_pose` não publica
+
+Verificar o estado de tracking:
+
+```bash
+ros2 topic echo /orb_slam3/tracking_state
+```
+
+Se o valor for `4` (LOST) durante um período prolongado, o nó tenta o reset automático após 30 frames consecutivos perdidos. Pode também fazer reset manual:
+
+```bash
+ros2 service call /orb_slam3/reset std_srvs/srv/Trigger
+```
+
+### 5.4 TF não disponível
+
+```bash
+# Verificar se o transform está a ser publicado
+ros2 run tf2_ros tf2_echo map camera_link
+
+# Verificar a árvore completa
+ros2 run tf2_tools view_frames
+```
+
+### 5.5 Performance baixa
+
+- Reduzir o número de features no ficheiro YAML:
+  ```yaml
+  ORBextractor.nFeatures: 500
+  ```
+- Verificar se o Pangolin não está a consumir demasiados recursos
+- Considerar desactivar o viewer do Pangolin
+
+---
+
+## 6. Referências
+
+- **ORB-SLAM3 Original:** https://github.com/UZ-SLAMLab/ORB_SLAM3
+- **ORB-SLAM3 Ubuntu 24.04:** https://github.com/AeroTec-ATLAS/ORB-SLAM3-STEREO-FIXED-for-ubuntu-24.04-LTS
+- **Wrapper ROS2:** https://github.com/AeroTec-ATLAS/ORB_SLAM3_ROS2
+- **Documentação ROS2:** https://docs.ros.org/
+
+---
+
+**Última actualização:** 18 de Março de 2026

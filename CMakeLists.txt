@@ -26,6 +26,8 @@ find_package(Sophus REQUIRED)
 find_package(Pangolin REQUIRED)
 find_package(ORB_SLAM3 REQUIRED)
 find_package(OpenCV 4.6 REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(std_srvs REQUIRED)
 
 include_directories(
   $ENV{ORB_SLAM3_ROOT_PATH}/ORB-SLAM3
@@ -48,7 +50,7 @@ add_executable(rgbd
   src/rgbd/rgbd.cpp
   src/rgbd/rgbd-slam-node.cpp
 )
-ament_target_dependencies(rgbd rclcpp sensor_msgs cv_bridge message_filters ORB_SLAM3 Pangolin)
+ament_target_dependencies(rgbd rclcpp sensor_msgs cv_bridge message_filters ORB_SLAM3 Pangolin nav_msgs std_srvs)
 
 add_executable(stereo
   src/stereo/stereo.cpp
