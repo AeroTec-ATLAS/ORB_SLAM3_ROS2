@@ -17,7 +17,7 @@
 #include <message_filters/synchronizer.h>
 #include <message_filters/sync_policies/approximate_time.h>
 
-#include <cv_bridge/cv_bridge.h>
+#include <cv_bridge/cv_bridge.hpp>
 #include <opencv2/core/core.hpp>
 #include <sophus/se3.hpp>
 
@@ -36,11 +36,11 @@ public:
     ~StereoSlamNode();
 
 private:
-    // ── Core SLAM callback ────────────────────────────────────────────────────
+    // Core SLAM callback
     void GrabStereo(const ImageMsg::SharedPtr msgLeft,
                     const ImageMsg::SharedPtr msgRight);
 
-    // ── Publishers ────────────────────────────────────────────────────────────
+    // Publishers
     void PublishPose(const Sophus::SE3f &Twc,
                      const std_msgs::msg::Header &header);
     void PublishOdometry(const Sophus::SE3f &Twc,
@@ -50,22 +50,22 @@ private:
     void PublishMapPoints(const std_msgs::msg::Header &header);
     void PublishTrackingState(int state);
 
-    // ── Failure handling ──────────────────────────────────────────────────────
+    // Failure handling
     void OnTrackingLost();
     void AttemptReinitialization();
     void ResetCallback(
         const std::shared_ptr<std_srvs::srv::Trigger::Request>  req,
               std::shared_ptr<std_srvs::srv::Trigger::Response> res);
 
-    // ── Diagnostics timer ─────────────────────────────────────────────────────
+    // Diagnostics timer
     void DiagnosticsCallback();
 
-    // ── Helpers ───────────────────────────────────────────────────────────────
+    // Helpers
     sensor_msgs::msg::PointCloud2 MapPointsToPointCloud2(
         const std::vector<ORB_SLAM3::MapPoint*> &map_points,
         const std_msgs::msg::Header &header);
 
-    // ── SLAM system ──────────────────────────────────────────────────────────
+    // SLAM system
     ORB_SLAM3::System* m_SLAM;
     bool doRectify{false};
 
@@ -76,27 +76,27 @@ private:
     cv_bridge::CvImageConstPtr cv_ptrLeft;
     cv_bridge::CvImageConstPtr cv_ptrRight;
 
-    // ── Subscriptions & sync ─────────────────────────────────────────────────
+    // Subscriptions & sync
     std::shared_ptr<message_filters::Subscriber<ImageMsg>> left_sub;
     std::shared_ptr<message_filters::Subscriber<ImageMsg>> right_sub;
     std::shared_ptr<message_filters::Synchronizer<approximate_sync_policy>> syncApproximate;
 
-    // ── Publishers ────────────────────────────────────────────────────────────
+    // Publishers
     rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr pose_pub_;
     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr         odom_pub_;
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr   map_pub_;
     rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr            state_pub_;
 
-    // ── TF ───────────────────────────────────────────────────────────────────
+    // TF
     std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
 
-    // ── Service ──────────────────────────────────────────────────────────────
+    // Service
     rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr reset_srv_;
 
-    // ── Diagnostics timer ────────────────────────────────────────────────────
+    // Diagnostics timer
     rclcpp::TimerBase::SharedPtr diagnostics_timer_;
 
-    // ── State tracking ───────────────────────────────────────────────────────
+    // State tracking
     int  last_tracking_state_{-1};
     int  lost_frame_count_{0};
     int  total_frames_{0};

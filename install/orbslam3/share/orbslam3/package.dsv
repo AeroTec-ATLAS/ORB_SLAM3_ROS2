@@ -1,3 +1,6 @@
+source;share/orbslam3/hook/cmake_prefix_path.ps1
+source;share/orbslam3/hook/cmake_prefix_path.dsv
+source;share/orbslam3/hook/cmake_prefix_path.sh
 source;share/orbslam3/local_setup.bash
 source;share/orbslam3/local_setup.dsv
 source;share/orbslam3/local_setup.ps1

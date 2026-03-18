@@ -1,0 +1,5 @@
+[  8%] [32mBuilding CXX object CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o[0m
+[ 33%] Built target mono
+[ 58%] Built target rgbd
+[ 66%] [32mBuilding CXX object CMakeFiles/stereo.dir/src/stereo/stereo-slam-node.cpp.o[0m
+[ 91%] Built target stereo-inertial

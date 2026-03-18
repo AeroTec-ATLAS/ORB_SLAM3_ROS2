@@ -1,0 +1,31 @@
+[ 25%] Built target mono
+[ 33%] [32mBuilding CXX object CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/stereo.dir/src/stereo/stereo-slam-node.cpp.o[0m
+[ 66%] Built target rgbd
+[ 91%] Built target stereo-inertial
+[100%] [32m[1mLinking CXX executable stereo[0m
+[100%] Built target stereo
+-- Install configuration: "Release"
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/lib/orbslam3/mono
+-- Set non-toolchain portion of runtime path of "/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/lib/orbslam3/mono" to ""
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/lib/orbslam3/rgbd
+-- Set non-toolchain portion of runtime path of "/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/lib/orbslam3/rgbd" to ""
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/lib/orbslam3/stereo
+-- Set non-toolchain portion of runtime path of "/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/lib/orbslam3/stereo" to ""
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/lib/orbslam3/stereo-inertial
+-- Set non-toolchain portion of runtime path of "/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/lib/orbslam3/stereo-inertial" to ""
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/ament_index/resource_index/package_run_dependencies/orbslam3
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/ament_index/resource_index/parent_prefix_path/orbslam3
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/environment/ament_prefix_path.sh
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/environment/ament_prefix_path.dsv
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/environment/path.sh
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/environment/path.dsv
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/local_setup.bash
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/local_setup.sh
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/local_setup.zsh
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/local_setup.dsv
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/package.dsv
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/ament_index/resource_index/packages/orbslam3
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/cmake/orbslam3Config.cmake
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/cmake/orbslam3Config-version.cmake
+-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/package.xml

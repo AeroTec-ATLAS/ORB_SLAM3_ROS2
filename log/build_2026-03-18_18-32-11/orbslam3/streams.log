@@ -1,0 +1,22 @@
+[0.020s] Invoking command in '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3 -- -j4 -l4
+[0.138s] [  8%] [32mBuilding CXX object CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o[0m
+[0.196s] [ 33%] Built target stereo-inertial
+[0.199s] [ 58%] Built target mono
+[0.214s] [ 83%] Built target rgbd
+[0.218s] [ 91%] [32mBuilding CXX object CMakeFiles/stereo.dir/src/stereo/stereo-slam-node.cpp.o[0m
+[0.738s] In file included from [01m[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo.cpp:7[m[K:
+[0.738s] [01m[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:8:10:[m[K [01;31m[Kfatal error: [m[Knav_msgs/msg/odometry.hpp: No such file or directory
+[0.739s]     8 | #include [01;31m[K<nav_msgs/msg/odometry.hpp>[m[K
+[0.739s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.739s] compilation terminated.
+[0.749s] gmake[2]: *** [CMakeFiles/stereo.dir/build.make:76: CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o] Error 1
+[0.749s] gmake[2]: *** Waiting for unfinished jobs....
+[0.789s] In file included from [01m[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1[m[K:
+[0.789s] [01m[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:8:10:[m[K [01;31m[Kfatal error: [m[Knav_msgs/msg/odometry.hpp: No such file or directory
+[0.789s]     8 | #include [01;31m[K<nav_msgs/msg/odometry.hpp>[m[K
+[0.790s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.790s] compilation terminated.
+[0.796s] gmake[2]: *** [CMakeFiles/stereo.dir/build.make:90: CMakeFiles/stereo.dir/src/stereo/stereo-slam-node.cpp.o] Error 1
+[0.796s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/stereo.dir/all] Error 2
+[0.797s] gmake: *** [Makefile:146: all] Error 2
+[0.801s] Invoked command in '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3 -- -j4 -l4

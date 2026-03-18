@@ -1,0 +1,1287 @@
+[0.000000] (-) TimerEvent: {}
+[0.003449] (orbslam3) JobQueued: {'identifier': 'orbslam3', 'dependencies': OrderedDict()}
+[0.003800] (orbslam3) JobStarted: {'identifier': 'orbslam3'}
+[0.023093] (orbslam3) JobProgress: {'identifier': 'orbslam3', 'progress': 'cmake'}
+[0.025226] (orbslam3) JobProgress: {'identifier': 'orbslam3', 'progress': 'build'}
+[0.027357] (orbslam3) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3', '--', '-j4', '-l4'], 'cwd': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'peter-parker', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/home/peter-parker/orb-slam3-root/ORB-SLAM3/lib', 'HOME': '/home/peter-parker', 'OLDPWD': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MAVEN_HOME': '/home/peter-parker/.sdkman/candidates/maven/current', 'SYSTEMD_EXEC_PID': '2430', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'peter-parker', 'SDKMAN_CANDIDATES_API': 'https://api.sdkman.io/2', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'peter-parker', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/peter-parker/.sdkman/candidates/maven/current/bin:/home/peter-parker/miniforge3/bin:/opt/ros/jazzy/bin:/home/peter-parker/.cargo/bin:/home/peter-parker/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/peter-parker-HP-Laptop-15s-fq2xxx:@/tmp/.ICE-unix/2209,unix/peter-parker-HP-Laptop-15s-fq2xxx:/tmp/.ICE-unix/2209', 'SDKMAN_CANDIDATES_DIR': '/home/peter-parker/.sdkman/candidates', 'XDG_MENU_PREFIX': 'gnome-', 'SDKMAN_BROKER_API': 'https://broker.sdkman.io', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/70e7aea9_b6c3_480b_aec2_44b2e9a16892', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'ORB_SLAM3_ROOT_PATH': '/home/peter-parker/orb-slam3-root', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.D136L3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.113', 'SDKMAN_DIR': '/home/peter-parker/.sdkman', 'SDKMAN_PLATFORM': 'linuxx64', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/install/orbslam3:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/install/orbslam3:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.100551] (-) TimerEvent: {}
+[0.202345] (-) TimerEvent: {}
+[0.306279] (orbslam3) StdoutLine: {'line': b'[ 25%] Built target mono\n'}
+[0.306864] (-) TimerEvent: {}
+[0.350106] (orbslam3) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o\x1b[0m\n'}
+[0.389409] (orbslam3) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/stereo.dir/src/stereo/stereo-slam-node.cpp.o\x1b[0m\n'}
+[0.407008] (-) TimerEvent: {}
+[0.413387] (orbslam3) StdoutLine: {'line': b'[ 66%] Built target rgbd\n'}
+[0.427021] (orbslam3) StdoutLine: {'line': b'[ 91%] Built target stereo-inertial\n'}
+[0.507164] (-) TimerEvent: {}
+[0.610174] (-) TimerEvent: {}
+[0.710723] (-) TimerEvent: {}
+[0.812148] (-) TimerEvent: {}
+[0.916996] (-) TimerEvent: {}
+[1.018382] (-) TimerEvent: {}
+[1.118934] (-) TimerEvent: {}
+[1.220475] (-) TimerEvent: {}
+[1.321003] (-) TimerEvent: {}
+[1.423405] (-) TimerEvent: {}
+[1.527218] (-) TimerEvent: {}
+[1.627844] (-) TimerEvent: {}
+[1.728785] (-) TimerEvent: {}
+[1.833500] (-) TimerEvent: {}
+[1.936043] (-) TimerEvent: {}
+[2.039001] (-) TimerEvent: {}
+[2.142228] (-) TimerEvent: {}
+[2.243119] (-) TimerEvent: {}
+[2.346159] (-) TimerEvent: {}
+[2.446753] (-) TimerEvent: {}
+[2.550231] (-) TimerEvent: {}
+[2.651124] (-) TimerEvent: {}
+[2.752520] (-) TimerEvent: {}
+[2.853536] (-) TimerEvent: {}
+[2.956642] (-) TimerEvent: {}
+[3.059164] (-) TimerEvent: {}
+[3.161841] (-) TimerEvent: {}
+[3.264192] (-) TimerEvent: {}
+[3.366332] (-) TimerEvent: {}
+[3.471101] (-) TimerEvent: {}
+[3.580275] (-) TimerEvent: {}
+[3.680838] (-) TimerEvent: {}
+[3.785008] (-) TimerEvent: {}
+[3.888688] (-) TimerEvent: {}
+[3.989283] (-) TimerEvent: {}
+[4.090997] (-) TimerEvent: {}
+[4.191858] (-) TimerEvent: {}
+[4.292704] (-) TimerEvent: {}
+[4.399146] (-) TimerEvent: {}
+[4.505240] (-) TimerEvent: {}
+[4.605825] (-) TimerEvent: {}
+[4.710691] (-) TimerEvent: {}
+[4.811605] (-) TimerEvent: {}
+[4.916200] (-) TimerEvent: {}
+[5.016777] (-) TimerEvent: {}
+[5.120039] (-) TimerEvent: {}
+[5.224810] (-) TimerEvent: {}
+[5.328012] (-) TimerEvent: {}
+[5.431574] (-) TimerEvent: {}
+[5.535014] (-) TimerEvent: {}
+[5.635619] (-) TimerEvent: {}
+[5.738250] (-) TimerEvent: {}
+[5.841234] (-) TimerEvent: {}
+[5.942824] (-) TimerEvent: {}
+[6.044579] (-) TimerEvent: {}
+[6.147236] (-) TimerEvent: {}
+[6.253128] (-) TimerEvent: {}
+[6.356353] (-) TimerEvent: {}
+[6.459183] (-) TimerEvent: {}
+[6.563296] (-) TimerEvent: {}
+[6.666021] (-) TimerEvent: {}
+[6.771164] (-) TimerEvent: {}
+[6.871809] (-) TimerEvent: {}
+[6.974995] (-) TimerEvent: {}
+[7.075621] (-) TimerEvent: {}
+[7.176990] (-) TimerEvent: {}
+[7.277588] (-) TimerEvent: {}
+[7.380011] (-) TimerEvent: {}
+[7.482224] (-) TimerEvent: {}
+[7.582846] (-) TimerEvent: {}
+[7.686430] (-) TimerEvent: {}
+[7.790248] (-) TimerEvent: {}
+[7.890949] (-) TimerEvent: {}
+[7.995741] (-) TimerEvent: {}
+[8.098013] (-) TimerEvent: {}
+[8.199147] (-) TimerEvent: {}
+[8.301368] (-) TimerEvent: {}
+[8.401992] (-) TimerEvent: {}
+[8.502571] (-) TimerEvent: {}
+[8.604472] (-) TimerEvent: {}
+[8.707288] (-) TimerEvent: {}
+[8.808300] (-) TimerEvent: {}
+[8.908911] (-) TimerEvent: {}
+[9.011777] (-) TimerEvent: {}
+[9.112358] (-) TimerEvent: {}
+[9.213682] (-) TimerEvent: {}
+[9.314598] (-) TimerEvent: {}
+[9.418265] (-) TimerEvent: {}
+[9.520003] (-) TimerEvent: {}
+[9.621005] (-) TimerEvent: {}
+[9.721993] (-) TimerEvent: {}
+[9.823525] (-) TimerEvent: {}
+[9.926282] (-) TimerEvent: {}
+[10.028556] (-) TimerEvent: {}
+[10.131530] (-) TimerEvent: {}
+[10.234592] (-) TimerEvent: {}
+[10.337201] (-) TimerEvent: {}
+[10.437816] (-) TimerEvent: {}
+[10.543102] (-) TimerEvent: {}
+[10.644835] (-) TimerEvent: {}
+[10.747278] (-) TimerEvent: {}
+[10.847915] (-) TimerEvent: {}
+[10.949016] (-) TimerEvent: {}
+[11.050058] (-) TimerEvent: {}
+[11.152620] (-) TimerEvent: {}
+[11.253246] (-) TimerEvent: {}
+[11.353836] (-) TimerEvent: {}
+[11.454583] (-) TimerEvent: {}
+[11.555513] (-) TimerEvent: {}
+[11.656102] (-) TimerEvent: {}
+[11.756682] (-) TimerEvent: {}
+[11.859843] (-) TimerEvent: {}
+[11.960492] (-) TimerEvent: {}
+[12.061314] (-) TimerEvent: {}
+[12.161944] (-) TimerEvent: {}
+[12.262494] (-) TimerEvent: {}
+[12.363080] (-) TimerEvent: {}
+[12.466335] (-) TimerEvent: {}
+[12.566923] (-) TimerEvent: {}
+[12.667517] (-) TimerEvent: {}
+[12.768132] (-) TimerEvent: {}
+[12.868810] (-) TimerEvent: {}
+[12.969395] (-) TimerEvent: {}
+[13.069999] (-) TimerEvent: {}
+[13.170587] (-) TimerEvent: {}
+[13.271228] (-) TimerEvent: {}
+[13.371824] (-) TimerEvent: {}
+[13.473045] (-) TimerEvent: {}
+[13.575347] (-) TimerEvent: {}
+[13.677340] (-) TimerEvent: {}
+[13.778082] (-) TimerEvent: {}
+[13.878668] (-) TimerEvent: {}
+[13.980230] (-) TimerEvent: {}
+[14.080810] (-) TimerEvent: {}
+[14.181382] (-) TimerEvent: {}
+[14.281971] (-) TimerEvent: {}
+[14.382546] (-) TimerEvent: {}
+[14.483132] (-) TimerEvent: {}
+[14.583705] (-) TimerEvent: {}
+[14.684298] (-) TimerEvent: {}
+[14.784911] (-) TimerEvent: {}
+[14.885493] (-) TimerEvent: {}
+[14.987003] (-) TimerEvent: {}
+[15.044822] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FORB.h:17\x1b[m\x1b[K,\n'}
+[15.045505] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/ORBVocabulary.h:23\x1b[m\x1b[K,\n'}
+[15.045856] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/KeyFrame.h:26\x1b[m\x1b[K,\n'}
+[15.046218] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[15.046530] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[15.046833] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[15.050343] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[15.050657] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[15.050988] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:24\x1b[m\x1b[K,\n'}
+[15.051284] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo.cpp:7\x1b[m\x1b[K:\n'}
+[15.051571] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FClass.h:35:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvirtual void DBoW2::FClass::\x1b[01;32m\x1b[KmeanValue\x1b[m\x1b[K(const std::vector<const TDescriptor*>&, TDescriptor&)\x1b[m\x1b[K\xe2\x80\x99 was hidden [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverloaded-virtual=\x07-Woverloaded-virtual=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.051887] (orbslam3) StderrLine: {'line': b'   35 |   virtual void \x1b[01;35m\x1b[KmeanValue\x1b[m\x1b[K(const std::vector<pDescriptor> &descriptors,\n'}
+[15.056608] (orbslam3) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[15.057200] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FORB.h:38:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  by \xe2\x80\x98\x1b[01m\x1b[Kstatic void DBoW2::FORB::\x1b[01;32m\x1b[KmeanValue\x1b[m\x1b[K(const std::vector<const cv::Mat*>&, TDescriptor&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.057518] (orbslam3) StderrLine: {'line': b'   38 |   static void \x1b[01;36m\x1b[KmeanValue\x1b[m\x1b[K(const std::vector<pDescriptor> &descriptors,\n'}
+[15.057777] (orbslam3) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[15.089022] (-) TimerEvent: {}
+[15.189644] (-) TimerEvent: {}
+[15.277257] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FORB.h:17\x1b[m\x1b[K,\n'}
+[15.277744] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/ORBVocabulary.h:23\x1b[m\x1b[K,\n'}
+[15.278006] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/KeyFrame.h:26\x1b[m\x1b[K,\n'}
+[15.278286] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/MapPoint.h:23\x1b[m\x1b[K,\n'}
+[15.278504] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/FrameDrawer.h:24\x1b[m\x1b[K,\n'}
+[15.278746] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Viewer.h:23\x1b[m\x1b[K,\n'}
+[15.279031] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Tracking.h:26\x1b[m\x1b[K,\n'}
+[15.279302] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/System.h:31\x1b[m\x1b[K,\n'}
+[15.279562] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:24\x1b[m\x1b[K,\n'}
+[15.279842] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[15.287130] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FClass.h:35:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvirtual void DBoW2::FClass::\x1b[01;32m\x1b[KmeanValue\x1b[m\x1b[K(const std::vector<const TDescriptor*>&, TDescriptor&)\x1b[m\x1b[K\xe2\x80\x99 was hidden [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverloaded-virtual=\x07-Woverloaded-virtual=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.287532] (orbslam3) StderrLine: {'line': b'   35 |   virtual void \x1b[01;35m\x1b[KmeanValue\x1b[m\x1b[K(const std::vector<pDescriptor> &descriptors,\n'}
+[15.287820] (orbslam3) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[15.288145] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FORB.h:38:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  by \xe2\x80\x98\x1b[01m\x1b[Kstatic void DBoW2::FORB::\x1b[01;32m\x1b[KmeanValue\x1b[m\x1b[K(const std::vector<const cv::Mat*>&, TDescriptor&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.288463] (orbslam3) StderrLine: {'line': b'   38 |   static void \x1b[01;36m\x1b[KmeanValue\x1b[m\x1b[K(const std::vector<pDescriptor> &descriptors,\n'}
+[15.288734] (orbslam3) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[15.292508] (-) TimerEvent: {}
+[15.393006] (-) TimerEvent: {}
+[15.493610] (-) TimerEvent: {}
+[15.594256] (-) TimerEvent: {}
+[15.694841] (-) TimerEvent: {}
+[15.795865] (-) TimerEvent: {}
+[15.896478] (-) TimerEvent: {}
+[15.997410] (-) TimerEvent: {}
+[16.097998] (-) TimerEvent: {}
+[16.174362] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Frame.h:30\x1b[m\x1b[K,\n'}
+[16.174977] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K:\n'}
+[16.175312] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/ImuTypes.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ORB_SLAM3::IMU::Preintegrated::\x1b[01;32m\x1b[KprintMeasurements\x1b[m\x1b[K() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.175606] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/ImuTypes.h:204:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ORB_SLAM3::IMU::Preintegrated::integrable>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.175925] (orbslam3) StderrLine: {'line': b'  204 |         for(int i=0; \x1b[01;35m\x1b[Ki<mvMeasurements.size()\x1b[m\x1b[K; i++){\n'}
+[16.176216] (orbslam3) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.198174] (-) TimerEvent: {}
+[16.298768] (-) TimerEvent: {}
+[16.340437] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37\x1b[m\x1b[K,\n'}
+[16.341002] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[16.341325] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Frame.h:33\x1b[m\x1b[K:\n'}
+[16.341624] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:\x1b[m\x1b[K At global scope:\n'}
+[16.341934] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.342272] (orbslam3) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[16.342561] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.342830] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[16.343132] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[16.343422] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/sophus/rotation_matrix.hpp:7\x1b[m\x1b[K,\n'}
+[16.343711] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/sophus/so3.hpp:7\x1b[m\x1b[K,\n'}
+[16.344000] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/sophus/se3.hpp:7\x1b[m\x1b[K,\n'}
+[16.344282] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:22\x1b[m\x1b[K:\n'}
+[16.344567] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[16.344832] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[16.345099] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.384994] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K:\n'}
+[16.385807] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.386161] (orbslam3) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[16.386464] (orbslam3) StderrLine: {'line': b'      |                                                                                  \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.386713] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[16.386991] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[16.387261] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.387544] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.387907] (orbslam3) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[16.388191] (orbslam3) StderrLine: {'line': b'      |                                                                                  \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.388476] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[16.388752] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[16.389046] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.398927] (-) TimerEvent: {}
+[16.418890] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Frame.h:30\x1b[m\x1b[K,\n'}
+[16.419449] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/KeyFrame.h:28\x1b[m\x1b[K:\n'}
+[16.419759] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/ImuTypes.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ORB_SLAM3::IMU::Preintegrated::\x1b[01;32m\x1b[KprintMeasurements\x1b[m\x1b[K() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.420063] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/ImuTypes.h:204:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ORB_SLAM3::IMU::Preintegrated::integrable>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.420360] (orbslam3) StderrLine: {'line': b'  204 |         for(int i=0; \x1b[01;35m\x1b[Ki<mvMeasurements.size()\x1b[m\x1b[K; i++){\n'}
+[16.420631] (orbslam3) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.459054] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:41\x1b[m\x1b[K:\n'}
+[16.459604] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/se3quat.h:43:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.459951] (orbslam3) StderrLine: {'line': b'   43 |       EIGEN_MAKE_ALIGNED_OPERATOR_NEW\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[16.460258] (orbslam3) StderrLine: {'line': b'      |                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[16.460557] (orbslam3) StderrLine: {'line': b'      |                                      \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[16.499092] (-) TimerEvent: {}
+[16.584239] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37\x1b[m\x1b[K,\n'}
+[16.584915] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Converter.h:26\x1b[m\x1b[K,\n'}
+[16.585270] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Frame.h:33\x1b[m\x1b[K:\n'}
+[16.585532] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:\x1b[m\x1b[K At global scope:\n'}
+[16.585830] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.586172] (orbslam3) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[16.586458] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.586719] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:161\x1b[m\x1b[K,\n'}
+[16.587074] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[16.587351] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/sophus/rotation_matrix.hpp:7\x1b[m\x1b[K,\n'}
+[16.587615] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/sophus/so3.hpp:7\x1b[m\x1b[K,\n'}
+[16.587899] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/sophus/se3.hpp:7\x1b[m\x1b[K,\n'}
+[16.588180] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:22\x1b[m\x1b[K:\n'}
+[16.588462] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[16.588761] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[16.589069] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.599238] (-) TimerEvent: {}
+[16.636158] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38\x1b[m\x1b[K:\n'}
+[16.636733] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.637085] (orbslam3) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[16.637382] (orbslam3) StderrLine: {'line': b'      |                                                                                  \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.637668] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[16.637984] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[16.638263] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.638752] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.639092] (orbslam3) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & \x1b[01;35m\x1b[KAlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[16.639395] (orbslam3) StderrLine: {'line': b'      |                                                                                  \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.639671] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[16.639969] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[16.640244] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.699411] (-) TimerEvent: {}
+[16.710361] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:41\x1b[m\x1b[K:\n'}
+[16.710910] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/se3quat.h:43:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.711270] (orbslam3) StderrLine: {'line': b'   43 |       EIGEN_MAKE_ALIGNED_OPERATOR_NEW\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[16.711546] (orbslam3) StderrLine: {'line': b'      |                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[16.711851] (orbslam3) StderrLine: {'line': b'      |                                      \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[16.799606] (-) TimerEvent: {}
+[16.900228] (-) TimerEvent: {}
+[17.000828] (-) TimerEvent: {}
+[17.101410] (-) TimerEvent: {}
+[17.125128] (orbslam3) StderrLine: {'line': b'/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.125671] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_sba.h:40:35:\x1b[m\x1b[K   required from here\n'}
+[17.125999] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.126306] (orbslam3) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[17.126602] (orbslam3) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.127019] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.127292] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.127560] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.177963] (orbslam3) StderrLine: {'line': b'/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<6, g2o::SE3Quat>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.178486] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:\x1b[m\x1b[K   required from here\n'}
+[17.178820] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.179129] (orbslam3) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[17.179407] (orbslam3) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.179669] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.179952] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.180216] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.201592] (-) TimerEvent: {}
+[17.233158] (orbslam3) StderrLine: {'line': b'/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.233702] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:\x1b[m\x1b[K   required from here\n'}
+[17.234042] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.234355] (orbslam3) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[17.234634] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.234939] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.235178] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.235458] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.235902] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.236249] (orbslam3) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[17.236522] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.236798] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.237107] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.237394] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.301760] (-) TimerEvent: {}
+[17.362588] (orbslam3) StderrLine: {'line': b'/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.363138] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:\x1b[m\x1b[K   required from here\n'}
+[17.363440] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.363731] (orbslam3) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[17.364026] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.364271] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.364556] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.364834] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.381932] (orbslam3) StderrLine: {'line': b'/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.382464] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_sba.h:40:35:\x1b[m\x1b[K   required from here\n'}
+[17.382771] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.383100] (orbslam3) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[17.383395] (orbslam3) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.383668] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.383977] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.384246] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.393905] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.394437] (orbslam3) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[17.394754] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.395020] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.395293] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.395598] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.401938] (-) TimerEvent: {}
+[17.435066] (orbslam3) StderrLine: {'line': b'/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<6, g2o::SE3Quat>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.435590] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:\x1b[m\x1b[K   required from here\n'}
+[17.435927] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.436236] (orbslam3) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[17.436519] (orbslam3) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.436928] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.437228] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.437495] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.486271] (orbslam3) StderrLine: {'line': b'/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.486990] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:\x1b[m\x1b[K   required from here\n'}
+[17.487304] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.487638] (orbslam3) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[17.487944] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.488259] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.488529] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.488794] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.489121] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.489408] (orbslam3) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[17.489689] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.489980] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.490259] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.490543] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.502102] (-) TimerEvent: {}
+[17.510800] (orbslam3) StderrLine: {'line': b'/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.511346] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:\x1b[m\x1b[K   required from here\n'}
+[17.511670] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.512026] (orbslam3) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[17.512310] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.512594] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.512839] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.513477] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.513745] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.514056] (orbslam3) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[17.514339] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.515034] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.515312] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.515591] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.602279] (-) TimerEvent: {}
+[17.617263] (orbslam3) StderrLine: {'line': b'/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.618672] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:\x1b[m\x1b[K   required from here\n'}
+[17.619169] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.619545] (orbslam3) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[17.619837] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.620156] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.620437] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.620726] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.643053] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.643568] (orbslam3) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[17.643896] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.644191] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.644471] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.644776] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.702446] (-) TimerEvent: {}
+[17.757331] (orbslam3) StderrLine: {'line': b'/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.757910] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:\x1b[m\x1b[K   required from here\n'}
+[17.758245] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.758578] (orbslam3) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[17.758907] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.759209] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.759492] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.759788] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.760302] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.760621] (orbslam3) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[17.760940] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.761241] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.761528] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.761806] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.802624] (-) TimerEvent: {}
+[17.903221] (-) TimerEvent: {}
+[17.928169] (orbslam3) StderrLine: {'line': b'/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<7, g2o::Sim3>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.928735] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:\x1b[m\x1b[K   required from here\n'}
+[17.929262] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.929671] (orbslam3) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[17.930003] (orbslam3) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.930289] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.930544] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.930823] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.993714] (orbslam3) StderrLine: {'line': b'/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.994305] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:\x1b[m\x1b[K   required from here\n'}
+[17.994674] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.995036] (orbslam3) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[17.995350] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.995637] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.996126] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.996430] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.996728] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[17.997033] (orbslam3) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[17.997339] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.997643] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[17.997939] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[17.998238] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.003360] (-) TimerEvent: {}
+[18.084393] (orbslam3) StderrLine: {'line': b'/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.084975] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:\x1b[m\x1b[K   required from here\n'}
+[18.085291] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[18.085578] (orbslam3) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[18.085846] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.086141] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[18.086404] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[18.086690] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.103550] (-) TimerEvent: {}
+[18.113558] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[18.114204] (orbslam3) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[18.114565] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.114895] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[18.115199] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[18.115508] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.191247] (orbslam3) StderrLine: {'line': b'/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseVertex<7, g2o::Sim3>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.191825] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:\x1b[m\x1b[K   required from here\n'}
+[18.192195] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[18.192551] (orbslam3) StderrLine: {'line': b'   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned >  HessianBlockType;\n'}
+[18.192846] (orbslam3) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.193168] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[18.193455] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[18.193752] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.203691] (-) TimerEvent: {}
+[18.249698] (orbslam3) StderrLine: {'line': b'/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.250832] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:\x1b[m\x1b[K   required from here\n'}
+[18.251844] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[18.252264] (orbslam3) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[18.252565] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.252857] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[18.253159] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[18.253449] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.253724] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[18.254033] (orbslam3) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[18.254298] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.254564] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[18.254855] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[18.255151] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.303858] (-) TimerEvent: {}
+[18.339881] (orbslam3) StderrLine: {'line': b'/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.340435] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:\x1b[m\x1b[K   required from here\n'}
+[18.340737] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[18.341064] (orbslam3) StderrLine: {'line': b'   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockType;\n'}
+[18.341336] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.341601] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[18.341858] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[18.342126] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.368250] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::AlignedBit\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[18.368782] (orbslam3) StderrLine: {'line': b'   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::\x1b[01;35m\x1b[KFlags & AlignedBit\x1b[m\x1b[K ? Aligned : Unaligned > HessianBlockTransposedType;\n'}
+[18.369086] (orbslam3) StderrLine: {'line': b'      |                                                                          \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.369356] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[18.369624] (orbslam3) StderrLine: {'line': b'  167 | EIGEN_DEPRECATED const unsigned int \x1b[01;36m\x1b[KAlignedBit\x1b[m\x1b[K = 0x80;\n'}
+[18.369904] (orbslam3) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.404002] (-) TimerEvent: {}
+[18.504594] (-) TimerEvent: {}
+[18.605219] (-) TimerEvent: {}
+[18.705847] (-) TimerEvent: {}
+[18.806447] (-) TimerEvent: {}
+[18.907028] (-) TimerEvent: {}
+[19.007623] (-) TimerEvent: {}
+[19.108206] (-) TimerEvent: {}
+[19.211657] (-) TimerEvent: {}
+[19.312790] (-) TimerEvent: {}
+[19.355345] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Atlas.h:26\x1b[m\x1b[K,\n'}
+[19.355961] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/FrameDrawer.h:25\x1b[m\x1b[K:\n'}
+[19.356357] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual bool ORB_SLAM3::Pinhole::\x1b[01;32m\x1b[KmatchAndtriangulate\x1b[m\x1b[K(const cv::KeyPoint&, const cv::KeyPoint&, ORB_SLAM3::GeometricCamera*, Sophus::SE3f&, Sophus::SE3f&, float, float, Eigen::Vector3f&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.356999] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:83:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kkp1\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.357339] (orbslam3) StderrLine: {'line': b'   83 |         bool matchAndtriangulate(\x1b[01;35m\x1b[Kconst cv::KeyPoint& kp1\x1b[m\x1b[K, const cv::KeyPoint& kp2, GeometricCamera* pOther,\n'}
+[19.357631] (orbslam3) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[19.363284] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:83:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kkp2\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.363603] (orbslam3) StderrLine: {'line': b'   83 |         bool matchAndtriangulate(const cv::KeyPoint& kp1, \x1b[01;35m\x1b[Kconst cv::KeyPoint& kp2\x1b[m\x1b[K, GeometricCamera* pOther,\n'}
+[19.363842] (orbslam3) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[19.364154] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:83:101:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KpOther\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.364488] (orbslam3) StderrLine: {'line': b'   83 |         bool matchAndtriangulate(const cv::KeyPoint& kp1, const cv::KeyPoint& kp2, \x1b[01;35m\x1b[KGeometricCamera* pOther\x1b[m\x1b[K,\n'}
+[19.364780] (orbslam3) StderrLine: {'line': b'      |                                                                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[19.369553] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:84:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KTcw1\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.369889] (orbslam3) StderrLine: {'line': b'   84 |                                  \x1b[01;35m\x1b[KSophus::SE3f& Tcw1\x1b[m\x1b[K, Sophus::SE3f& Tcw2,\n'}
+[19.370175] (orbslam3) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[19.370428] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:84:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KTcw2\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.370695] (orbslam3) StderrLine: {'line': b'   84 |                                  Sophus::SE3f& Tcw1, \x1b[01;35m\x1b[KSophus::SE3f& Tcw2\x1b[m\x1b[K,\n'}
+[19.370980] (orbslam3) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[19.371242] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:85:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KsigmaLevel1\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.371516] (orbslam3) StderrLine: {'line': b'   85 |                                  \x1b[01;35m\x1b[Kconst float sigmaLevel1\x1b[m\x1b[K, const float sigmaLevel2,\n'}
+[19.371766] (orbslam3) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.375340] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:85:71:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KsigmaLevel2\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.375658] (orbslam3) StderrLine: {'line': b'   85 |                                  const float sigmaLevel1, \x1b[01;35m\x1b[Kconst float sigmaLevel2\x1b[m\x1b[K,\n'}
+[19.375863] (orbslam3) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.378364] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:86:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kx3Dtriangulated\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.378660] (orbslam3) StderrLine: {'line': b'   86 |                                  \x1b[01;35m\x1b[KEigen::Vector3f& x3Dtriangulated\x1b[m\x1b[K) { return false;}\n'}
+[19.378940] (orbslam3) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.379211] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Atlas.h:27\x1b[m\x1b[K:\n'}
+[19.379460] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KORB_SLAM3::KannalaBrandt8::\x1b[01;32m\x1b[KKannalaBrandt8\x1b[m\x1b[K(std::vector<float>)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.379716] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:102:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KORB_SLAM3::KannalaBrandt8::precision\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.383098] (orbslam3) StderrLine: {'line': b'  102 |         const float \x1b[01;35m\x1b[Kprecision\x1b[m\x1b[K;\n'}
+[19.383451] (orbslam3) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[19.383679] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:88:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.383921] (orbslam3) StderrLine: {'line': b'   88 |         std::vector<int> \x1b[01;35m\x1b[KmvLappingArea\x1b[m\x1b[K;\n'}
+[19.384206] (orbslam3) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.384468] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:47:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.384696] (orbslam3) StderrLine: {'line': b'   47 |         \x1b[01;35m\x1b[KKannalaBrandt8\x1b[m\x1b[K(const std::vector<float> _vParameters) : GeometricCamera(_vParameters), precision(1e-6), mvLappingArea(2,0) ,tvr(nullptr) {\n'}
+[19.386054] (orbslam3) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.386362] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KORB_SLAM3::KannalaBrandt8::\x1b[01;32m\x1b[KKannalaBrandt8\x1b[m\x1b[K(std::vector<float>, float)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.386610] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:102:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KORB_SLAM3::KannalaBrandt8::precision\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.386833] (orbslam3) StderrLine: {'line': b'  102 |         const float \x1b[01;35m\x1b[Kprecision\x1b[m\x1b[K;\n'}
+[19.387074] (orbslam3) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[19.387325] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:88:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.387561] (orbslam3) StderrLine: {'line': b'   88 |         std::vector<int> \x1b[01;35m\x1b[KmvLappingArea\x1b[m\x1b[K;\n'}
+[19.387784] (orbslam3) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.391247] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:53:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.391552] (orbslam3) StderrLine: {'line': b'   53 |         \x1b[01;35m\x1b[KKannalaBrandt8\x1b[m\x1b[K(const std::vector<float> _vParameters, const float _precision) : GeometricCamera(_vParameters),\n'}
+[19.391812] (orbslam3) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.392088] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KORB_SLAM3::KannalaBrandt8::\x1b[01;32m\x1b[KKannalaBrandt8\x1b[m\x1b[K(ORB_SLAM3::KannalaBrandt8*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.392343] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:102:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KORB_SLAM3::KannalaBrandt8::precision\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.392594] (orbslam3) StderrLine: {'line': b'  102 |         const float \x1b[01;35m\x1b[Kprecision\x1b[m\x1b[K;\n'}
+[19.392818] (orbslam3) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[19.396255] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:88:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.396529] (orbslam3) StderrLine: {'line': b'   88 |         std::vector<int> \x1b[01;35m\x1b[KmvLappingArea\x1b[m\x1b[K;\n'}
+[19.396791] (orbslam3) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.397066] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:59:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.397342] (orbslam3) StderrLine: {'line': b'   59 |         \x1b[01;35m\x1b[KKannalaBrandt8\x1b[m\x1b[K(KannalaBrandt8* pKannala) : GeometricCamera(pKannala->mvParameters), precision(pKannala->precision), mvLappingArea(2,0) ,tvr(nullptr) {\n'}
+[19.397616] (orbslam3) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.412979] (-) TimerEvent: {}
+[19.513561] (-) TimerEvent: {}
+[19.614157] (-) TimerEvent: {}
+[19.657910] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Atlas.h:26\x1b[m\x1b[K,\n'}
+[19.658445] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/FrameDrawer.h:25\x1b[m\x1b[K:\n'}
+[19.658741] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual bool ORB_SLAM3::Pinhole::\x1b[01;32m\x1b[KmatchAndtriangulate\x1b[m\x1b[K(const cv::KeyPoint&, const cv::KeyPoint&, ORB_SLAM3::GeometricCamera*, Sophus::SE3f&, Sophus::SE3f&, float, float, Eigen::Vector3f&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.660402] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:83:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kkp1\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.660771] (orbslam3) StderrLine: {'line': b'   83 |         bool matchAndtriangulate(\x1b[01;35m\x1b[Kconst cv::KeyPoint& kp1\x1b[m\x1b[K, const cv::KeyPoint& kp2, GeometricCamera* pOther,\n'}
+[19.661083] (orbslam3) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[19.661363] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:83:79:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kkp2\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.661659] (orbslam3) StderrLine: {'line': b'   83 |         bool matchAndtriangulate(const cv::KeyPoint& kp1, \x1b[01;35m\x1b[Kconst cv::KeyPoint& kp2\x1b[m\x1b[K, GeometricCamera* pOther,\n'}
+[19.662670] (orbslam3) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[19.663015] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:83:101:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KpOther\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.663372] (orbslam3) StderrLine: {'line': b'   83 |         bool matchAndtriangulate(const cv::KeyPoint& kp1, const cv::KeyPoint& kp2, \x1b[01;35m\x1b[KGeometricCamera* pOther\x1b[m\x1b[K,\n'}
+[19.663846] (orbslam3) StderrLine: {'line': b'      |                                                                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[19.664148] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:84:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KTcw1\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.664421] (orbslam3) StderrLine: {'line': b'   84 |                                  \x1b[01;35m\x1b[KSophus::SE3f& Tcw1\x1b[m\x1b[K, Sophus::SE3f& Tcw2,\n'}
+[19.664725] (orbslam3) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[19.665471] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:84:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KTcw2\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.665772] (orbslam3) StderrLine: {'line': b'   84 |                                  Sophus::SE3f& Tcw1, \x1b[01;35m\x1b[KSophus::SE3f& Tcw2\x1b[m\x1b[K,\n'}
+[19.666218] (orbslam3) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[19.666493] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:85:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KsigmaLevel1\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.666786] (orbslam3) StderrLine: {'line': b'   85 |                                  \x1b[01;35m\x1b[Kconst float sigmaLevel1\x1b[m\x1b[K, const float sigmaLevel2,\n'}
+[19.667103] (orbslam3) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.667378] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:85:71:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KsigmaLevel2\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.667670] (orbslam3) StderrLine: {'line': b'   85 |                                  const float sigmaLevel1, \x1b[01;35m\x1b[Kconst float sigmaLevel2\x1b[m\x1b[K,\n'}
+[19.667977] (orbslam3) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.668251] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:86:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kx3Dtriangulated\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.668569] (orbslam3) StderrLine: {'line': b'   86 |                                  \x1b[01;35m\x1b[KEigen::Vector3f& x3Dtriangulated\x1b[m\x1b[K) { return false;}\n'}
+[19.668862] (orbslam3) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.669147] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Atlas.h:27\x1b[m\x1b[K:\n'}
+[19.669436] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KORB_SLAM3::KannalaBrandt8::\x1b[01;32m\x1b[KKannalaBrandt8\x1b[m\x1b[K(std::vector<float>)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.669734] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:102:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KORB_SLAM3::KannalaBrandt8::precision\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.670040] (orbslam3) StderrLine: {'line': b'  102 |         const float \x1b[01;35m\x1b[Kprecision\x1b[m\x1b[K;\n'}
+[19.670336] (orbslam3) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[19.670614] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:88:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.670912] (orbslam3) StderrLine: {'line': b'   88 |         std::vector<int> \x1b[01;35m\x1b[KmvLappingArea\x1b[m\x1b[K;\n'}
+[19.671198] (orbslam3) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.671477] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:47:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.671762] (orbslam3) StderrLine: {'line': b'   47 |         \x1b[01;35m\x1b[KKannalaBrandt8\x1b[m\x1b[K(const std::vector<float> _vParameters) : GeometricCamera(_vParameters), precision(1e-6), mvLappingArea(2,0) ,tvr(nullptr) {\n'}
+[19.672053] (orbslam3) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.672325] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KORB_SLAM3::KannalaBrandt8::\x1b[01;32m\x1b[KKannalaBrandt8\x1b[m\x1b[K(std::vector<float>, float)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.672609] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:102:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KORB_SLAM3::KannalaBrandt8::precision\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.672907] (orbslam3) StderrLine: {'line': b'  102 |         const float \x1b[01;35m\x1b[Kprecision\x1b[m\x1b[K;\n'}
+[19.673186] (orbslam3) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[19.673460] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:88:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.673786] (orbslam3) StderrLine: {'line': b'   88 |         std::vector<int> \x1b[01;35m\x1b[KmvLappingArea\x1b[m\x1b[K;\n'}
+[19.674077] (orbslam3) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.674349] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:53:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.674636] (orbslam3) StderrLine: {'line': b'   53 |         \x1b[01;35m\x1b[KKannalaBrandt8\x1b[m\x1b[K(const std::vector<float> _vParameters, const float _precision) : GeometricCamera(_vParameters),\n'}
+[19.674926] (orbslam3) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.675204] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KORB_SLAM3::KannalaBrandt8::\x1b[01;32m\x1b[KKannalaBrandt8\x1b[m\x1b[K(ORB_SLAM3::KannalaBrandt8*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.675483] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:102:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KORB_SLAM3::KannalaBrandt8::precision\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.675789] (orbslam3) StderrLine: {'line': b'  102 |         const float \x1b[01;35m\x1b[Kprecision\x1b[m\x1b[K;\n'}
+[19.676084] (orbslam3) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[19.676363] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:88:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.676669] (orbslam3) StderrLine: {'line': b'   88 |         std::vector<int> \x1b[01;35m\x1b[KmvLappingArea\x1b[m\x1b[K;\n'}
+[19.676958] (orbslam3) StderrLine: {'line': b'      |                          \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.677224] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:59:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.677520] (orbslam3) StderrLine: {'line': b'   59 |         \x1b[01;35m\x1b[KKannalaBrandt8\x1b[m\x1b[K(KannalaBrandt8* pKannala) : GeometricCamera(pKannala->mvParameters), precision(pKannala->precision), mvLappingArea(2,0) ,tvr(nullptr) {\n'}
+[19.677804] (orbslam3) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.714328] (-) TimerEvent: {}
+[19.814917] (-) TimerEvent: {}
+[19.915478] (-) TimerEvent: {}
+[20.016020] (-) TimerEvent: {}
+[20.117562] (-) TimerEvent: {}
+[20.219964] (-) TimerEvent: {}
+[20.323211] (-) TimerEvent: {}
+[20.424566] (-) TimerEvent: {}
+[20.525583] (-) TimerEvent: {}
+[20.626176] (-) TimerEvent: {}
+[20.726766] (-) TimerEvent: {}
+[20.827358] (-) TimerEvent: {}
+[20.928283] (-) TimerEvent: {}
+[21.029230] (-) TimerEvent: {}
+[21.133788] (-) TimerEvent: {}
+[21.234433] (-) TimerEvent: {}
+[21.335031] (-) TimerEvent: {}
+[21.435638] (-) TimerEvent: {}
+[21.536264] (-) TimerEvent: {}
+[21.636853] (-) TimerEvent: {}
+[21.737441] (-) TimerEvent: {}
+[21.838012] (-) TimerEvent: {}
+[21.938595] (-) TimerEvent: {}
+[22.039196] (-) TimerEvent: {}
+[22.139805] (-) TimerEvent: {}
+[22.240418] (-) TimerEvent: {}
+[22.341994] (-) TimerEvent: {}
+[22.442537] (-) TimerEvent: {}
+[22.543143] (-) TimerEvent: {}
+[22.644009] (-) TimerEvent: {}
+[22.744964] (-) TimerEvent: {}
+[22.845904] (-) TimerEvent: {}
+[22.946857] (-) TimerEvent: {}
+[23.047490] (-) TimerEvent: {}
+[23.148337] (-) TimerEvent: {}
+[23.249126] (-) TimerEvent: {}
+[23.350440] (-) TimerEvent: {}
+[23.451501] (-) TimerEvent: {}
+[23.552479] (-) TimerEvent: {}
+[23.653572] (-) TimerEvent: {}
+[23.755242] (-) TimerEvent: {}
+[23.856228] (-) TimerEvent: {}
+[23.957191] (-) TimerEvent: {}
+[24.057779] (-) TimerEvent: {}
+[24.159242] (-) TimerEvent: {}
+[24.259823] (-) TimerEvent: {}
+[24.360846] (-) TimerEvent: {}
+[24.461995] (-) TimerEvent: {}
+[24.563010] (-) TimerEvent: {}
+[24.664067] (-) TimerEvent: {}
+[24.766250] (-) TimerEvent: {}
+[24.870251] (-) TimerEvent: {}
+[24.970843] (-) TimerEvent: {}
+[25.071436] (-) TimerEvent: {}
+[25.172019] (-) TimerEvent: {}
+[25.272610] (-) TimerEvent: {}
+[25.373195] (-) TimerEvent: {}
+[25.473775] (-) TimerEvent: {}
+[25.574415] (-) TimerEvent: {}
+[25.675022] (-) TimerEvent: {}
+[25.775608] (-) TimerEvent: {}
+[25.876199] (-) TimerEvent: {}
+[25.976850] (-) TimerEvent: {}
+[26.077463] (-) TimerEvent: {}
+[26.178097] (-) TimerEvent: {}
+[26.278687] (-) TimerEvent: {}
+[26.379325] (-) TimerEvent: {}
+[26.479922] (-) TimerEvent: {}
+[26.580542] (-) TimerEvent: {}
+[26.682203] (-) TimerEvent: {}
+[26.782790] (-) TimerEvent: {}
+[26.883415] (-) TimerEvent: {}
+[26.986246] (-) TimerEvent: {}
+[27.088280] (-) TimerEvent: {}
+[27.188898] (-) TimerEvent: {}
+[27.289508] (-) TimerEvent: {}
+[27.390148] (-) TimerEvent: {}
+[27.490810] (-) TimerEvent: {}
+[27.591429] (-) TimerEvent: {}
+[27.692019] (-) TimerEvent: {}
+[27.792634] (-) TimerEvent: {}
+[27.893265] (-) TimerEvent: {}
+[27.993963] (-) TimerEvent: {}
+[28.094594] (-) TimerEvent: {}
+[28.195234] (-) TimerEvent: {}
+[28.295962] (-) TimerEvent: {}
+[28.396585] (-) TimerEvent: {}
+[28.497175] (-) TimerEvent: {}
+[28.597746] (-) TimerEvent: {}
+[28.698372] (-) TimerEvent: {}
+[28.798984] (-) TimerEvent: {}
+[28.899569] (-) TimerEvent: {}
+[29.003193] (-) TimerEvent: {}
+[29.107329] (-) TimerEvent: {}
+[29.208995] (-) TimerEvent: {}
+[29.309595] (-) TimerEvent: {}
+[29.412456] (-) TimerEvent: {}
+[29.513028] (-) TimerEvent: {}
+[29.614238] (-) TimerEvent: {}
+[29.714903] (-) TimerEvent: {}
+[29.815754] (-) TimerEvent: {}
+[29.916404] (-) TimerEvent: {}
+[30.017001] (-) TimerEvent: {}
+[30.119237] (-) TimerEvent: {}
+[30.219817] (-) TimerEvent: {}
+[30.320448] (-) TimerEvent: {}
+[30.421082] (-) TimerEvent: {}
+[30.522492] (-) TimerEvent: {}
+[30.623374] (-) TimerEvent: {}
+[30.724009] (-) TimerEvent: {}
+[30.825629] (-) TimerEvent: {}
+[30.926325] (-) TimerEvent: {}
+[31.027070] (-) TimerEvent: {}
+[31.127740] (-) TimerEvent: {}
+[31.228508] (-) TimerEvent: {}
+[31.329318] (-) TimerEvent: {}
+[31.430576] (-) TimerEvent: {}
+[31.531292] (-) TimerEvent: {}
+[31.632188] (-) TimerEvent: {}
+[31.732817] (-) TimerEvent: {}
+[31.834712] (-) TimerEvent: {}
+[31.935395] (-) TimerEvent: {}
+[32.035991] (-) TimerEvent: {}
+[32.136586] (-) TimerEvent: {}
+[32.237613] (-) TimerEvent: {}
+[32.339292] (-) TimerEvent: {}
+[32.439903] (-) TimerEvent: {}
+[32.540889] (-) TimerEvent: {}
+[32.642580] (-) TimerEvent: {}
+[32.743197] (-) TimerEvent: {}
+[32.843794] (-) TimerEvent: {}
+[32.944416] (-) TimerEvent: {}
+[33.045008] (-) TimerEvent: {}
+[33.146248] (-) TimerEvent: {}
+[33.246822] (-) TimerEvent: {}
+[33.347763] (-) TimerEvent: {}
+[33.448402] (-) TimerEvent: {}
+[33.549713] (-) TimerEvent: {}
+[33.651677] (-) TimerEvent: {}
+[33.752273] (-) TimerEvent: {}
+[33.852855] (-) TimerEvent: {}
+[33.953461] (-) TimerEvent: {}
+[34.054028] (-) TimerEvent: {}
+[34.154633] (-) TimerEvent: {}
+[34.255240] (-) TimerEvent: {}
+[34.355822] (-) TimerEvent: {}
+[34.458116] (-) TimerEvent: {}
+[34.558673] (-) TimerEvent: {}
+[34.659376] (-) TimerEvent: {}
+[34.759961] (-) TimerEvent: {}
+[34.860705] (-) TimerEvent: {}
+[34.962018] (-) TimerEvent: {}
+[35.062583] (-) TimerEvent: {}
+[35.163210] (-) TimerEvent: {}
+[35.265958] (-) TimerEvent: {}
+[35.366571] (-) TimerEvent: {}
+[35.467217] (-) TimerEvent: {}
+[35.568349] (-) TimerEvent: {}
+[35.668921] (-) TimerEvent: {}
+[35.769499] (-) TimerEvent: {}
+[35.870105] (-) TimerEvent: {}
+[35.972259] (-) TimerEvent: {}
+[36.072841] (-) TimerEvent: {}
+[36.173437] (-) TimerEvent: {}
+[36.274069] (-) TimerEvent: {}
+[36.374650] (-) TimerEvent: {}
+[36.475252] (-) TimerEvent: {}
+[36.575807] (-) TimerEvent: {}
+[36.676438] (-) TimerEvent: {}
+[36.779788] (-) TimerEvent: {}
+[36.880388] (-) TimerEvent: {}
+[36.980976] (-) TimerEvent: {}
+[37.081528] (-) TimerEvent: {}
+[37.182113] (-) TimerEvent: {}
+[37.282664] (-) TimerEvent: {}
+[37.383289] (-) TimerEvent: {}
+[37.483824] (-) TimerEvent: {}
+[37.584398] (-) TimerEvent: {}
+[37.685842] (-) TimerEvent: {}
+[37.787542] (-) TimerEvent: {}
+[37.888116] (-) TimerEvent: {}
+[37.988684] (-) TimerEvent: {}
+[38.089256] (-) TimerEvent: {}
+[38.189839] (-) TimerEvent: {}
+[38.290404] (-) TimerEvent: {}
+[38.390954] (-) TimerEvent: {}
+[38.491496] (-) TimerEvent: {}
+[38.592036] (-) TimerEvent: {}
+[38.692579] (-) TimerEvent: {}
+[38.793240] (-) TimerEvent: {}
+[38.893805] (-) TimerEvent: {}
+[38.994397] (-) TimerEvent: {}
+[39.094973] (-) TimerEvent: {}
+[39.195529] (-) TimerEvent: {}
+[39.296117] (-) TimerEvent: {}
+[39.396847] (-) TimerEvent: {}
+[39.497435] (-) TimerEvent: {}
+[39.597972] (-) TimerEvent: {}
+[39.698504] (-) TimerEvent: {}
+[39.799166] (-) TimerEvent: {}
+[39.899669] (-) TimerEvent: {}
+[40.000369] (-) TimerEvent: {}
+[40.100928] (-) TimerEvent: {}
+[40.201588] (-) TimerEvent: {}
+[40.302170] (-) TimerEvent: {}
+[40.402823] (-) TimerEvent: {}
+[40.503398] (-) TimerEvent: {}
+[40.604121] (-) TimerEvent: {}
+[40.704779] (-) TimerEvent: {}
+[40.805486] (-) TimerEvent: {}
+[40.906135] (-) TimerEvent: {}
+[41.006906] (-) TimerEvent: {}
+[41.107471] (-) TimerEvent: {}
+[41.208111] (-) TimerEvent: {}
+[41.308781] (-) TimerEvent: {}
+[41.409636] (-) TimerEvent: {}
+[41.510466] (-) TimerEvent: {}
+[41.615320] (-) TimerEvent: {}
+[41.716042] (-) TimerEvent: {}
+[41.816788] (-) TimerEvent: {}
+[41.917559] (-) TimerEvent: {}
+[42.018174] (-) TimerEvent: {}
+[42.118767] (-) TimerEvent: {}
+[42.219390] (-) TimerEvent: {}
+[42.320010] (-) TimerEvent: {}
+[42.420594] (-) TimerEvent: {}
+[42.521196] (-) TimerEvent: {}
+[42.621864] (-) TimerEvent: {}
+[42.722671] (-) TimerEvent: {}
+[42.823376] (-) TimerEvent: {}
+[42.923914] (-) TimerEvent: {}
+[43.024540] (-) TimerEvent: {}
+[43.125056] (-) TimerEvent: {}
+[43.225691] (-) TimerEvent: {}
+[43.326235] (-) TimerEvent: {}
+[43.426804] (-) TimerEvent: {}
+[43.527388] (-) TimerEvent: {}
+[43.627922] (-) TimerEvent: {}
+[43.728416] (-) TimerEvent: {}
+[43.828961] (-) TimerEvent: {}
+[43.929485] (-) TimerEvent: {}
+[44.030060] (-) TimerEvent: {}
+[44.130572] (-) TimerEvent: {}
+[44.231220] (-) TimerEvent: {}
+[44.331713] (-) TimerEvent: {}
+[44.432183] (-) TimerEvent: {}
+[44.532675] (-) TimerEvent: {}
+[44.633276] (-) TimerEvent: {}
+[44.733858] (-) TimerEvent: {}
+[44.834612] (-) TimerEvent: {}
+[44.935175] (-) TimerEvent: {}
+[45.035619] (-) TimerEvent: {}
+[45.136104] (-) TimerEvent: {}
+[45.236708] (-) TimerEvent: {}
+[45.337755] (-) TimerEvent: {}
+[45.438211] (-) TimerEvent: {}
+[45.538749] (-) TimerEvent: {}
+[45.639208] (-) TimerEvent: {}
+[45.739642] (-) TimerEvent: {}
+[45.840077] (-) TimerEvent: {}
+[45.940646] (-) TimerEvent: {}
+[46.041137] (-) TimerEvent: {}
+[46.141618] (-) TimerEvent: {}
+[46.242110] (-) TimerEvent: {}
+[46.342677] (-) TimerEvent: {}
+[46.443162] (-) TimerEvent: {}
+[46.543716] (-) TimerEvent: {}
+[46.644222] (-) TimerEvent: {}
+[46.744700] (-) TimerEvent: {}
+[46.845176] (-) TimerEvent: {}
+[46.945736] (-) TimerEvent: {}
+[47.046228] (-) TimerEvent: {}
+[47.146710] (-) TimerEvent: {}
+[47.247191] (-) TimerEvent: {}
+[47.347667] (-) TimerEvent: {}
+[47.448136] (-) TimerEvent: {}
+[47.548615] (-) TimerEvent: {}
+[47.653182] (-) TimerEvent: {}
+[47.756223] (-) TimerEvent: {}
+[47.856768] (-) TimerEvent: {}
+[47.957327] (-) TimerEvent: {}
+[48.057820] (-) TimerEvent: {}
+[48.158321] (-) TimerEvent: {}
+[48.258869] (-) TimerEvent: {}
+[48.359406] (-) TimerEvent: {}
+[48.459892] (-) TimerEvent: {}
+[48.560371] (-) TimerEvent: {}
+[48.660857] (-) TimerEvent: {}
+[48.761359] (-) TimerEvent: {}
+[48.861881] (-) TimerEvent: {}
+[48.962397] (-) TimerEvent: {}
+[49.062810] (-) TimerEvent: {}
+[49.163318] (-) TimerEvent: {}
+[49.263755] (-) TimerEvent: {}
+[49.364315] (-) TimerEvent: {}
+[49.464863] (-) TimerEvent: {}
+[49.565419] (-) TimerEvent: {}
+[49.665863] (-) TimerEvent: {}
+[49.766308] (-) TimerEvent: {}
+[49.866790] (-) TimerEvent: {}
+[49.967327] (-) TimerEvent: {}
+[50.067762] (-) TimerEvent: {}
+[50.168307] (-) TimerEvent: {}
+[50.268741] (-) TimerEvent: {}
+[50.369280] (-) TimerEvent: {}
+[50.469717] (-) TimerEvent: {}
+[50.570248] (-) TimerEvent: {}
+[50.670689] (-) TimerEvent: {}
+[50.771219] (-) TimerEvent: {}
+[50.871659] (-) TimerEvent: {}
+[50.972114] (-) TimerEvent: {}
+[51.072552] (-) TimerEvent: {}
+[51.173089] (-) TimerEvent: {}
+[51.273521] (-) TimerEvent: {}
+[51.373974] (-) TimerEvent: {}
+[51.474414] (-) TimerEvent: {}
+[51.575015] (-) TimerEvent: {}
+[51.675555] (-) TimerEvent: {}
+[51.776129] (-) TimerEvent: {}
+[51.876603] (-) TimerEvent: {}
+[51.977517] (-) TimerEvent: {}
+[52.078222] (-) TimerEvent: {}
+[52.178907] (-) TimerEvent: {}
+[52.279487] (-) TimerEvent: {}
+[52.380113] (-) TimerEvent: {}
+[52.480657] (-) TimerEvent: {}
+[52.581347] (-) TimerEvent: {}
+[52.681990] (-) TimerEvent: {}
+[52.782735] (-) TimerEvent: {}
+[52.883293] (-) TimerEvent: {}
+[52.983905] (-) TimerEvent: {}
+[53.084554] (-) TimerEvent: {}
+[53.185128] (-) TimerEvent: {}
+[53.285741] (-) TimerEvent: {}
+[53.386197] (-) TimerEvent: {}
+[53.486715] (-) TimerEvent: {}
+[53.587163] (-) TimerEvent: {}
+[53.687634] (-) TimerEvent: {}
+[53.788267] (-) TimerEvent: {}
+[53.888907] (-) TimerEvent: {}
+[53.989356] (-) TimerEvent: {}
+[54.089943] (-) TimerEvent: {}
+[54.190430] (-) TimerEvent: {}
+[54.290929] (-) TimerEvent: {}
+[54.391419] (-) TimerEvent: {}
+[54.491965] (-) TimerEvent: {}
+[54.592439] (-) TimerEvent: {}
+[54.692932] (-) TimerEvent: {}
+[54.793435] (-) TimerEvent: {}
+[54.893956] (-) TimerEvent: {}
+[54.994406] (-) TimerEvent: {}
+[55.096683] (-) TimerEvent: {}
+[55.197251] (-) TimerEvent: {}
+[55.301267] (-) TimerEvent: {}
+[55.402326] (-) TimerEvent: {}
+[55.503343] (-) TimerEvent: {}
+[55.605716] (-) TimerEvent: {}
+[55.706164] (-) TimerEvent: {}
+[55.806621] (-) TimerEvent: {}
+[55.907106] (-) TimerEvent: {}
+[56.007804] (-) TimerEvent: {}
+[56.109254] (-) TimerEvent: {}
+[56.209855] (-) TimerEvent: {}
+[56.310403] (-) TimerEvent: {}
+[56.410974] (-) TimerEvent: {}
+[56.511481] (-) TimerEvent: {}
+[56.612030] (-) TimerEvent: {}
+[56.712507] (-) TimerEvent: {}
+[56.815088] (-) TimerEvent: {}
+[56.915587] (-) TimerEvent: {}
+[57.016486] (-) TimerEvent: {}
+[57.117223] (-) TimerEvent: {}
+[57.218297] (-) TimerEvent: {}
+[57.318804] (-) TimerEvent: {}
+[57.419349] (-) TimerEvent: {}
+[57.519835] (-) TimerEvent: {}
+[57.620435] (-) TimerEvent: {}
+[57.720863] (-) TimerEvent: {}
+[57.821316] (-) TimerEvent: {}
+[57.921846] (-) TimerEvent: {}
+[58.025212] (-) TimerEvent: {}
+[58.125730] (-) TimerEvent: {}
+[58.226182] (-) TimerEvent: {}
+[58.326624] (-) TimerEvent: {}
+[58.427068] (-) TimerEvent: {}
+[58.527579] (-) TimerEvent: {}
+[58.627984] (-) TimerEvent: {}
+[58.728502] (-) TimerEvent: {}
+[58.828948] (-) TimerEvent: {}
+[58.929451] (-) TimerEvent: {}
+[59.029940] (-) TimerEvent: {}
+[59.130471] (-) TimerEvent: {}
+[59.231002] (-) TimerEvent: {}
+[59.331507] (-) TimerEvent: {}
+[59.432002] (-) TimerEvent: {}
+[59.532510] (-) TimerEvent: {}
+[59.633016] (-) TimerEvent: {}
+[59.733571] (-) TimerEvent: {}
+[59.834109] (-) TimerEvent: {}
+[59.934670] (-) TimerEvent: {}
+[60.035291] (-) TimerEvent: {}
+[60.139030] (-) TimerEvent: {}
+[60.239647] (-) TimerEvent: {}
+[60.341141] (-) TimerEvent: {}
+[60.441643] (-) TimerEvent: {}
+[60.542214] (-) TimerEvent: {}
+[60.642694] (-) TimerEvent: {}
+[60.743180] (-) TimerEvent: {}
+[60.843650] (-) TimerEvent: {}
+[60.944145] (-) TimerEvent: {}
+[61.044633] (-) TimerEvent: {}
+[61.145136] (-) TimerEvent: {}
+[61.245687] (-) TimerEvent: {}
+[61.346231] (-) TimerEvent: {}
+[61.446835] (-) TimerEvent: {}
+[61.547572] (-) TimerEvent: {}
+[61.647990] (-) TimerEvent: {}
+[61.748420] (-) TimerEvent: {}
+[61.848861] (-) TimerEvent: {}
+[61.949393] (-) TimerEvent: {}
+[62.049997] (-) TimerEvent: {}
+[62.150658] (-) TimerEvent: {}
+[62.251240] (-) TimerEvent: {}
+[62.355206] (-) TimerEvent: {}
+[62.455658] (-) TimerEvent: {}
+[62.556197] (-) TimerEvent: {}
+[62.656659] (-) TimerEvent: {}
+[62.757197] (-) TimerEvent: {}
+[62.857631] (-) TimerEvent: {}
+[62.958151] (-) TimerEvent: {}
+[63.058595] (-) TimerEvent: {}
+[63.159099] (-) TimerEvent: {}
+[63.259632] (-) TimerEvent: {}
+[63.360189] (-) TimerEvent: {}
+[63.460721] (-) TimerEvent: {}
+[63.561264] (-) TimerEvent: {}
+[63.661795] (-) TimerEvent: {}
+[63.762344] (-) TimerEvent: {}
+[63.862858] (-) TimerEvent: {}
+[63.963422] (-) TimerEvent: {}
+[64.063956] (-) TimerEvent: {}
+[64.167203] (-) TimerEvent: {}
+[64.271944] (-) TimerEvent: {}
+[64.372507] (-) TimerEvent: {}
+[64.473436] (-) TimerEvent: {}
+[64.574374] (-) TimerEvent: {}
+[64.675314] (-) TimerEvent: {}
+[64.781252] (-) TimerEvent: {}
+[64.881768] (-) TimerEvent: {}
+[64.982220] (-) TimerEvent: {}
+[65.082685] (-) TimerEvent: {}
+[65.183201] (-) TimerEvent: {}
+[65.283800] (-) TimerEvent: {}
+[65.384377] (-) TimerEvent: {}
+[65.484861] (-) TimerEvent: {}
+[65.585433] (-) TimerEvent: {}
+[65.685916] (-) TimerEvent: {}
+[65.786445] (-) TimerEvent: {}
+[65.886944] (-) TimerEvent: {}
+[65.987415] (-) TimerEvent: {}
+[66.089995] (-) TimerEvent: {}
+[66.190555] (-) TimerEvent: {}
+[66.291162] (-) TimerEvent: {}
+[66.392911] (-) TimerEvent: {}
+[66.493817] (-) TimerEvent: {}
+[66.594379] (-) TimerEvent: {}
+[66.694864] (-) TimerEvent: {}
+[66.795347] (-) TimerEvent: {}
+[66.895835] (-) TimerEvent: {}
+[66.996431] (-) TimerEvent: {}
+[67.096925] (-) TimerEvent: {}
+[67.197496] (-) TimerEvent: {}
+[67.297988] (-) TimerEvent: {}
+[67.398561] (-) TimerEvent: {}
+[67.499056] (-) TimerEvent: {}
+[67.599633] (-) TimerEvent: {}
+[67.700115] (-) TimerEvent: {}
+[67.800655] (-) TimerEvent: {}
+[67.901142] (-) TimerEvent: {}
+[68.001707] (-) TimerEvent: {}
+[68.102186] (-) TimerEvent: {}
+[68.202732] (-) TimerEvent: {}
+[68.303218] (-) TimerEvent: {}
+[68.403798] (-) TimerEvent: {}
+[68.504271] (-) TimerEvent: {}
+[68.604844] (-) TimerEvent: {}
+[68.705333] (-) TimerEvent: {}
+[68.805813] (-) TimerEvent: {}
+[68.906277] (-) TimerEvent: {}
+[69.006789] (-) TimerEvent: {}
+[69.107233] (-) TimerEvent: {}
+[69.207801] (-) TimerEvent: {}
+[69.308373] (-) TimerEvent: {}
+[69.408965] (-) TimerEvent: {}
+[69.509413] (-) TimerEvent: {}
+[69.609950] (-) TimerEvent: {}
+[69.710461] (-) TimerEvent: {}
+[69.811065] (-) TimerEvent: {}
+[69.911545] (-) TimerEvent: {}
+[70.012161] (-) TimerEvent: {}
+[70.112584] (-) TimerEvent: {}
+[70.212987] (-) TimerEvent: {}
+[70.313978] (-) TimerEvent: {}
+[70.414498] (-) TimerEvent: {}
+[70.514952] (-) TimerEvent: {}
+[70.615418] (-) TimerEvent: {}
+[70.719269] (-) TimerEvent: {}
+[70.819896] (-) TimerEvent: {}
+[70.920461] (-) TimerEvent: {}
+[71.021033] (-) TimerEvent: {}
+[71.121560] (-) TimerEvent: {}
+[71.222061] (-) TimerEvent: {}
+[71.322576] (-) TimerEvent: {}
+[71.426937] (-) TimerEvent: {}
+[71.527483] (-) TimerEvent: {}
+[71.627976] (-) TimerEvent: {}
+[71.728456] (-) TimerEvent: {}
+[71.829071] (-) TimerEvent: {}
+[71.929568] (-) TimerEvent: {}
+[72.030059] (-) TimerEvent: {}
+[72.130518] (-) TimerEvent: {}
+[72.231113] (-) TimerEvent: {}
+[72.331630] (-) TimerEvent: {}
+[72.432227] (-) TimerEvent: {}
+[72.532800] (-) TimerEvent: {}
+[72.633450] (-) TimerEvent: {}
+[72.734006] (-) TimerEvent: {}
+[72.834494] (-) TimerEvent: {}
+[72.934980] (-) TimerEvent: {}
+[73.035557] (-) TimerEvent: {}
+[73.136081] (-) TimerEvent: {}
+[73.236522] (-) TimerEvent: {}
+[73.336974] (-) TimerEvent: {}
+[73.437420] (-) TimerEvent: {}
+[73.537982] (-) TimerEvent: {}
+[73.638505] (-) TimerEvent: {}
+[73.738960] (-) TimerEvent: {}
+[73.839417] (-) TimerEvent: {}
+[73.939928] (-) TimerEvent: {}
+[74.040477] (-) TimerEvent: {}
+[74.141041] (-) TimerEvent: {}
+[74.241618] (-) TimerEvent: {}
+[74.342205] (-) TimerEvent: {}
+[74.442699] (-) TimerEvent: {}
+[74.543182] (-) TimerEvent: {}
+[74.643650] (-) TimerEvent: {}
+[74.744141] (-) TimerEvent: {}
+[74.844641] (-) TimerEvent: {}
+[74.948200] (-) TimerEvent: {}
+[75.048705] (-) TimerEvent: {}
+[75.149176] (-) TimerEvent: {}
+[75.249740] (-) TimerEvent: {}
+[75.350245] (-) TimerEvent: {}
+[75.450789] (-) TimerEvent: {}
+[75.551309] (-) TimerEvent: {}
+[75.651905] (-) TimerEvent: {}
+[75.752474] (-) TimerEvent: {}
+[75.852982] (-) TimerEvent: {}
+[75.953522] (-) TimerEvent: {}
+[76.053976] (-) TimerEvent: {}
+[76.154460] (-) TimerEvent: {}
+[76.254942] (-) TimerEvent: {}
+[76.355535] (-) TimerEvent: {}
+[76.456108] (-) TimerEvent: {}
+[76.556659] (-) TimerEvent: {}
+[76.657142] (-) TimerEvent: {}
+[76.757626] (-) TimerEvent: {}
+[76.858107] (-) TimerEvent: {}
+[76.958671] (-) TimerEvent: {}
+[77.059152] (-) TimerEvent: {}
+[77.159714] (-) TimerEvent: {}
+[77.260221] (-) TimerEvent: {}
+[77.360787] (-) TimerEvent: {}
+[77.461327] (-) TimerEvent: {}
+[77.561933] (-) TimerEvent: {}
+[77.662445] (-) TimerEvent: {}
+[77.762964] (-) TimerEvent: {}
+[77.863440] (-) TimerEvent: {}
+[77.963939] (-) TimerEvent: {}
+[78.064437] (-) TimerEvent: {}
+[78.164936] (-) TimerEvent: {}
+[78.265419] (-) TimerEvent: {}
+[78.365913] (-) TimerEvent: {}
+[78.466401] (-) TimerEvent: {}
+[78.566906] (-) TimerEvent: {}
+[78.667363] (-) TimerEvent: {}
+[78.767797] (-) TimerEvent: {}
+[78.868216] (-) TimerEvent: {}
+[78.968741] (-) TimerEvent: {}
+[79.069233] (-) TimerEvent: {}
+[79.176615] (-) TimerEvent: {}
+[79.278217] (-) TimerEvent: {}
+[79.378782] (-) TimerEvent: {}
+[79.479313] (-) TimerEvent: {}
+[79.579909] (-) TimerEvent: {}
+[79.680411] (-) TimerEvent: {}
+[79.781015] (-) TimerEvent: {}
+[79.881450] (-) TimerEvent: {}
+[79.981909] (-) TimerEvent: {}
+[80.082364] (-) TimerEvent: {}
+[80.182791] (-) TimerEvent: {}
+[80.283235] (-) TimerEvent: {}
+[80.383726] (-) TimerEvent: {}
+[80.484143] (-) TimerEvent: {}
+[80.584583] (-) TimerEvent: {}
+[80.684985] (-) TimerEvent: {}
+[80.785518] (-) TimerEvent: {}
+[80.886112] (-) TimerEvent: {}
+[80.986621] (-) TimerEvent: {}
+[81.087121] (-) TimerEvent: {}
+[81.187585] (-) TimerEvent: {}
+[81.288072] (-) TimerEvent: {}
+[81.388653] (-) TimerEvent: {}
+[81.489276] (-) TimerEvent: {}
+[81.524915] (orbslam3) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable stereo\x1b[0m\n'}
+[81.589435] (-) TimerEvent: {}
+[81.689943] (-) TimerEvent: {}
+[81.790419] (-) TimerEvent: {}
+[81.891014] (-) TimerEvent: {}
+[81.992003] (-) TimerEvent: {}
+[82.093210] (-) TimerEvent: {}
+[82.193686] (-) TimerEvent: {}
+[82.294157] (-) TimerEvent: {}
+[82.394698] (-) TimerEvent: {}
+[82.496997] (-) TimerEvent: {}
+[82.597640] (-) TimerEvent: {}
+[82.698520] (-) TimerEvent: {}
+[82.798985] (-) TimerEvent: {}
+[82.899486] (-) TimerEvent: {}
+[83.000052] (-) TimerEvent: {}
+[83.100547] (-) TimerEvent: {}
+[83.201107] (-) TimerEvent: {}
+[83.301861] (-) TimerEvent: {}
+[83.402506] (-) TimerEvent: {}
+[83.505414] (-) TimerEvent: {}
+[83.546668] (orbslam3) StdoutLine: {'line': b'[100%] Built target stereo\n'}
+[83.569148] (orbslam3) CommandEnded: {'returncode': 0}
+[83.570505] (orbslam3) JobProgress: {'identifier': 'orbslam3', 'progress': 'install'}
+[83.588269] (orbslam3) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3'], 'cwd': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'peter-parker', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/home/peter-parker/orb-slam3-root/ORB-SLAM3/lib', 'HOME': '/home/peter-parker', 'OLDPWD': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MAVEN_HOME': '/home/peter-parker/.sdkman/candidates/maven/current', 'SYSTEMD_EXEC_PID': '2430', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'peter-parker', 'SDKMAN_CANDIDATES_API': 'https://api.sdkman.io/2', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'peter-parker', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/peter-parker/.sdkman/candidates/maven/current/bin:/home/peter-parker/miniforge3/bin:/opt/ros/jazzy/bin:/home/peter-parker/.cargo/bin:/home/peter-parker/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/peter-parker-HP-Laptop-15s-fq2xxx:@/tmp/.ICE-unix/2209,unix/peter-parker-HP-Laptop-15s-fq2xxx:/tmp/.ICE-unix/2209', 'SDKMAN_CANDIDATES_DIR': '/home/peter-parker/.sdkman/candidates', 'XDG_MENU_PREFIX': 'gnome-', 'SDKMAN_BROKER_API': 'https://broker.sdkman.io', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/70e7aea9_b6c3_480b_aec2_44b2e9a16892', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'ORB_SLAM3_ROOT_PATH': '/home/peter-parker/orb-slam3-root', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.D136L3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.113', 'SDKMAN_DIR': '/home/peter-parker/.sdkman', 'SDKMAN_PLATFORM': 'linuxx64', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/install/orbslam3:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/install/orbslam3:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[83.603622] (orbslam3) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[83.604207] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/lib/orbslam3/mono\n'}
+[83.605500] (-) TimerEvent: {}
+[83.605900] (orbslam3) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/lib/orbslam3/mono" to ""\n'}
+[83.606323] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/lib/orbslam3/rgbd\n'}
+[83.609503] (orbslam3) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/lib/orbslam3/rgbd" to ""\n'}
+[83.610071] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/lib/orbslam3/stereo\n'}
+[83.613976] (orbslam3) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/lib/orbslam3/stereo" to ""\n'}
+[83.614537] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/lib/orbslam3/stereo-inertial\n'}
+[83.617059] (orbslam3) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/lib/orbslam3/stereo-inertial" to ""\n'}
+[83.617499] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/ament_index/resource_index/package_run_dependencies/orbslam3\n'}
+[83.618041] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/ament_index/resource_index/parent_prefix_path/orbslam3\n'}
+[83.618470] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/environment/ament_prefix_path.sh\n'}
+[83.618816] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/environment/ament_prefix_path.dsv\n'}
+[83.619213] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/environment/path.sh\n'}
+[83.619605] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/environment/path.dsv\n'}
+[83.619978] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/local_setup.bash\n'}
+[83.620303] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/local_setup.sh\n'}
+[83.620713] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/local_setup.zsh\n'}
+[83.621055] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/local_setup.dsv\n'}
+[83.621366] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/package.dsv\n'}
+[83.621719] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/ament_index/resource_index/packages/orbslam3\n'}
+[83.622095] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/cmake/orbslam3Config.cmake\n'}
+[83.622441] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/cmake/orbslam3Config-version.cmake\n'}
+[83.622793] (orbslam3) StdoutLine: {'line': b'-- Installing: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/install/orbslam3/share/orbslam3/package.xml\n'}
+[83.628183] (orbslam3) CommandEnded: {'returncode': 0}
+[83.671405] (orbslam3) JobEnded: {'identifier': 'orbslam3', 'rc': 0}
+[83.682564] (-) EventReactorShutdown: {}

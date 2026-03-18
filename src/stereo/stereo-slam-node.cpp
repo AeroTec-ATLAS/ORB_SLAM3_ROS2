@@ -1,6 +1,7 @@
 #include "stereo-slam-node.hpp"
 #include <opencv2/core/core.hpp>
 #include <cstring>  ///< std::memcpy
+#include "utility.hpp"
 
 /// Marcadores de posição para std::bind, utilizados no registo do serviço e do temporizador.
 using std::placeholders::_1;
@@ -568,7 +569,7 @@ sensor_msgs::msg::PointCloud2 StereoSlamNode::MapPointsToPointCloud2(
     std::vector<float> data;
     data.reserve(map_points.size() * 3);
 
-    for (const auto* mp : map_points) {
+    for (auto* mp : map_points) {
         /// Ignora Pointeres nulos (o ORB-SLAM3 pode deixar lacunas) e pontos inválidos/eliminados.
         if (!mp || mp->isBad()) continue;
 
