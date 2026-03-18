@@ -55,7 +55,7 @@ cd $ORB_SLAM3_ROOT_PATH
 mkdir -p ROS2_ORB_SLAM3/src
 cd ROS2_ORB_SLAM3/src
 
-git clone https://github.com/pedroMVicente/ORB_SLAM3_ROS2.git orbslam3_ros2
+git clone https://github.com/AeroTec-ATLAS/ORB_SLAM3_ROS2.git orbslam3_ros2
 ```
 
 ### 2. Build
