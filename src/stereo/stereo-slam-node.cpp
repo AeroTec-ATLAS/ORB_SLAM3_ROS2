@@ -544,10 +544,10 @@ sensor_msgs::msg::PointCloud2 StereoSlamNode::MapPointsToPointCloud2(
 {
     sensor_msgs::msg::PointCloud2 cloud;
     cloud.header       = header;
-    cloud.height       = 1;      ///< Nuvem não organizada — linha única.
-    cloud.is_dense     = false;  ///< Podem existir lacunas; os consumidores devem verificar NaN/Inf.
-    cloud.is_bigendian = false;  ///< x86 e ARM são little-endian.
-    cloud.point_step   = 12;     ///< 3 campos x 4 bytes por float32 = 12 bytes/ponto.
+    cloud.height       = 1;
+    cloud.is_dense     = false;
+    cloud.is_bigendian = false;
+    cloud.point_step   = 12;
 
     /**
      * @brief Bloco de descritores de campos.
@@ -570,7 +570,7 @@ sensor_msgs::msg::PointCloud2 StereoSlamNode::MapPointsToPointCloud2(
     data.reserve(map_points.size() * 3);
 
     for (auto* mp : map_points) {
-        /// Ignora Pointeres nulos (o ORB-SLAM3 pode deixar lacunas) e pontos inválidos/eliminados.
+        /// Ignora Pointers nulos e pontos inválidos/eliminados.
         if (!mp || mp->isBad()) continue;
 
         const Eigen::Vector3f pos = mp->GetWorldPos();  ///< Posição 3D no referencial do mundo.
