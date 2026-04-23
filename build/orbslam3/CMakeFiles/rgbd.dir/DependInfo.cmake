@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.cpp" "CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.o" "gcc" "CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.o.d"
   "/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/rgbd/rgbd-slam-node.cpp" "CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o" "gcc" "CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o.d"
   "/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/rgbd/rgbd.cpp" "CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o" "gcc" "CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o.d"
   )

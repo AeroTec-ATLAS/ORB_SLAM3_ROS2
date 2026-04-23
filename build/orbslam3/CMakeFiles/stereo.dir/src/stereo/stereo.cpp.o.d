@@ -701,31 +701,16 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: \
  /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_event_handler.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_service.hpp \
  /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/image.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__builder.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/point_field.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__builder.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__type_support.hpp \
+ /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/../nodes/slam-node-base.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
@@ -745,15 +730,23 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/point_field.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__builder.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__type_support.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/int32.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__builder.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__traits.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__type_support.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/header.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__builder.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp \
  /opt/ros/jazzy/include/std_srvs/std_srvs/srv/trigger.hpp \
  /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__struct.hpp \
  /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__builder.hpp \
@@ -777,51 +770,18 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: \
  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp \
  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/jazzy/include/tf2_ros/tf2_ros/qos.hpp \
- /opt/ros/jazzy/include/message_filters/message_filters/subscriber.h \
- /opt/ros/jazzy/include/message_filters/message_filters/connection.h \
- /opt/ros/jazzy/include/message_filters/message_filters/visibility_control.h \
- /opt/ros/jazzy/include/message_filters/message_filters/simple_filter.h \
- /opt/ros/jazzy/include/message_filters/message_filters/signal1.h \
- /opt/ros/jazzy/include/message_filters/message_filters/message_event.h \
- /opt/ros/jazzy/include/message_filters/message_filters/parameter_adapter.h \
- /opt/ros/jazzy/include/message_filters/message_filters/synchronizer.h \
- /opt/ros/jazzy/include/message_filters/message_filters/null_types.h \
- /opt/ros/jazzy/include/message_filters/message_filters/message_traits.h \
- /opt/ros/jazzy/include/message_filters/message_filters/signal9.h \
- /opt/ros/jazzy/include/message_filters/message_filters/sync_policies/approximate_time.h \
- /usr/include/inttypes.h \
- /opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/compressed_image.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__builder.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__type_support.hpp \
- /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/image_encodings.hpp \
- /usr/include/c++/13/regex /usr/include/c++/13/bitset \
- /usr/include/c++/13/stack /usr/include/c++/13/bits/stl_stack.h \
- /usr/include/c++/13/bits/regex_constants.h \
- /usr/include/c++/13/bits/regex_error.h \
- /usr/include/c++/13/bits/regex_automaton.h \
- /usr/include/c++/13/bits/regex_automaton.tcc \
- /usr/include/c++/13/bits/regex_scanner.h \
- /usr/include/c++/13/bits/regex_scanner.tcc \
- /usr/include/c++/13/bits/regex_compiler.h \
- /usr/include/c++/13/bits/regex_compiler.tcc \
- /usr/include/c++/13/bits/regex.h /usr/include/c++/13/bits/regex.tcc \
- /usr/include/c++/13/bits/regex_executor.h \
- /usr/include/c++/13/bits/regex_executor.tcc \
- /usr/include/opencv4/opencv2/core/core.hpp \
- /usr/include/opencv4/opencv2/core.hpp \
- /usr/include/opencv4/opencv2/core/cvdef.h \
- /usr/include/opencv4/opencv2/core/version.hpp \
- /usr/include/opencv4/opencv2/core/hal/interface.h \
- /usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
+ /usr/local/include/sophus/se3.hpp /usr/local/include/sophus/so3.hpp \
+ /usr/local/include/sophus/rotation_matrix.hpp \
+ /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Core \
+ /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
+ /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
+ /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h \
- /usr/include/opencv4/opencv2/core/base.hpp \
- /usr/include/opencv4/opencv2/opencv_modules.hpp \
+ /usr/include/c++/13/complex \
+ /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h \
  /usr/include/c++/13/climits \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
@@ -831,42 +791,6 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /usr/include/opencv4/opencv2/core/cvstd.hpp \
- /usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
- /usr/include/opencv4/opencv2/core/neon_utils.hpp \
- /usr/include/opencv4/opencv2/core/vsx_utils.hpp \
- /usr/include/opencv4/opencv2/core/check.hpp \
- /usr/include/opencv4/opencv2/core/traits.hpp \
- /usr/include/opencv4/opencv2/core/matx.hpp \
- /usr/include/opencv4/opencv2/core/saturate.hpp \
- /usr/include/opencv4/opencv2/core/fast_math.hpp \
- /usr/include/opencv4/opencv2/core/types.hpp /usr/include/c++/13/cfloat \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
- /usr/include/opencv4/opencv2/core/mat.hpp \
- /usr/include/opencv4/opencv2/core/bufferpool.hpp \
- /usr/include/opencv4/opencv2/core/mat.inl.hpp \
- /usr/include/opencv4/opencv2/core/persistence.hpp \
- /usr/include/opencv4/opencv2/core/operations.hpp \
- /usr/include/opencv4/opencv2/core/cvstd.inl.hpp \
- /usr/include/c++/13/complex \
- /usr/include/opencv4/opencv2/core/utility.hpp \
- /usr/include/opencv4/opencv2/core/optim.hpp \
- /usr/include/opencv4/opencv2/core/ovx.hpp \
- /usr/include/opencv4/opencv2/core/cvdef.h \
- /usr/include/opencv4/opencv2/imgproc/imgproc.hpp \
- /usr/include/opencv4/opencv2/imgproc.hpp \
- /usr/include/opencv4/opencv2/imgproc/segmentation.hpp \
- /usr/include/opencv4/opencv2/imgproc/types_c.h \
- /usr/include/opencv4/opencv2/core/core_c.h \
- /usr/include/opencv4/opencv2/core/types_c.h \
- /opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge_export.h \
- /usr/local/include/sophus/se3.hpp /usr/local/include/sophus/so3.hpp \
- /usr/local/include/sophus/rotation_matrix.hpp \
- /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Core \
- /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
- /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
- /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
- /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h \
  /usr/include/eigen3/Eigen/src/Core/util/Constants.h \
  /usr/include/eigen3/Eigen/src/Core/util/Meta.h \
  /usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h \
@@ -1058,7 +982,37 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: \
  /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
  /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
  /usr/include/eigen3/Eigen/src/Geometry/RotationBase.h \
+ /usr/include/eigen3/Eigen/Geometry \
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/System.h \
+ /usr/include/opencv4/opencv2/core/core.hpp \
+ /usr/include/opencv4/opencv2/core.hpp \
+ /usr/include/opencv4/opencv2/core/cvdef.h \
+ /usr/include/opencv4/opencv2/core/version.hpp \
+ /usr/include/opencv4/opencv2/core/hal/interface.h \
+ /usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
+ /usr/include/opencv4/opencv2/core/base.hpp \
+ /usr/include/opencv4/opencv2/opencv_modules.hpp \
+ /usr/include/opencv4/opencv2/core/cvstd.hpp \
+ /usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
+ /usr/include/opencv4/opencv2/core/neon_utils.hpp \
+ /usr/include/opencv4/opencv2/core/vsx_utils.hpp \
+ /usr/include/opencv4/opencv2/core/check.hpp \
+ /usr/include/opencv4/opencv2/core/traits.hpp \
+ /usr/include/opencv4/opencv2/core/matx.hpp \
+ /usr/include/opencv4/opencv2/core/saturate.hpp \
+ /usr/include/opencv4/opencv2/core/fast_math.hpp \
+ /usr/include/opencv4/opencv2/core/types.hpp /usr/include/c++/13/cfloat \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
+ /usr/include/opencv4/opencv2/core/mat.hpp \
+ /usr/include/opencv4/opencv2/core/bufferpool.hpp \
+ /usr/include/opencv4/opencv2/core/mat.inl.hpp \
+ /usr/include/opencv4/opencv2/core/persistence.hpp \
+ /usr/include/opencv4/opencv2/core/operations.hpp \
+ /usr/include/opencv4/opencv2/core/cvstd.inl.hpp \
+ /usr/include/opencv4/opencv2/core/utility.hpp \
+ /usr/include/opencv4/opencv2/core/optim.hpp \
+ /usr/include/opencv4/opencv2/core/ovx.hpp \
+ /usr/include/opencv4/opencv2/core/cvdef.h \
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Tracking.h \
  /usr/include/opencv4/opencv2/features2d/features2d.hpp \
  /usr/include/opencv4/opencv2/features2d.hpp \
@@ -1378,6 +1332,8 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: \
  /usr/include/opencv4/opencv2/highgui.hpp \
  /usr/include/opencv4/opencv2/imgcodecs.hpp \
  /usr/include/opencv4/opencv2/videoio.hpp \
+ /usr/include/opencv4/opencv2/imgproc.hpp \
+ /usr/include/opencv4/opencv2/imgproc/segmentation.hpp \
  /usr/include/opencv4/opencv2/ml.hpp \
  /usr/include/opencv4/opencv2/ml/ml.inl.hpp \
  /usr/include/opencv4/opencv2/objdetect.hpp \
@@ -1413,7 +1369,6 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: \
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/so3.hpp \
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/types.hpp \
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/ImuTypes.h \
- /usr/include/eigen3/Eigen/Geometry \
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/SerializationUtils.h \
  /usr/include/boost/serialization/vector.hpp \
  /usr/include/boost/serialization/collections_load_imp.hpp \
@@ -1459,7 +1414,7 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: \
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/openmp_mutex.h \
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/../../config.h \
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/hyper_graph.h \
- /usr/include/c++/13/tr1/unordered_map \
+ /usr/include/c++/13/bitset /usr/include/c++/13/tr1/unordered_map \
  /usr/include/c++/13/tr1/type_traits \
  /usr/include/c++/13/tr1/functional_hash.h \
  /usr/include/c++/13/tr1/hashtable.h \
@@ -1473,7 +1428,8 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: \
  /usr/include/eigen3/Eigen/src/StlSupport/details.h \
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/../stuff/macros.h \
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/creators.h \
- /usr/include/eigen3/Eigen/Cholesky \
+ /usr/include/eigen3/Eigen/Cholesky /usr/include/c++/13/stack \
+ /usr/include/c++/13/bits/stl_stack.h \
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.hpp \
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h \
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/../core/base_edge.h \
@@ -1494,6 +1450,7 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: \
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/sim_details.hpp \
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Settings.h \
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/GeometricCamera.h \
+ /usr/include/opencv4/opencv2/imgproc/imgproc.hpp \
  /usr/include/boost/serialization/export.hpp \
  /usr/include/boost/serialization/extended_type_info.hpp \
  /usr/include/c++/13/cstdarg /usr/include/boost/noncopyable.hpp \
@@ -1525,7 +1482,8 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: \
  /usr/local/include/pangolin/gl/glinclude.h \
  /usr/local/include/pangolin/gl/glplatform.h /usr/include/epoxy/gl.h \
  /usr/include/epoxy/common.h /usr/include/epoxy/gl_generated.h \
- /usr/include/GL/gl.h /usr/local/include/pangolin/gl/glpangoglu.h \
+ /usr/include/inttypes.h /usr/include/GL/gl.h \
+ /usr/local/include/pangolin/gl/glpangoglu.h \
  /usr/local/include/pangolin/gl/viewport.h \
  /usr/local/include/pangolin/utils/params.h \
  /usr/local/include/pangolin/utils/type_convert.h \
@@ -1792,4 +1750,46 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: \
  /usr/include/boost/algorithm/string/detail/find_format_all.hpp \
  /usr/include/boost/algorithm/string/formatter.hpp \
  /usr/include/boost/algorithm/string/detail/formatter.hpp \
- /usr/include/boost/algorithm/string/erase.hpp
+ /usr/include/boost/algorithm/string/erase.hpp \
+ /opt/ros/jazzy/include/message_filters/message_filters/subscriber.h \
+ /opt/ros/jazzy/include/message_filters/message_filters/connection.h \
+ /opt/ros/jazzy/include/message_filters/message_filters/visibility_control.h \
+ /opt/ros/jazzy/include/message_filters/message_filters/simple_filter.h \
+ /opt/ros/jazzy/include/message_filters/message_filters/signal1.h \
+ /opt/ros/jazzy/include/message_filters/message_filters/message_event.h \
+ /opt/ros/jazzy/include/message_filters/message_filters/parameter_adapter.h \
+ /opt/ros/jazzy/include/message_filters/message_filters/sync_policies/approximate_time.h \
+ /opt/ros/jazzy/include/message_filters/message_filters/message_traits.h \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/header.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__builder.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp \
+ /opt/ros/jazzy/include/message_filters/message_filters/null_types.h \
+ /opt/ros/jazzy/include/message_filters/message_filters/signal9.h \
+ /opt/ros/jazzy/include/message_filters/message_filters/synchronizer.h \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/image.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__builder.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp \
+ /opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/compressed_image.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__builder.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__type_support.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/image_encodings.hpp \
+ /usr/include/c++/13/regex /usr/include/c++/13/bits/regex_constants.h \
+ /usr/include/c++/13/bits/regex_error.h \
+ /usr/include/c++/13/bits/regex_automaton.h \
+ /usr/include/c++/13/bits/regex_automaton.tcc \
+ /usr/include/c++/13/bits/regex_scanner.h \
+ /usr/include/c++/13/bits/regex_scanner.tcc \
+ /usr/include/c++/13/bits/regex_compiler.h \
+ /usr/include/c++/13/bits/regex_compiler.tcc \
+ /usr/include/c++/13/bits/regex.h /usr/include/c++/13/bits/regex.tcc \
+ /usr/include/c++/13/bits/regex_executor.h \
+ /usr/include/c++/13/bits/regex_executor.tcc \
+ /usr/include/opencv4/opencv2/imgproc/types_c.h \
+ /usr/include/opencv4/opencv2/core/core_c.h \
+ /usr/include/opencv4/opencv2/core/types_c.h \
+ /opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge_export.h

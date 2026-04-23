@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.cpp" "CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.o" "gcc" "CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.o.d"
   "/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo-inertial/stereo-inertial-node.cpp" "CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial-node.cpp.o" "gcc" "CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial-node.cpp.o.d"
   "/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo-inertial/stereo-inertial.cpp" "CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial.cpp.o" "gcc" "CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial.cpp.o.d"
   )

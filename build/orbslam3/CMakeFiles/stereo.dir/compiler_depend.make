@@ -66,6 +66,8 @@ CMakeFiles/stereo.dir/src/stereo/stereo-slam-node.cpp.o: /home/peter-parker/orb-
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Tracking.h \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/TwoViewReconstruction.h \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Viewer.h \
+  /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/include/utility.hpp \
+  /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-header.hpp \
   /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
@@ -1942,6 +1944,7 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: /home/peter-parker/orb-slam3-root
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Tracking.h \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/TwoViewReconstruction.h \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Viewer.h \
+  /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.hpp \
   /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
@@ -3754,6 +3757,8 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: /home/peter-parker/orb-slam3-root
   /usr/local/include/sophus/types.hpp
 
 
+/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.hpp:
+
 /usr/local/include/sophus/types.hpp:
 
 /usr/local/include/sigslot/signal.hpp:
@@ -4526,10 +4531,6 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: /home/peter-parker/orb-slam3-root
 
 /usr/include/c++/13/deque:
 
-/usr/include/opencv4/opencv2/flann/config.h:
-
-/usr/include/c++/13/cxxabi.h:
-
 /usr/include/c++/13/cwctype:
 
 /usr/include/eigen3/Eigen/src/Core/Matrix.h:
@@ -4745,10 +4746,6 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: /home/peter-parker/orb-slam3-root
 /usr/include/boost/type_traits/declval.hpp:
 
 /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:
-
-/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp:
-
-/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:
 
 /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h:
 
@@ -5158,6 +5155,10 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: /home/peter-parker/orb-slam3-root
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/init_options.hpp:
 
+/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:
+
+/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp:
+
 /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo.cpp:
 
 /usr/include/boost/type_traits/is_const.hpp:
@@ -5273,38 +5274,6 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: /home/peter-parker/orb-slam3-root
 /opt/ros/jazzy/include/rcutils/rcutils/time.h:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
-
-/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp:
-
-/usr/include/boost/preprocessor/detail/is_binary.hpp:
-
-/usr/local/include/pangolin/image/image_io.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FeatureVector.h:
-
-/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:
-
-/opt/ros/jazzy/include/rcutils/rcutils/error_handling.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/publisher_factory.hpp:
-
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/type_source__struct.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/se3_ops.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h:
-
-/usr/include/boost/archive/detail/abi_suffix.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/Random.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
-
-/usr/include/boost/config/no_tr1/functional.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message_type.hpp:
 
@@ -5462,6 +5431,10 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: /home/peter-parker/orb-slam3-root
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp:
 
+/usr/include/c++/13/bits/basic_string.h:
+
+/usr/include/boost/function/detail/maybe_include.hpp:
+
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp:
@@ -5519,6 +5492,8 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: /home/peter-parker/orb-slam3-root
 /opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
 
 /usr/include/boost/concept/detail/concept_def.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h:
 
@@ -5592,6 +5567,10 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: /home/peter-parker/orb-slam3-root
 
 /usr/include/boost/type_traits/is_assignable.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/Random.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
+
 /usr/include/boost/range/detail/has_member_size.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
@@ -5599,6 +5578,16 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: /home/peter-parker/orb-slam3-root
 /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/System.h:
 
 /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
+
+/usr/include/boost/mpl/aux_/config/gpu.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/SerializationUtils.h:
+
+/usr/local/include/pangolin/image/image_io.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FeatureVector.h:
+
+/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:
 
 /usr/include/c++/13/csignal:
 
@@ -5634,33 +5623,25 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: /home/peter-parker/orb-slam3-root
 
 /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/creators.h:
 
-/usr/local/include/sophus/rotation_matrix.hpp:
+/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp:
+/usr/include/boost/preprocessor/detail/is_binary.hpp:
 
-/opt/ros/jazzy/include/message_filters/message_filters/sync_policies/approximate_time.h:
+/opt/ros/jazzy/include/rcutils/rcutils/error_handling.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/any_service_callback.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/publisher_factory.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/type_source__struct.h:
 
-/usr/include/boost/preprocessor/arithmetic/detail/is_minimum_number.hpp:
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/se3_ops.h:
 
-/usr/include/boost/serialization/void_cast_fwd.hpp:
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
+/usr/include/boost/archive/detail/abi_suffix.hpp:
 
-/usr/include/libintl.h:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/base_binary_edge.h:
-
-/usr/include/eigen3/Eigen/src/Core/Replicate.h:
-
-/usr/include/boost/preprocessor/detail/auto_rec.hpp:
-
-/usr/include/boost/type_traits/is_complete.hpp:
+/usr/include/boost/config/no_tr1/functional.hpp:
 
 /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/sim3.hpp:
 
@@ -5860,7 +5841,39 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: /home/peter-parker/orb-slam3-root
 
 /opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp:
 
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
+
+/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/include/utility.hpp:
+
 /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Settings.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/libintl.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/base_binary_edge.h:
+
+/usr/include/eigen3/Eigen/src/Core/Replicate.h:
+
+/usr/include/boost/preprocessor/detail/auto_rec.hpp:
+
+/usr/include/boost/type_traits/is_complete.hpp:
+
+/usr/local/include/sophus/rotation_matrix.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp:
+
+/opt/ros/jazzy/include/message_filters/message_filters/sync_policies/approximate_time.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/any_service_callback.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
+
+/usr/include/boost/preprocessor/arithmetic/detail/is_minimum_number.hpp:
+
+/usr/include/boost/serialization/void_cast_fwd.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/topic_endpoint_info_array.h:
 
@@ -6022,9 +6035,17 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: /home/peter-parker/orb-slam3-root
 
 /usr/include/boost/preprocessor/control/while.hpp:
 
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/exceptions.hpp:
 
 /usr/include/boost/core/no_exceptions_support.hpp:
+
+/usr/include/opencv4/opencv2/flann/config.h:
+
+/usr/include/c++/13/cxxabi.h:
+
+/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-header.hpp:
 
 /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp:
 
@@ -6049,12 +6070,6 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: /home/peter-parker/orb-slam3-root
 /usr/include/c++/13/bits/std_abs.h:
 
 /opt/ros/jazzy/include/rcl/rcl/init_options.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/SerializationUtils.h:
-
-/usr/include/boost/mpl/aux_/config/gpu.hpp:
-
-/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:
 
 /usr/include/c++/13/bits/locale_classes.h:
 
@@ -6318,8 +6333,6 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: /home/peter-parker/orb-slam3-root
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
 
-/opt/ros/jazzy/include/std_srvs/std_srvs/srv/trigger.hpp:
-
 /opt/ros/jazzy/include/rmw/rmw/qos_policy_kind.h:
 
 /usr/include/eigen3/Eigen/src/Core/Reshaped.h:
@@ -6390,7 +6403,7 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: /home/peter-parker/orb-slam3-root
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/add_guard_condition_to_rcl_wait_set.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
+/opt/ros/jazzy/include/std_srvs/std_srvs/srv/trigger.hpp:
 
 /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp:
 
@@ -7501,7 +7514,3 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o: /home/peter-parker/orb-slam3-root
 /usr/include/c++/13/bits/algorithmfwd.h:
 
 /usr/include/c++/13/bits/allocated_ptr.h:
-
-/usr/include/boost/function/detail/maybe_include.hpp:
-
-/usr/include/c++/13/bits/basic_string.h:

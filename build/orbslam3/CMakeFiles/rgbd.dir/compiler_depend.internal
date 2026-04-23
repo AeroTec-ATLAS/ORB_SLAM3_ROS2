@@ -10,10 +10,7 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FeatureVector.h
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/ScoringObject.h
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h
- /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/common.hpp
- /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/formatstring.hpp
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/geometry.hpp
- /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/rotation_matrix.hpp
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/rxso3.hpp
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/se2.hpp
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/se3.hpp
@@ -71,6 +68,7 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/TwoViewReconstruction.h
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Viewer.h
  /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/include/utility.hpp
+ /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-header.hpp
  /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/rgbd/rgbd-slam-node.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp
@@ -86,6 +84,33 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/time.hpp
  /opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp
  /opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge_export.h
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp
@@ -108,6 +133,12 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o
  /opt/ros/jazzy/include/message_filters/message_filters/sync_policies/approximate_time.h
  /opt/ros/jazzy/include/message_filters/message_filters/synchronizer.h
  /opt/ros/jazzy/include/message_filters/message_filters/visibility_control.h
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/odometry.hpp
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/jazzy/include/rcl/rcl/allocator.h
  /opt/ros/jazzy/include/rcl/rcl/arguments.h
  /opt/ros/jazzy/include/rcl/rcl/client.h
@@ -473,7 +504,17 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__builder.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__type_support.hpp
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/image.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/point_field.hpp
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp
@@ -490,8 +531,29 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__builder.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__traits.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__type_support.hpp
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/header.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/int32.hpp
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/ros/jazzy/include/std_srvs/std_srvs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__builder.hpp
+ /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__struct.hpp
+ /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__traits.hpp
+ /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__type_support.hpp
+ /opt/ros/jazzy/include/std_srvs/std_srvs/srv/trigger.hpp
+ /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp
+ /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp
+ /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp
+ /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp
+ /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp
+ /opt/ros/jazzy/include/tf2_ros/tf2_ros/qos.hpp
+ /opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_broadcaster.h
+ /opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_broadcaster.hpp
+ /opt/ros/jazzy/include/tf2_ros/tf2_ros/visibility_control.hpp
  /opt/ros/jazzy/include/tracetools/tracetools/config.h
  /opt/ros/jazzy/include/tracetools/tracetools/tracetools.h
  /opt/ros/jazzy/include/tracetools/tracetools/utils.hpp
@@ -1810,7 +1872,13 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o
  /usr/local/include/pangolin/windowing/handler_enums.h
  /usr/local/include/pangolin/windowing/window.h
  /usr/local/include/sigslot/signal.hpp
+ /usr/local/include/sophus/common.hpp
+ /usr/local/include/sophus/formatstring.hpp
+ /usr/local/include/sophus/rotation_matrix.hpp
  /usr/local/include/sophus/se3.hpp
+ /usr/local/include/sophus/so2.hpp
+ /usr/local/include/sophus/so3.hpp
+ /usr/local/include/sophus/types.hpp
 
 CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o
  /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/rgbd/rgbd.cpp
@@ -1821,10 +1889,7 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FeatureVector.h
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/ScoringObject.h
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h
- /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/common.hpp
- /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/formatstring.hpp
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/geometry.hpp
- /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/rotation_matrix.hpp
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/rxso3.hpp
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/se2.hpp
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/se3.hpp
@@ -1882,6 +1947,7 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/TwoViewReconstruction.h
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Viewer.h
  /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/include/utility.hpp
+ /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.hpp
  /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/rgbd/rgbd-slam-node.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp
@@ -1897,6 +1963,33 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/time.hpp
  /opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp
  /opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge_export.h
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp
@@ -1919,6 +2012,12 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o
  /opt/ros/jazzy/include/message_filters/message_filters/sync_policies/approximate_time.h
  /opt/ros/jazzy/include/message_filters/message_filters/synchronizer.h
  /opt/ros/jazzy/include/message_filters/message_filters/visibility_control.h
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/odometry.hpp
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/jazzy/include/rcl/rcl/allocator.h
  /opt/ros/jazzy/include/rcl/rcl/arguments.h
  /opt/ros/jazzy/include/rcl/rcl/client.h
@@ -2284,7 +2383,17 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__builder.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__type_support.hpp
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/image.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/point_field.hpp
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp
@@ -2301,8 +2410,29 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__builder.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__traits.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__type_support.hpp
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/header.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/int32.hpp
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/ros/jazzy/include/std_srvs/std_srvs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__builder.hpp
+ /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__struct.hpp
+ /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__traits.hpp
+ /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__type_support.hpp
+ /opt/ros/jazzy/include/std_srvs/std_srvs/srv/trigger.hpp
+ /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp
+ /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp
+ /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp
+ /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp
+ /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp
+ /opt/ros/jazzy/include/tf2_ros/tf2_ros/qos.hpp
+ /opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_broadcaster.h
+ /opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_broadcaster.hpp
+ /opt/ros/jazzy/include/tf2_ros/tf2_ros/visibility_control.hpp
  /opt/ros/jazzy/include/tracetools/tracetools/config.h
  /opt/ros/jazzy/include/tracetools/tracetools/tracetools.h
  /opt/ros/jazzy/include/tracetools/tracetools/utils.hpp
@@ -3621,5 +3751,11 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o
  /usr/local/include/pangolin/windowing/handler_enums.h
  /usr/local/include/pangolin/windowing/window.h
  /usr/local/include/sigslot/signal.hpp
+ /usr/local/include/sophus/common.hpp
+ /usr/local/include/sophus/formatstring.hpp
+ /usr/local/include/sophus/rotation_matrix.hpp
  /usr/local/include/sophus/se3.hpp
+ /usr/local/include/sophus/so2.hpp
+ /usr/local/include/sophus/so3.hpp
+ /usr/local/include/sophus/types.hpp
 

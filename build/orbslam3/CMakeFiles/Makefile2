@@ -167,12 +167,12 @@ CMakeFiles/mono.dir/clean:
 CMakeFiles/rgbd.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd.dir/build.make CMakeFiles/rgbd.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd.dir/build.make CMakeFiles/rgbd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles --progress-num=4,5,6 "Built target rgbd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles --progress-num=4,5,6,7 "Built target rgbd"
 .PHONY : CMakeFiles/rgbd.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rgbd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rgbd.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles 0
 .PHONY : CMakeFiles/rgbd.dir/rule
@@ -193,12 +193,12 @@ CMakeFiles/rgbd.dir/clean:
 CMakeFiles/stereo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo.dir/build.make CMakeFiles/stereo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo.dir/build.make CMakeFiles/stereo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles --progress-num=7,8,9 "Built target stereo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles --progress-num=8,9,10,11 "Built target stereo"
 .PHONY : CMakeFiles/stereo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/stereo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/stereo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles 0
 .PHONY : CMakeFiles/stereo.dir/rule
@@ -219,12 +219,12 @@ CMakeFiles/stereo.dir/clean:
 CMakeFiles/stereo-inertial.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo-inertial.dir/build.make CMakeFiles/stereo-inertial.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo-inertial.dir/build.make CMakeFiles/stereo-inertial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles --progress-num=10,11,12 "Built target stereo-inertial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles --progress-num=12,13,14,15 "Built target stereo-inertial"
 .PHONY : CMakeFiles/stereo-inertial.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/stereo-inertial.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/stereo-inertial.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles 0
 .PHONY : CMakeFiles/stereo-inertial.dir/rule

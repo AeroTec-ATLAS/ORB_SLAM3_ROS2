@@ -67,6 +67,8 @@ CMakeFiles/stereo.dir/src/stereo/stereo-slam-node.cpp.o
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Tracking.h
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/TwoViewReconstruction.h
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Viewer.h
+ /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/include/utility.hpp
+ /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-header.hpp
  /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp
@@ -1944,6 +1946,7 @@ CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Tracking.h
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/TwoViewReconstruction.h
  /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Viewer.h
+ /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.hpp
  /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp

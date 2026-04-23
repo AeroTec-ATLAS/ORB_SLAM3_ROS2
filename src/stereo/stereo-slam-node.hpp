@@ -1,107 +1,127 @@
 #pragma once
 
-#include <rclcpp/rclcpp.hpp>
-#include <sensor_msgs/msg/image.hpp>
-#include <sensor_msgs/msg/point_cloud2.hpp>
-#include <sensor_msgs/msg/point_field.hpp>
-#include <geometry_msgs/msg/pose_stamped.hpp>
-#include <nav_msgs/msg/odometry.hpp>
-#include <std_msgs/msg/int32.hpp>
-#include <std_msgs/msg/header.hpp>
-#include <std_srvs/srv/trigger.hpp>
-
-#include <tf2_ros/transform_broadcaster.h>
-#include <geometry_msgs/msg/transform_stamped.hpp>
+#include "../nodes/slam-node-base.hpp"
 
 #include <message_filters/subscriber.h>
-#include <message_filters/synchronizer.h>
 #include <message_filters/sync_policies/approximate_time.h>
-
+#include <message_filters/synchronizer.h>
+#include <sensor_msgs/msg/image.hpp>
 #include <cv_bridge/cv_bridge.hpp>
 #include <opencv2/core/core.hpp>
-#include <sophus/se3.hpp>
 
-#include "System.h"   // ORB_SLAM3
+#include <string>
+#include <memory>
 
-class StereoSlamNode : public rclcpp::Node
+/**
+ * @brief Nó ROS 2 para SLAM estéreo com ORB-SLAM3.
+ *
+ * Herda toda a infra-estrutura ROS 2 partilhada de SlamNodeBase e acrescenta
+ * apenas a lógica específica do modo estéreo:
+ *   - Subscrições sincronizadas das câmaras esquerda e direita.
+ *   - Cálculo opcional dos mapas de rectificação via cv::initUndistortRectifyMap.
+ *   - Callback GrabStereo() que alimenta o ORB-SLAM3 e delega a publicação
+ *     na classe base.
+ */
+class StereoSlamNode : public SlamNodeBase
 {
 public:
-    using ImageMsg              = sensor_msgs::msg::Image;
-    using approximate_sync_policy =
-        message_filters::sync_policies::ApproximateTime<ImageMsg, ImageMsg>;
+    /**
+     * @brief Constrói o nó estéreo.
+     *
+     * Executado pela ordem:
+     *   1. Interpreta strDoRectify e converte-o em booleano.
+     *   2. Se necessário, lê os parâmetros de calibração de strSettingsFile e
+     *      pré-calcula os mapas de undistort/rectify (evita recalculá-los por frame).
+     *   3. Cria as subscrições e o sincronizador ApproximateTime.
+     *
+     * A infra-estrutura ROS 2 partilhada (publishers, TF, serviço, temporizador)
+     * é inicializada pelo construtor de SlamNodeBase.
+     *
+     * @param pSLAM           Pointer para o ORB_SLAM3::System já construído.
+     * @param strSettingsFile Caminho absoluto para o ficheiro YAML de configuração.
+     * @param strDoRectify    String "true" ou "false" que controla a rectificação.
+     *
+     * @throws std::runtime_error Se o ficheiro de configuração não puder ser aberto
+     *         ou se algum parâmetro de calibração obrigatório estiver ausente.
+     */
+    StereoSlamNode(ORB_SLAM3::System*  pSLAM,
+                   const std::string  &strSettingsFile,
+                   const std::string  &strDoRectify);
 
-    StereoSlamNode(ORB_SLAM3::System* pSLAM,
-                   const std::string &strSettingsFile,
-                   const std::string &strDoRectify);
-    ~StereoSlamNode();
+    ~StereoSlamNode() override = default;
 
 private:
-    // Core SLAM callback
+    // ------------------------------------------------------------------ //
+    //  Tipos ROS 2 internos                                               //
+    // ------------------------------------------------------------------ //
+
+    using ImageMsg           = sensor_msgs::msg::Image;
+    using approximate_sync_policy = message_filters::sync_policies::ApproximateTime<
+                                        ImageMsg, ImageMsg>;
+
+    // ------------------------------------------------------------------ //
+    //  Inicialização                                                      //
+    // ------------------------------------------------------------------ //
+
+    /**
+     * @brief Lê os parâmetros estéreo do ficheiro YAML e pré-calcula os mapas
+     *        de rectificação para as câmaras esquerda e direita.
+     *
+     * Chamado pelo construtor apenas quando doRectify == true.
+     * Os mapas M1l/M2l e M1r/M2r ficam guardados como membros para reutilização
+     * em cada invocação de GrabStereo().
+     *
+     * @param strSettingsFile Caminho para o ficheiro YAML de calibração.
+     * @throws std::runtime_error Se o ficheiro não puder ser aberto ou se algum
+     *         parâmetro de calibração estiver ausente.
+     */
+    void InitRectificationMaps(const std::string &strSettingsFile);
+
+    // ------------------------------------------------------------------ //
+    //  Callback do sincronizador                                          //
+    // ------------------------------------------------------------------ //
+
+    /**
+     * @brief Processa um par de imagens estéreo sincronizadas.
+     *
+     * Passos:
+     *   1. Converte as mensagens ROS para cv::Mat via cv_bridge.
+     *   2. Aplica os mapas de rectificação, se doRectify == true.
+     *   3. Invoca ORB_SLAM3::System::TrackStereo() para obter Tcw.
+     *   4. Gere transições de estado (OK / RECENTLY_LOST / LOST) e dispara
+     *      reinicialização automática quando necessário.
+     *   5. Delega a publicação de pose, odometria, TF, mapa e estado
+     *      nos métodos de SlamNodeBase.
+     *
+     * @param msgLeft  Mensagem de imagem da câmara esquerda.
+     * @param msgRight Mensagem de imagem da câmara direita.
+     */
     void GrabStereo(const ImageMsg::SharedPtr msgLeft,
                     const ImageMsg::SharedPtr msgRight);
 
-    // Publishers
-    void PublishPose(const Sophus::SE3f &Twc,
-                     const std_msgs::msg::Header &header);
-    void PublishOdometry(const Sophus::SE3f &Twc,
-                         const std_msgs::msg::Header &header);
-    void PublishTF(const Sophus::SE3f &Twc,
-                   const std_msgs::msg::Header &header);
-    void PublishMapPoints(const std_msgs::msg::Header &header);
-    void PublishTrackingState(int state);
+    // ------------------------------------------------------------------ //
+    //  Estado estéreo                                                     //
+    // ------------------------------------------------------------------ //
 
-    // Failure handling
-    void OnTrackingLost();
-    void AttemptReinitialization();
-    void ResetCallback(
-        const std::shared_ptr<std_srvs::srv::Trigger::Request>  req,
-              std::shared_ptr<std_srvs::srv::Trigger::Response> res);
+    bool doRectify = false;  ///< Indica se a rectificação deve ser aplicada por frame.
 
-    // Diagnostics timer
-    void DiagnosticsCallback();
+    /// Mapas de undistort/rectify pré-calculados para a câmara esquerda.
+    cv::Mat M1l, M2l;
 
-    // Helpers
-    sensor_msgs::msg::PointCloud2 MapPointsToPointCloud2(
-        const std::vector<ORB_SLAM3::MapPoint*> &map_points,
-        const std_msgs::msg::Header &header);
+    /// Mapas de undistort/rectify pré-calculados para a câmara direita.
+    cv::Mat M1r, M2r;
 
-    // SLAM system
-    ORB_SLAM3::System* m_SLAM;
-    bool doRectify{false};
-
-    // Rectification maps
-    cv::Mat M1l, M2l, M1r, M2r;
-
-    // Image buffers
+    /// Ponteiros de cv_bridge reutilizados entre frames para evitar alocações repetidas.
     cv_bridge::CvImageConstPtr cv_ptrLeft;
     cv_bridge::CvImageConstPtr cv_ptrRight;
 
-    // Subscriptions & sync
+    // ------------------------------------------------------------------ //
+    //  Subscrições e sincronizador                                        //
+    // ------------------------------------------------------------------ //
+
     std::shared_ptr<message_filters::Subscriber<ImageMsg>> left_sub;
     std::shared_ptr<message_filters::Subscriber<ImageMsg>> right_sub;
-    std::shared_ptr<message_filters::Synchronizer<approximate_sync_policy>> syncApproximate;
 
-    // Publishers
-    rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr pose_pub_;
-    rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr         odom_pub_;
-    rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr   map_pub_;
-    rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr            state_pub_;
-
-    // TF
-    std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
-
-    // Service
-    rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr reset_srv_;
-
-    // Diagnostics timer
-    rclcpp::TimerBase::SharedPtr diagnostics_timer_;
-
-    // State tracking
-    int  last_tracking_state_{-1};
-    int  lost_frame_count_{0};
-    int  total_frames_{0};
-    int  published_frames_{0};
-
-    // After this many consecutive lost frames → attempt reinit
-    static constexpr int kLostFrameThreshold = 30;
+    std::shared_ptr<
+        message_filters::Synchronizer<approximate_sync_policy>> syncApproximate;
 };

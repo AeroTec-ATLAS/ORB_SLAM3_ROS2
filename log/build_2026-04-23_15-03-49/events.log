@@ -1,0 +1,73 @@
+[0.000000] (-) TimerEvent: {}
+[0.001956] (orbslam3) JobQueued: {'identifier': 'orbslam3', 'dependencies': OrderedDict()}
+[0.002030] (orbslam3) JobStarted: {'identifier': 'orbslam3'}
+[0.006672] (orbslam3) JobProgress: {'identifier': 'orbslam3', 'progress': 'cmake'}
+[0.007338] (orbslam3) JobProgress: {'identifier': 'orbslam3', 'progress': 'build'}
+[0.008054] (orbslam3) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3', '--', '-j4', '-l4'], 'cwd': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'peter-parker', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/home/peter-parker/orb-slam3-root/ORB-SLAM3/lib', 'HOME': '/home/peter-parker', 'OLDPWD': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MAVEN_HOME': '/home/peter-parker/.sdkman/candidates/maven/current', 'SYSTEMD_EXEC_PID': '2475', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'peter-parker', 'SDKMAN_CANDIDATES_API': 'https://api.sdkman.io/2', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'peter-parker', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/peter-parker/.sdkman/candidates/maven/current/bin:/home/peter-parker/miniforge3/bin:/opt/ros/jazzy/bin:/home/peter-parker/.cargo/bin:/home/peter-parker/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/peter-parker-HP-Laptop-15s-fq2xxx:@/tmp/.ICE-unix/2256,unix/peter-parker-HP-Laptop-15s-fq2xxx:/tmp/.ICE-unix/2256', 'SDKMAN_CANDIDATES_DIR': '/home/peter-parker/.sdkman/candidates', 'XDG_MENU_PREFIX': 'gnome-', 'SDKMAN_BROKER_API': 'https://broker.sdkman.io', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/7d459fed_f1be_4029_b976_ccdb635d5306', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'ORB_SLAM3_ROOT_PATH': '/home/peter-parker/orb-slam3-root', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.WTGEO3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SDKMAN_DIR': '/home/peter-parker/.sdkman', 'SDKMAN_PLATFORM': 'linuxx64', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/install/orbslam3:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/install/orbslam3:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.077058] (orbslam3) StdoutLine: {'line': b'[ 25%] Built target mono\n'}
+[0.085604] (orbslam3) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o\x1b[0m\n'}
+[0.090890] (orbslam3) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/stereo.dir/src/stereo/stereo-slam-node.cpp.o\x1b[0m\n'}
+[0.095382] (orbslam3) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial.cpp.o\x1b[0m\n'}
+[0.097473] (orbslam3) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o\x1b[0m\n'}
+[0.099862] (-) TimerEvent: {}
+[0.201352] (-) TimerEvent: {}
+[0.304331] (-) TimerEvent: {}
+[0.404623] (-) TimerEvent: {}
+[0.468357] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/rgbd/rgbd-slam-node.hpp:4\x1b[m\x1b[K,\n'}
+[0.468568] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/rgbd/rgbd.cpp:7\x1b[m\x1b[K:\n'}
+[0.468651] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/rgbd/../nodes/slam-node-header.hpp:10:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ktf2_ros/transform_broadcaster.h: No such file or directory\n'}
+[0.468726] (orbslam3) StderrLine: {'line': b'   10 | #include \x1b[01;31m\x1b[K<tf2_ros/transform_broadcaster.h>\x1b[m\x1b[K\n'}
+[0.468798] (orbslam3) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.468869] (orbslam3) StderrLine: {'line': b'compilation terminated.\n'}
+[0.473248] (orbslam3) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/rgbd.dir/build.make:76: CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o] Error 1\n'}
+[0.473916] (orbslam3) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/rgbd.dir/all] Error 2\n'}
+[0.474005] (orbslam3) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[0.477633] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo-inertial/stereo-inertial-node.hpp:4\x1b[m\x1b[K,\n'}
+[0.477822] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo-inertial/stereo-inertial.cpp:7\x1b[m\x1b[K:\n'}
+[0.477907] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo-inertial/../nodes/slam-node-header.hpp:5:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knav_msgs/msg/odometry.hpp: No such file or directory\n'}
+[0.477987] (orbslam3) StderrLine: {'line': b'    5 | #include \x1b[01;31m\x1b[K<nav_msgs/msg/odometry.hpp>\x1b[m\x1b[K\n'}
+[0.478063] (orbslam3) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.478139] (orbslam3) StderrLine: {'line': b'compilation terminated.\n'}
+[0.480530] (orbslam3) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/stereo-inertial.dir/build.make:76: CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial.cpp.o] Error 1\n'}
+[0.480727] (orbslam3) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[0.487719] (orbslam3) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial-node.cpp.o\x1b[0m\n'}
+[0.505340] (-) TimerEvent: {}
+[0.605689] (-) TimerEvent: {}
+[0.705994] (-) TimerEvent: {}
+[0.782439] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo-inertial/stereo-inertial-node.hpp:4\x1b[m\x1b[K,\n'}
+[0.782723] (orbslam3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo-inertial/stereo-inertial-node.cpp:1\x1b[m\x1b[K:\n'}
+[0.782866] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo-inertial/../nodes/slam-node-header.hpp:5:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knav_msgs/msg/odometry.hpp: No such file or directory\n'}
+[0.782985] (orbslam3) StderrLine: {'line': b'    5 | #include \x1b[01;31m\x1b[K<nav_msgs/msg/odometry.hpp>\x1b[m\x1b[K\n'}
+[0.783093] (orbslam3) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.783295] (orbslam3) StderrLine: {'line': b'compilation terminated.\n'}
+[0.791807] (orbslam3) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/stereo-inertial.dir/build.make:90: CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial-node.cpp.o] Error 1\n'}
+[0.792030] (orbslam3) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/stereo-inertial.dir/all] Error 2\n'}
+[0.807347] (-) TimerEvent: {}
+[0.907638] (-) TimerEvent: {}
+[1.007937] (-) TimerEvent: {}
+[1.108221] (-) TimerEvent: {}
+[1.208525] (-) TimerEvent: {}
+[1.308835] (-) TimerEvent: {}
+[1.409136] (-) TimerEvent: {}
+[1.509444] (-) TimerEvent: {}
+[1.611666] (-) TimerEvent: {}
+[1.684055] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo.cpp:7\x1b[m\x1b[K:\n'}
+[1.684263] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:9:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcv_bridge/cv_bridge.h: No such file or directory\n'}
+[1.684378] (orbslam3) StderrLine: {'line': b'    9 | #include \x1b[01;31m\x1b[K<cv_bridge/cv_bridge.h>\x1b[m\x1b[K\n'}
+[1.684474] (orbslam3) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.684567] (orbslam3) StderrLine: {'line': b'compilation terminated.\n'}
+[1.702643] (orbslam3) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/stereo.dir/build.make:76: CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o] Error 1\n'}
+[1.702853] (orbslam3) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[1.711764] (-) TimerEvent: {}
+[1.793761] (orbslam3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo-slam-node.cpp:1\x1b[m\x1b[K:\n'}
+[1.793955] (orbslam3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo/stereo-slam-node.hpp:9:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcv_bridge/cv_bridge.h: No such file or directory\n'}
+[1.794034] (orbslam3) StderrLine: {'line': b'    9 | #include \x1b[01;31m\x1b[K<cv_bridge/cv_bridge.h>\x1b[m\x1b[K\n'}
+[1.794107] (orbslam3) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.794168] (orbslam3) StderrLine: {'line': b'compilation terminated.\n'}
+[1.811820] (orbslam3) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/stereo.dir/build.make:90: CMakeFiles/stereo.dir/src/stereo/stereo-slam-node.cpp.o] Error 1\n'}
+[1.811971] (-) TimerEvent: {}
+[1.812330] (orbslam3) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/stereo.dir/all] Error 2\n'}
+[1.812527] (orbslam3) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[1.815317] (orbslam3) CommandEnded: {'returncode': 2}
+[1.823138] (orbslam3) JobEnded: {'identifier': 'orbslam3', 'rc': 2}
+[1.833732] (-) EventReactorShutdown: {}

@@ -9,10 +9,7 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o: /home/peter-parker/orb-slam3-
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FeatureVector.h \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/ScoringObject.h \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h \
-  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/common.hpp \
-  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/formatstring.hpp \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/geometry.hpp \
-  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/rotation_matrix.hpp \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/rxso3.hpp \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/se2.hpp \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/se3.hpp \
@@ -70,6 +67,7 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o: /home/peter-parker/orb-slam3-
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/TwoViewReconstruction.h \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Viewer.h \
   /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/include/utility.hpp \
+  /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-header.hpp \
   /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/rgbd/rgbd-slam-node.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
@@ -85,6 +83,33 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o: /home/peter-parker/orb-slam3-
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/time.hpp \
   /opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp \
   /opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge_export.h \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp \
@@ -107,6 +132,12 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o: /home/peter-parker/orb-slam3-
   /opt/ros/jazzy/include/message_filters/message_filters/sync_policies/approximate_time.h \
   /opt/ros/jazzy/include/message_filters/message_filters/synchronizer.h \
   /opt/ros/jazzy/include/message_filters/message_filters/visibility_control.h \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/odometry.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/rcl/rcl/allocator.h \
   /opt/ros/jazzy/include/rcl/rcl/arguments.h \
   /opt/ros/jazzy/include/rcl/rcl/client.h \
@@ -472,7 +503,17 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o: /home/peter-parker/orb-slam3-
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp \
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp \
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__builder.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__type_support.hpp \
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/image.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/point_field.hpp \
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h \
   /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp \
@@ -489,8 +530,29 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o: /home/peter-parker/orb-slam3-
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__builder.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__traits.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__type_support.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/header.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/int32.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/jazzy/include/std_srvs/std_srvs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__builder.hpp \
+  /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__struct.hpp \
+  /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__traits.hpp \
+  /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__type_support.hpp \
+  /opt/ros/jazzy/include/std_srvs/std_srvs/srv/trigger.hpp \
+  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp \
+  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp \
+  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp \
+  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp \
+  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp \
+  /opt/ros/jazzy/include/tf2_ros/tf2_ros/qos.hpp \
+  /opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_broadcaster.h \
+  /opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_broadcaster.hpp \
+  /opt/ros/jazzy/include/tf2_ros/tf2_ros/visibility_control.hpp \
   /opt/ros/jazzy/include/tracetools/tracetools/config.h \
   /opt/ros/jazzy/include/tracetools/tracetools/tracetools.h \
   /opt/ros/jazzy/include/tracetools/tracetools/utils.hpp \
@@ -1809,7 +1871,13 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o: /home/peter-parker/orb-slam3-
   /usr/local/include/pangolin/windowing/handler_enums.h \
   /usr/local/include/pangolin/windowing/window.h \
   /usr/local/include/sigslot/signal.hpp \
-  /usr/local/include/sophus/se3.hpp
+  /usr/local/include/sophus/common.hpp \
+  /usr/local/include/sophus/formatstring.hpp \
+  /usr/local/include/sophus/rotation_matrix.hpp \
+  /usr/local/include/sophus/se3.hpp \
+  /usr/local/include/sophus/so2.hpp \
+  /usr/local/include/sophus/so3.hpp \
+  /usr/local/include/sophus/types.hpp
 
 CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/rgbd/rgbd.cpp \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DUtils/Random.h \
@@ -1819,10 +1887,7 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FeatureVector.h \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/ScoringObject.h \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h \
-  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/common.hpp \
-  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/formatstring.hpp \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/geometry.hpp \
-  /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/rotation_matrix.hpp \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/rxso3.hpp \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/se2.hpp \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/se3.hpp \
@@ -1880,6 +1945,7 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/TwoViewReconstruction.h \
   /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Viewer.h \
   /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/include/utility.hpp \
+  /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.hpp \
   /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/rgbd/rgbd-slam-node.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
@@ -1895,6 +1961,33 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
   /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/time.hpp \
   /opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp \
   /opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge_export.h \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp \
@@ -1917,6 +2010,12 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
   /opt/ros/jazzy/include/message_filters/message_filters/sync_policies/approximate_time.h \
   /opt/ros/jazzy/include/message_filters/message_filters/synchronizer.h \
   /opt/ros/jazzy/include/message_filters/message_filters/visibility_control.h \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/odometry.hpp \
+  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/rcl/rcl/allocator.h \
   /opt/ros/jazzy/include/rcl/rcl/arguments.h \
   /opt/ros/jazzy/include/rcl/rcl/client.h \
@@ -2282,7 +2381,17 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp \
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp \
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__builder.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__type_support.hpp \
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/image.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/point_field.hpp \
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h \
   /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp \
@@ -2299,8 +2408,29 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__builder.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__traits.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__type_support.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/header.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/int32.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/jazzy/include/std_srvs/std_srvs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__builder.hpp \
+  /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__struct.hpp \
+  /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__traits.hpp \
+  /opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__type_support.hpp \
+  /opt/ros/jazzy/include/std_srvs/std_srvs/srv/trigger.hpp \
+  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp \
+  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp \
+  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp \
+  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp \
+  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp \
+  /opt/ros/jazzy/include/tf2_ros/tf2_ros/qos.hpp \
+  /opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_broadcaster.h \
+  /opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_broadcaster.hpp \
+  /opt/ros/jazzy/include/tf2_ros/tf2_ros/visibility_control.hpp \
   /opt/ros/jazzy/include/tracetools/tracetools/config.h \
   /opt/ros/jazzy/include/tracetools/tracetools/tracetools.h \
   /opt/ros/jazzy/include/tracetools/tracetools/utils.hpp \
@@ -3619,10 +3749,20 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
   /usr/local/include/pangolin/windowing/handler_enums.h \
   /usr/local/include/pangolin/windowing/window.h \
   /usr/local/include/sigslot/signal.hpp \
-  /usr/local/include/sophus/se3.hpp
+  /usr/local/include/sophus/common.hpp \
+  /usr/local/include/sophus/formatstring.hpp \
+  /usr/local/include/sophus/rotation_matrix.hpp \
+  /usr/local/include/sophus/se3.hpp \
+  /usr/local/include/sophus/so2.hpp \
+  /usr/local/include/sophus/so3.hpp \
+  /usr/local/include/sophus/types.hpp
 
+
+/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.hpp:
 
 /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/rgbd/rgbd.cpp:
+
+/usr/local/include/sophus/types.hpp:
 
 /usr/local/include/sigslot/signal.hpp:
 
@@ -3640,8 +3780,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/local/include/pangolin/var/varstate.h:
 
-/usr/local/include/pangolin/var/varextra.h:
-
 /usr/local/include/pangolin/utils/type_convert.h:
 
 /usr/local/include/pangolin/utils/simple_math.h:
@@ -3649,8 +3787,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /usr/local/include/pangolin/utils/picojson.h:
 
 /usr/local/include/pangolin/utils/params.h:
-
-/usr/local/include/pangolin/utils/file_utils.h:
 
 /usr/local/include/pangolin/utils/bitmask.h:
 
@@ -3717,8 +3853,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
 
@@ -3854,8 +3988,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
@@ -3897,8 +4029,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp:
 
 /usr/include/opencv4/opencv2/ml/ml.inl.hpp:
-
-/usr/include/opencv4/opencv2/imgproc/types_c.h:
 
 /usr/include/opencv4/opencv2/imgproc/segmentation.hpp:
 
@@ -4054,6 +4184,8 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h:
 
+/usr/local/include/sophus/so3.hpp:
+
 /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h:
 
 /usr/include/eigen3/Eigen/src/LU/FullPivLU.h:
@@ -4193,6 +4325,8 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /usr/include/eigen3/Eigen/src/Core/ReturnByValue.h:
 
 /usr/include/eigen3/Eigen/src/Core/Ref.h:
+
+/usr/local/include/sophus/so2.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/Redux.h:
 
@@ -4402,10 +4536,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/c++/13/deque:
 
-/usr/include/opencv4/opencv2/flann/config.h:
-
-/usr/include/c++/13/cxxabi.h:
-
 /usr/include/c++/13/cwctype:
 
 /usr/include/eigen3/Eigen/src/Core/Matrix.h:
@@ -4462,6 +4592,8 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/c++/13/bits/stringfwd.h:
 
+/usr/include/c++/13/bits/streambuf_iterator.h:
+
 /usr/include/c++/13/bits/streambuf.tcc:
 
 /usr/include/c++/13/bits/stream_iterator.h:
@@ -4508,10 +4640,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/c++/13/bits/stl_construct.h:
 
-/usr/include/c++/13/pstl/execution_defs.h:
-
-/usr/include/c++/13/bits/stl_algobase.h:
-
 /usr/include/c++/13/bits/std_thread.h:
 
 /usr/include/c++/13/bits/std_mutex.h:
@@ -4520,89 +4648,97 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/c++/13/bits/shared_ptr_atomic.h:
 
-/usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h:
-
-/usr/include/eigen3/Eigen/src/Core/IndexedView.h:
-
-/usr/include/c++/13/bits/shared_ptr.h:
-
 /usr/include/c++/13/bits/regex_scanner.tcc:
 
-/usr/include/boost/algorithm/string/replace.hpp:
+/usr/include/c++/13/bits/regex_scanner.h:
 
-/usr/include/x86_64-linux-gnu/bits/time.h:
+/usr/include/c++/13/bits/regex_executor.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+/usr/include/c++/13/bits/regex_executor.h:
 
-/usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:
+/usr/include/c++/13/bits/regex_constants.h:
 
-/usr/include/boost/algorithm/string/erase.hpp:
+/usr/include/c++/13/bits/regex_compiler.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/timex.h:
+/usr/include/c++/13/list:
 
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
+/usr/include/c++/13/bits/regex_compiler.h:
 
-/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp:
+/usr/include/c++/13/bits/regex.h:
 
-/usr/include/c++/13/bitset:
+/usr/include/c++/13/bits/random.tcc:
 
-/usr/include/boost/algorithm/string/detail/trim.hpp:
+/usr/include/c++/13/bits/ptr_traits.h:
 
-/usr/include/opencv4/opencv2/stitching/detail/camera.hpp:
+/usr/include/c++/13/bits/predefined_ops.h:
 
-/usr/include/boost/algorithm/string/detail/replace_storage.hpp:
+/usr/include/c++/13/bits/ostream.tcc:
 
-/usr/include/boost/archive/detail/auto_link_archive.hpp:
+/usr/include/c++/13/bits/node_handle.h:
 
-/usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h:
+/usr/include/c++/13/bits/new_allocator.h:
 
-/usr/include/boost/algorithm/string/detail/finder.hpp:
+/usr/local/include/pangolin/var/varinit.h:
 
-/usr/include/boost/algorithm/string/detail/find_format_store.hpp:
+/usr/include/c++/13/bits/move.h:
 
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/base_binary_edge.hpp:
+/usr/include/c++/13/bits/localefwd.h:
 
-/usr/include/boost/algorithm/string/detail/find_format_all.hpp:
+/usr/include/c++/13/bits/locale_facets_nonio.h:
 
-/usr/include/boost/algorithm/string/constants.hpp:
+/usr/include/c++/13/bits/locale_facets.tcc:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
+/usr/include/c++/13/tr1/hypergeometric.tcc:
 
-/usr/include/boost/move/detail/meta_utils_core.hpp:
+/usr/include/c++/13/bits/locale_facets.h:
 
-/usr/include/boost/algorithm/string/case_conv.hpp:
+/usr/include/c++/13/bits/locale_classes.tcc:
 
-/opt/ros/jazzy/include/rmw/rmw/events_statuses/events_statuses.h:
+/usr/include/c++/13/bits/istream.tcc:
 
-/usr/include/asm-generic/errno-base.h:
+/usr/include/c++/13/bits/ios_base.h:
 
-/usr/include/c++/13/bits/stl_uninitialized.h:
+/usr/include/c++/13/bits/invoke.h:
 
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/get_type_description.h:
+/usr/include/c++/13/bits/hashtable_policy.h:
 
-/usr/include/boost/config/detail/posix_features.hpp:
+/usr/include/c++/13/bits/hashtable.h:
 
-/opt/ros/jazzy/include/rmw/rmw/network_flow_endpoint_array.h:
+/usr/include/c++/13/bits/functional_hash.h:
 
-/usr/local/include/pangolin/var/var.h:
+/usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h:
 
-/usr/include/boost/preprocessor/arithmetic/detail/is_1_number.hpp:
+/usr/include/c++/13/bits/specfun.h:
 
-/opt/ros/jazzy/include/tracetools/tracetools/config.h:
+/usr/include/c++/13/bits/exception_ptr.h:
 
-/usr/include/boost/algorithm/string/find_format.hpp:
+/usr/include/c++/13/bits/exception_defines.h:
+
+/usr/include/c++/13/bits/exception.h:
+
+/usr/include/c++/13/bits/erase_if.h:
+
+/usr/include/c++/13/bits/cxxabi_forced.h:
+
+/usr/include/c++/13/bits/cpp_type_traits.h:
+
+/usr/include/c++/13/bits/concept_check.h:
+
+/usr/include/c++/13/bits/codecvt.h:
+
+/usr/include/c++/13/bits/charconv.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/boost/range/detail/misc_concept.hpp:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__builder.hpp:
 
 /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics_state.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
-
-/usr/include/alloca.h:
-
-/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/image_encodings.hpp:
 
 /usr/include/boost/preprocessor/array/data.hpp:
 
@@ -4612,15 +4748,17 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/c++/13/backward/auto_ptr.h:
 
-/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp:
-
 /usr/include/boost/type_traits/declval.hpp:
 
 /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp:
 
 /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h:
 
-/opt/ros/jazzy/include/tracetools/tracetools/tracetools.h:
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__builder.hpp:
+
+/usr/include/boost/mpl/aux_/na.hpp:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:
 
 /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/message_introspection.hpp:
 
@@ -4652,13 +4790,13 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
-/usr/include/boost/utility/binary.hpp:
-
-/usr/include/c++/13/bits/basic_string.tcc:
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:
 
 /usr/include/opencv4/opencv2/flann/any.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp:
 
 /usr/local/include/pangolin/plot/datalog.h:
 
@@ -4670,21 +4808,17 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
 
+/opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_broadcaster.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/include/boost/iterator/detail/config_undef.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/types.h:
 
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field_type__struct.h:
-
 /opt/ros/jazzy/include/rmw/rmw/time.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/dynamic_storage.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/any_subscription_callback.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_serialization_support.hpp:
 
 /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
 
@@ -4693,6 +4827,10 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /usr/include/c++/13/bits/sstream.tcc:
 
 /usr/include/boost/mpl/limits/arity.hpp:
+
+/usr/include/c++/13/bits/range_access.h:
+
+/opt/ros/jazzy/include/rmw/rmw/qos_string_conversions.h:
 
 /usr/include/c++/13/bits/basic_ios.h:
 
@@ -4706,16 +4844,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rmw/rmw/init.h:
 
-/opt/ros/jazzy/include/rmw/rmw/impl/cpp/demangle.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_entities_collector.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/event_callback.h:
-
-/usr/include/c++/13/bits/requires_hosted.h:
-
-/usr/include/boost/iterator/detail/enable_if.hpp:
-
 /usr/include/c++/13/variant:
 
 /usr/include/c++/13/system_error:
@@ -4725,6 +4853,8 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/boost/preprocessor/iterate.hpp:
+
+/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp:
 
 /usr/include/boost/noncopyable.hpp:
 
@@ -4740,7 +4870,9 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rmw/rmw/events_statuses/matched.h:
 
-/opt/ros/jazzy/include/rmw/rmw/events_statuses/incompatible_type.h:
+/opt/ros/jazzy/include/rmw/rmw/events_statuses/events_statuses.h:
+
+/usr/include/boost/algorithm/string/case_conv.hpp:
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp:
 
@@ -4752,11 +4884,11 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/type_traits/type_with_alignment.hpp:
 
+/opt/ros/jazzy/include/rcutils/rcutils/types/string_array.h:
+
 /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/ORBVocabulary.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/types/rcutils_ret.h:
-
-/opt/ros/jazzy/include/rcutils/rcutils/testing/fault_injection.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/snprintf.h:
 
@@ -4786,10 +4918,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rmw/rmw/event.h:
 
-/usr/include/boost/preprocessor/arithmetic/add.hpp:
-
-/opt/ros/jazzy/include/rcpputils/rcpputils/time.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/event_handler.hpp:
 
 /usr/include/c++/13/bits/alloc_traits.h:
@@ -4818,10 +4946,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp:
 
-/usr/include/boost/assert.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/time.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/create_intra_process_buffer.hpp:
@@ -4835,6 +4959,14 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h:
+
+/usr/include/opencv4/opencv2/flann/result_set.h:
+
+/usr/include/c++/13/limits:
+
+/usr/include/c++/13/bits/chrono.h:
+
+/usr/include/boost/mpl/aux_/is_msvc_eti_arg.hpp:
 
 /usr/include/boost/mpl/and.hpp:
 
@@ -4857,10 +4989,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
 
 /usr/include/boost/mpl/aux_/config/arrays.hpp:
-
-/usr/include/c++/13/bits/predefined_ops.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_value.hpp:
 
@@ -4888,6 +5016,20 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rcutils/rcutils/sha256.h:
 
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:
+
+/usr/include/boost/algorithm/string/erase.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/ArrayBase.h:
@@ -4897,14 +5039,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /usr/include/c++/13/cstdlib:
 
 /usr/include/c++/13/bit:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_options.hpp:
-
-/opt/ros/jazzy/include/rmw/rmw/get_topic_names_and_types.h:
-
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/type_description__struct.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/event.hpp:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h:
 
@@ -4932,13 +5066,15 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/mpl/apply_fwd.hpp:
 
-/usr/include/boost/algorithm/string/find_iterator.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:
-
 /opt/ros/jazzy/include/rmw/rmw/security_options.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/allocator.h:
+
+/usr/include/c++/13/iostream:
+
+/usr/include/c++/13/bits/hash_bytes.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
 
 /usr/include/c++/13/tr1/unordered_map:
 
@@ -4948,23 +5084,11 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/get_node_clock_interface.hpp:
 
-/usr/include/boost/algorithm/string/predicate.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
-
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/visibility_control.hpp:
 
 /opt/ros/jazzy/include/rcutils/rcutils/types/char_array.h:
-
-/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
-
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__type_support.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
 
 /usr/include/boost/range/rbegin.hpp:
 
@@ -5036,19 +5160,15 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:
 
+/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp:
+
 /usr/include/boost/type_traits/is_const.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/generic_subscription.hpp:
 
-/usr/include/boost/algorithm/string/detail/sequence.hpp:
-
-/usr/include/boost/mpl/aux_/template_arity_fwd.hpp:
-
 /usr/include/eigen3/Eigen/src/misc/Kernel.h:
 
 /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/rxso3.hpp:
-
-/usr/include/boost/algorithm/string/detail/util.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/timers_manager.hpp:
 
@@ -5068,81 +5188,73 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
 
+/usr/include/c++/13/bits/regex_error.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
+
 /usr/include/boost/mpl/apply.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:
-
-/usr/include/boost/algorithm/string/detail/find_iterator.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__struct.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
 
+/usr/include/boost/algorithm/string/detail/find_iterator.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/simple_events_queue.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:
+
+/usr/include/boost/algorithm/string/find_iterator.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_queue.hpp:
 
-/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/identifier.h:
+/usr/include/boost/mpl/aux_/type_wrapper.hpp:
 
-/opt/ros/jazzy/include/rcl/rcl/subscription.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:
 
-/opt/ros/jazzy/include/rmw/rmw/events_statuses/liveliness_changed.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:
 
-/opt/ros/jazzy/include/rcl/rcl/publisher.h:
+/usr/include/boost/mpl/aux_/value_wknd.hpp:
 
-/opt/ros/jazzy/include/rcl/rcl/node.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_entities_collection.hpp:
 
-/usr/include/eigen3/Eigen/src/Geometry/Umeyama.h:
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/optimizable_graph.h:
 
-/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/types.h:
+/usr/include/boost/mpl/or.hpp:
 
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Converter.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/event.hpp:
 
-/usr/include/boost/type_traits/is_assignable.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_options.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/Random.h:
+/opt/ros/jazzy/include/rmw/rmw/get_topic_names_and_types.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/type_description__struct.h:
 
-/usr/include/boost/range/detail/has_member_size.hpp:
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__builder.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
+/usr/include/boost/type_traits/is_abstract.hpp:
 
-/usr/include/boost/serialization/tracking.hpp:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
 
-/usr/include/boost/range/detail/implementation_help.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface_traits.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_notify_waitable.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:
 
-/usr/include/boost/preprocessor/enum_params.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
-/usr/include/boost/preprocessor/facilities/expand.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:
 
-/usr/include/opencv4/opencv2/flann/allocator.h:
-
-/usr/include/c++/13/cwchar:
-
-/usr/include/boost/preprocessor/seq/enum.hpp:
-
-/usr/include/c++/13/bits/hashtable_policy.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/KeyFrame.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp:
 
-/usr/include/c++/13/bits/locale_classes.tcc:
-
 /opt/ros/jazzy/include/message_filters/message_filters/simple_filter.h:
-
-/opt/ros/jazzy/include/message_filters/message_filters/signal9.h:
-
-/usr/include/c++/13/bits/regex_compiler.tcc:
 
 /usr/include/c++/13/bits/uses_allocator.h:
 
@@ -5150,51 +5262,31 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/mpl/int_fwd.hpp:
 
-/usr/include/boost/type_traits/function_traits.hpp:
+/opt/ros/jazzy/include/message_filters/message_filters/signal9.h:
 
 /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__builder.hpp:
 
-/usr/include/c++/13/condition_variable:
+/usr/include/opencv4/opencv2/flann/kdtree_index.h:
 
-/opt/ros/jazzy/include/rcl/rcl/guard_condition.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:
 
-/usr/include/boost/algorithm/string/formatter.hpp:
+/opt/ros/jazzy/include/rcl/rcl/types.h:
 
-/opt/ros/jazzy/include/message_filters/message_filters/subscriber.h:
+/opt/ros/jazzy/include/rcutils/rcutils/time.h:
 
-/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
-
-/usr/include/boost/type_traits/is_array.hpp:
-
-/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp:
-
-/usr/include/boost/preprocessor/detail/is_binary.hpp:
-
-/usr/local/include/pangolin/image/image_io.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FeatureVector.h:
-
-/opt/ros/jazzy/include/rcutils/rcutils/error_handling.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/publisher_factory.hpp:
-
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/type_source__struct.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/se3_ops.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h:
-
-/usr/include/boost/archive/detail/abi_suffix.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
-
-/usr/include/boost/config/no_tr1/functional.hpp:
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message_type.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
 
-/opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h:
+/usr/include/c++/13/bits/basic_ios.tcc:
+
+/opt/ros/jazzy/include/rmw/rmw/features.h:
+
+/opt/ros/jazzy/include/rmw/rmw/dynamic_message_type_support.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/is_ros_compatible_type.hpp:
 
@@ -5202,19 +5294,13 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
-
-/usr/include/boost/serialization/base_object.hpp:
-
-/usr/include/eigen3/Eigen/Dense:
-
-/usr/include/asm-generic/errno.h:
-
-/opt/ros/jazzy/include/rmw/rmw/names_and_types.h:
-
-/usr/include/boost/preprocessor/repetition/limits/repeat_256.hpp:
-
 /opt/ros/jazzy/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
+
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
+
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
+
+/usr/include/boost/algorithm/string/predicate.hpp:
 
 /usr/local/include/pangolin/video/video_output_interface.h:
 
@@ -5226,17 +5312,27 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/generic_publisher.hpp:
 
-/usr/include/c++/13/bits/erase_if.h:
-
-/usr/include/boost/algorithm/string/detail/find_format.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/config.h:
-
 /usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/publisher_base.hpp:
+
+/usr/include/c++/13/bits/refwrap.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/openmp_mutex.h:
+
+/usr/include/c++/13/random:
+
+/usr/include/boost/preprocessor/variadic/limits/elem_64.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:
+
+/usr/include/c++/13/cctype:
+
+/opt/ros/jazzy/include/rcpputils/rcpputils/scope_exit.hpp:
 
 /usr/include/c++/13/string:
 
@@ -5258,521 +5354,13 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
-/opt/ros/jazzy/include/rcl/rcl/context.h:
+/usr/include/boost/algorithm/string/detail/find_format.hpp:
 
-/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__builder.hpp:
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/config.h:
 
-/usr/include/boost/type_traits/is_abstract.hpp:
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/int32.hpp:
 
-/usr/include/c++/13/bits/new_allocator.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:
-
-/usr/include/boost/config/helper_macros.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
-
-/usr/include/c++/13/debug/assertions.h:
-
-/usr/include/boost/mpl/placeholders.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h:
-
-/opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
-
-/usr/include/opencv4/opencv2/flann/kmeans_index.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/guard_condition.hpp:
-
-/usr/local/include/pangolin/utils/range.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/BowVector.h:
-
-/opt/ros/jazzy/include/message_filters/message_filters/visibility_control.h:
-
-/opt/ros/jazzy/include/rcutils/rcutils/time.h:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
-
-/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
-
-/usr/include/boost/move/detail/addressof.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
-
-/usr/include/boost/mpl/quote.hpp:
-
-/usr/include/eigen3/Eigen/StdVector:
-
-/usr/include/boost/preprocessor/identity.hpp:
-
-/usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h:
-
-/usr/include/boost/mpl/arg.hpp:
-
-/usr/include/boost/range/rend.hpp:
-
-/usr/include/opencv4/opencv2/flann/result_set.h:
-
-/usr/include/c++/13/limits:
-
-/usr/include/boost/mpl/aux_/is_msvc_eti_arg.hpp:
-
-/usr/include/c++/13/bits/chrono.h:
-
-/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp:
-
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
-
-/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/rgbd/rgbd-slam-node.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/System.h:
-
-/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/MapPoint.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp:
-
-/usr/include/boost/mpl/aux_/config/preprocessor.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/libintl.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/base_binary_edge.h:
-
-/usr/include/eigen3/Eigen/src/Core/Replicate.h:
-
-/usr/include/boost/preprocessor/detail/auto_rec.hpp:
-
-/usr/include/boost/type_traits/is_complete.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/sim3.hpp:
-
-/usr/include/boost/range/distance.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/ImuTypes.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/sim_details.hpp:
-
-/usr/include/boost/algorithm/string/compare.hpp:
-
-/usr/include/opencv4/opencv2/flann/autotuned_index.h:
-
-/opt/ros/jazzy/include/rcpputils/rcpputils/filesystem_helper.hpp:
-
-/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
-
-/usr/include/boost/preprocessor/slot/slot.hpp:
-
-/usr/include/boost/type_traits/has_plus_assign.hpp:
-
-/usr/include/c++/13/cfloat:
-
-/opt/ros/jazzy/include/rmw/rmw/events_statuses/liveliness_lost.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/serialization.hpp:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/usr/include/opencv4/opencv2/stitching/detail/matchers.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_template.hpp:
-
-/usr/include/boost/mpl/aux_/static_cast.hpp:
-
-/usr/include/boost/serialization/assume_abstract.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/qos_parameters.hpp:
-
-/usr/include/boost/config/compiler/gcc.hpp:
-
-/usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h:
-
-/usr/include/boost/iterator/interoperable.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_event_handler.hpp:
-
-/usr/include/boost/type_traits/enable_if.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
-
-/usr/include/c++/13/numeric:
-
-/usr/include/boost/operators.hpp:
-
-/opt/ros/jazzy/include/message_filters/message_filters/connection.h:
-
-/usr/include/c++/13/ext/aligned_buffer.h:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/subscription.hpp:
-
-/opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp:
-
-/usr/include/c++/13/bits/basic_ios.tcc:
-
-/opt/ros/jazzy/include/rmw/rmw/features.h:
-
-/opt/ros/jazzy/include/rmw/rmw/dynamic_message_type_support.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/KeyFrameDatabase.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:
-
-/opt/ros/jazzy/include/rcutils/rcutils/types/string_array.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/formatstring.hpp:
-
-/opt/ros/jazzy/include/rmw/rmw/topic_endpoint_info_array.h:
-
-/opt/ros/jazzy/include/message_filters/message_filters/sync_policies/approximate_time.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/any_service_callback.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
-
-/usr/include/boost/preprocessor/arithmetic/detail/is_minimum_number.hpp:
-
-/usr/include/boost/serialization/void_cast_fwd.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/optimizable_graph.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_entities_collection.hpp:
-
-/usr/include/boost/mpl/or.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h:
-
-/opt/ros/jazzy/include/rmw/rmw/domain_id.h:
-
-/usr/include/boost/preprocessor/arithmetic/mod.hpp:
-
-/usr/include/c++/13/pstl/pstl_config.h:
-
-/usr/include/c++/13/iomanip:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/LoopClosing.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/create_service.hpp:
-
-/opt/ros/jazzy/include/rmw/rmw/topic_endpoint_info.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DUtils/Random.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/jacobian_workspace.h:
-
-/opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h:
-
-/usr/include/boost/algorithm/string/split.hpp:
-
-/usr/include/c++/13/bits/std_function.h:
-
-/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
-
-/usr/include/boost/mpl/aux_/config/ttp.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_type_descriptions_interface.hpp:
-
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/rosidl_generator_c__visibility_control.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/robust_kernel.h:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
-
-/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/include/utility.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Settings.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
-
-/usr/include/opencv4/opencv2/core/matx.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/creators.h:
-
-/opt/ros/jazzy/include/rcl/rcl/log_level.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/FrameDrawer.h:
-
-/usr/include/boost/mpl/aux_/config/lambda.hpp:
-
-/usr/include/c++/13/ext/string_conversions.h:
-
-/usr/include/boost/type_traits/is_same.hpp:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/rotation_matrix.hpp:
-
-/usr/local/include/pangolin/video/video_exception.h:
-
-/opt/ros/jazzy/include/rmw/rmw/discovery_options.h:
-
-/opt/ros/jazzy/include/message_filters/message_filters/parameter_adapter.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/so2.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/common.hpp:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_hash.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h:
-
-/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/api/dynamic_data.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
-
-/usr/include/boost/serialization/vector.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
-
-/usr/include/boost/concept/detail/concept_def.hpp:
-
-/usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/arguments.h:
-
-/usr/include/boost/preprocessor/control/while.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
-
-/usr/include/boost/mpl/tag.hpp:
-
-/usr/include/boost/preprocessor/list/limits/fold_left_256.hpp:
-
-/usr/include/c++/13/ext/type_traits.h:
-
-/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/MapDrawer.h:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/allocator.h:
-
-/usr/include/boost/mpl/aux_/config/integral.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/hyper_graph.h:
-
-/usr/include/boost/current_function.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_sba.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/wait_result.hpp:
-
-/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:
-
-/usr/include/boost/serialization/collections_load_imp.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/base_unary_edge.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:
-
-/usr/include/boost/range/detail/msvc_has_iterator_workaround.hpp:
-
-/usr/include/boost/move/detail/meta_utils.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/parameter_container.h:
-
-/opt/ros/jazzy/include/rmw/rmw/subscription_content_filter_options.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/so3.hpp:
-
-/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:
-
-/usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Atlas.h:
-
-/usr/include/boost/mpl/aux_/config/intel.hpp:
-
-/usr/include/boost/config/workaround.hpp:
-
-/usr/include/c++/13/bits/memory_resource.h:
-
-/usr/include/boost/mpl/aux_/preprocessor/enum.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h:
-
-/usr/include/c++/13/ext/numeric_traits.h:
-
-/usr/include/boost/algorithm/string/predicate_facade.hpp:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
-
-/usr/local/include/pangolin/utils/log.h:
-
-/usr/local/include/pangolin/compat/type_traits.h:
-
-/usr/include/boost/core/checked_delete.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/boost/algorithm/string/classification.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h:
-
-/opt/ros/jazzy/include/rcl/rcl/service_introspection.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/se3_ops.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_notify_waitable.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/Pinhole.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/logger.hpp:
-
-/usr/include/c++/13/bits/unordered_set.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/GeometricCamera.h:
-
-/usr/include/c++/13/bits/std_abs.h:
-
-/opt/ros/jazzy/include/rcl/rcl/init_options.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/SerializationUtils.h:
-
-/usr/include/boost/mpl/aux_/config/gpu.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/ScoringObject.h:
-
-/usr/include/boost/mpl/aux_/has_tag.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_clock_interface_traits.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/ORBextractor.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FORB.h:
-
-/usr/include/opencv4/opencv2/dnn/layer.hpp:
-
-/usr/include/opencv4/opencv2/dnn/dnn.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/sim3.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/LocalMapping.h:
-
-/usr/include/boost/mpl/aux_/config/adl.hpp:
-
-/usr/include/boost/preprocessor/arithmetic/detail/div_base.hpp:
-
-/usr/include/boost/preprocessor/logical/bitor.hpp:
-
-/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp:
-
-/usr/include/boost/mpl/not_equal_to.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
-
-/usr/include/boost/range/mutable_iterator.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Tracking.h:
-
-/usr/include/boost/type_traits/aligned_storage.hpp:
-
-/usr/include/c++/13/future:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Map.h:
-
-/opt/ros/jazzy/include/rcl/rcl/types.h:
-
-/usr/include/opencv4/opencv2/flann/kdtree_index.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/service.h:
-
-/usr/include/boost/preprocessor/seq/transform.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
-
-/usr/include/boost/algorithm/string/detail/case_conv.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
-
-/usr/include/c++/13/bits/stl_heap.h:
-
-/opt/ros/jazzy/include/rcl/rcl/visibility_control.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/loaned_message.hpp:
-
-/usr/include/boost/mpl/aux_/config/workaround.hpp:
-
-/usr/include/boost/algorithm/string/config.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/wait.h:
+/usr/include/boost/mpl/aux_/config/eti.hpp:
 
 /usr/include/eigen3/Eigen/src/SVD/SVDBase.h:
 
@@ -5794,19 +5382,779 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
 
+/opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/boost/type_traits/function_traits.hpp:
+
+/usr/include/boost/move/detail/meta_utils.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
+
+/usr/include/opencv4/opencv2/imgproc/types_c.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_sba.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/wait_result.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp:
+
+/usr/include/c++/13/bits/postypes.h:
+
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__type_support.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:
+
+/usr/include/boost/config/helper_macros.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
+
+/usr/include/c++/13/debug/assertions.h:
+
+/usr/include/boost/mpl/placeholders.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h:
+
+/usr/include/boost/type_traits/is_signed.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp:
+
+/usr/include/c++/13/bits/basic_string.h:
+
+/usr/include/boost/function/detail/maybe_include.hpp:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp:
+
+/usr/include/boost/preprocessor/seq/seq.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
+
+/usr/include/boost/assert.hpp:
+
+/usr/local/include/pangolin/var/varextra.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp:
+
+/usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
+
+/usr/include/boost/preprocessor/logical/bitor.hpp:
+
+/opt/ros/jazzy/include/rmw/rmw/domain_id.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h:
+
+/usr/include/boost/preprocessor/arithmetic/mod.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp:
+
+/opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__struct.hpp:
+
+/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/identifier.h:
+
+/opt/ros/jazzy/include/rcl/rcl/context.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
+
+/usr/include/boost/serialization/vector.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h:
+
+/usr/include/boost/move/detail/config_begin.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
+
+/usr/include/boost/concept/detail/concept_def.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h:
+
+/opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
+
+/usr/include/opencv4/opencv2/flann/kmeans_index.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/guard_condition.hpp:
+
+/usr/local/include/pangolin/utils/range.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/BowVector.h:
+
+/usr/include/boost/preprocessor/logical/bitand.hpp:
+
+/usr/include/c++/13/ctime:
+
+/usr/include/boost/type_traits/is_member_function_pointer.hpp:
+
+/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp:
+
+/usr/include/boost/type_traits/is_default_constructible.hpp:
+
+/usr/include/opencv4/opencv2/flann/flann_base.hpp:
+
+/opt/ros/jazzy/include/rcpputils/rcpputils/shared_library.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
+
+/usr/include/boost/config/detail/select_platform_config.hpp:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp:
+
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
+
+/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/rgbd/rgbd-slam-node.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Converter.h:
+
+/usr/include/boost/type_traits/is_assignable.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/Random.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
+
+/usr/include/boost/range/detail/has_member_size.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/System.h:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
+
+/usr/include/boost/mpl/aux_/config/gpu.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/SerializationUtils.h:
+
+/usr/local/include/pangolin/image/image_io.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FeatureVector.h:
+
+/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:
+
+/usr/include/c++/13/csignal:
+
+/usr/include/c++/13/bits/quoted_string.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/qos_overriding_options.hpp:
+
+/usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h:
+
+/usr/include/eigen3/Eigen/src/Core/IndexedView.h:
+
+/usr/include/c++/13/bits/shared_ptr.h:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp:
+
+/usr/include/boost/range/detail/msvc_has_iterator_workaround.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/jacobian_workspace.h:
+
+/opt/ros/jazzy/include/rmw/rmw/topic_endpoint_info.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DUtils/Random.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/subscription.hpp:
+
+/usr/include/c++/13/ext/aligned_buffer.h:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
+
+/usr/include/opencv4/opencv2/core/matx.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/creators.h:
+
+/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp:
+
+/usr/include/boost/preprocessor/detail/is_binary.hpp:
+
+/opt/ros/jazzy/include/rcutils/rcutils/error_handling.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/publisher_factory.hpp:
+
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/type_source__struct.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/se3_ops.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h:
+
+/usr/include/boost/archive/detail/abi_suffix.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
+
+/usr/include/boost/config/no_tr1/functional.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/sim3.hpp:
+
 /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/base_unary_edge.hpp:
 
 /usr/include/boost/mpl/aux_/numeric_cast_utils.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/KeyFrameDatabase.h:
 
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/GeometricTools.h:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
+
+/usr/include/boost/range/distance.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/ImuTypes.h:
+
+/opt/ros/jazzy/include/rmw/rmw/impl/cpp/demangle.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_entities_collector.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/event_callback.h:
+
+/usr/include/c++/13/bits/requires_hosted.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:
+
+/usr/include/boost/iterator/detail/enable_if.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
+
+/usr/include/c++/13/ext/type_traits.h:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__type_support.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/MapDrawer.h:
+
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/types.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
+
+/usr/include/boost/mpl/aux_/config/bcc.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/qos_parameters.hpp:
+
+/usr/include/boost/config/compiler/gcc.hpp:
+
+/usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h:
+
+/usr/include/boost/iterator/interoperable.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/parameter_event_handler.hpp:
+
+/usr/include/boost/type_traits/enable_if.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/matchers.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_template.hpp:
+
+/usr/include/boost/mpl/aux_/static_cast.hpp:
+
+/usr/include/boost/serialization/assume_abstract.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/base_binary_edge.hpp:
+
+/usr/include/boost/algorithm/string/detail/find_format_store.hpp:
+
+/usr/include/c++/13/bits/basic_string.tcc:
+
+/usr/include/boost/utility/binary.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/sim_details.hpp:
+
+/usr/include/opencv4/opencv2/flann/autotuned_index.h:
+
+/opt/ros/jazzy/include/rcpputils/rcpputils/filesystem_helper.hpp:
+
+/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
+
+/usr/include/boost/preprocessor/slot/slot.hpp:
+
+/usr/include/boost/type_traits/has_plus_assign.hpp:
+
+/usr/include/c++/13/cfloat:
+
+/opt/ros/jazzy/include/rmw/rmw/events_statuses/liveliness_lost.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/serialization.hpp:
+
+/usr/include/boost/preprocessor/arithmetic/detail/div_base.hpp:
+
+/usr/include/boost/mpl/aux_/config/adl.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__traits.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp:
 
-/usr/include/boost/mpl/print.hpp:
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/FrameDrawer.h:
+
+/usr/include/boost/mpl/aux_/config/lambda.hpp:
+
+/usr/include/c++/13/ext/string_conversions.h:
+
+/usr/include/boost/type_traits/is_same.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/so2.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/base_unary_edge.h:
+
+/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp:
+
+/usr/include/boost/serialization/collections_load_imp.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:
+
+/usr/include/c++/13/bits/std_function.h:
+
+/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
+
+/usr/include/boost/mpl/aux_/config/ttp.hpp:
+
+/opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h:
+
+/usr/include/boost/algorithm/string/split.hpp:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
+
+/usr/include/boost/current_function.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/allocator.h:
+
+/usr/include/boost/mpl/aux_/config/integral.hpp:
+
+/usr/include/c++/13/pstl/pstl_config.h:
+
+/usr/include/c++/13/iomanip:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/LoopClosing.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/create_service.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_type_descriptions_interface.hpp:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/rosidl_generator_c__visibility_control.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/robust_kernel.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
+
+/usr/include/c++/13/numeric:
+
+/usr/include/boost/operators.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp:
+
+/usr/include/boost/mpl/bool.hpp:
+
+/opt/ros/jazzy/include/message_filters/message_filters/connection.h:
+
+/opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
+
+/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/include/utility.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Settings.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/libintl.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/base_binary_edge.h:
+
+/usr/include/eigen3/Eigen/src/Core/Replicate.h:
+
+/usr/include/boost/preprocessor/detail/auto_rec.hpp:
+
+/usr/include/boost/type_traits/is_complete.hpp:
+
+/usr/local/include/sophus/rotation_matrix.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp:
+
+/opt/ros/jazzy/include/message_filters/message_filters/sync_policies/approximate_time.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/any_service_callback.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
+
+/usr/include/boost/preprocessor/arithmetic/detail/is_minimum_number.hpp:
+
+/usr/include/boost/serialization/void_cast_fwd.hpp:
+
+/opt/ros/jazzy/include/rmw/rmw/topic_endpoint_info_array.h:
+
+/opt/ros/jazzy/include/rcutils/rcutils/testing/fault_injection.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/LocalMapping.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/sim3.h:
+
+/opt/ros/jazzy/include/rmw/rmw/events_statuses/incompatible_type.h:
+
+/usr/include/c++/13/bits/enable_special_members.h:
+
+/usr/include/boost/preprocessor/repetition/enum_binary_params.hpp:
+
+/opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/parameter_container.h:
+
+/usr/include/boost/type_traits/is_pod.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h:
+
+/usr/include/c++/13/ext/numeric_traits.h:
+
+/usr/include/boost/algorithm/string/predicate_facade.hpp:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
+
+/usr/local/include/pangolin/utils/log.h:
+
+/usr/local/include/pangolin/compat/type_traits.h:
+
+/usr/include/boost/core/checked_delete.hpp:
+
+/usr/include/eigen3/Eigen/src/Geometry/Umeyama.h:
+
+/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/types.h:
+
+/opt/ros/jazzy/include/rcl/rcl/node.h:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/image_encodings.hpp:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
+
+/usr/include/alloca.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h:
+
+/opt/ros/jazzy/include/rcl/rcl/service_introspection.h:
+
+/usr/include/boost/preprocessor/list/adt.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/contexts/default_context.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/se3_ops.hpp:
+
+/opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__builder.hpp:
+
+/usr/include/c++/13/bits/atomic_base.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/KeyFrame.h:
+
+/opt/ros/jazzy/include/message_filters/message_filters/visibility_control.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/logger.hpp:
+
+/usr/include/c++/13/bits/unordered_set.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/GeometricCamera.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/resolve_use_intra_process.hpp:
+
+/usr/include/c++/13/bits/nested_exception.h:
+
+/usr/include/boost/range/range_fwd.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/create_generic_subscription.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FClass.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
+
+/opt/ros/jazzy/include/rmw/rmw/network_flow_endpoint_array.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/ScoringObject.h:
+
+/usr/include/boost/mpl/aux_/has_tag.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_clock_interface_traits.hpp:
+
+/usr/include/c++/13/bits/ostream_insert.h:
+
+/usr/include/boost/preprocessor/config/limits.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/ORBextractor.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FORB.h:
+
+/usr/local/include/pangolin/video/video_exception.h:
+
+/opt/ros/jazzy/include/rmw/rmw/discovery_options.h:
+
+/opt/ros/jazzy/include/message_filters/message_filters/parameter_adapter.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
+
+/usr/include/boost/algorithm/string/constants.hpp:
+
+/usr/include/opencv4/opencv2/dnn/layer.hpp:
+
+/usr/include/opencv4/opencv2/dnn/dnn.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/hyper_graph.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
+
+/usr/include/boost/mpl/aux_/has_type.hpp:
+
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field__struct.h:
+
+/usr/include/boost/type_traits/remove_const.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Tracking.h:
+
+/usr/include/boost/type_traits/aligned_storage.hpp:
+
+/usr/include/c++/13/future:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Map.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/MapPoint.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp:
+
+/usr/include/boost/mpl/aux_/config/preprocessor.hpp:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/odometry.hpp:
+
+/usr/include/boost/type_traits/is_void.hpp:
+
+/usr/include/c++/13/bits/align.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
+
+/opt/ros/jazzy/include/std_srvs/std_srvs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/usr/include/boost/mpl/tag.hpp:
+
+/usr/include/boost/preprocessor/list/limits/fold_left_256.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/arguments.h:
+
+/usr/include/boost/preprocessor/control/while.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/exceptions.hpp:
+
+/usr/include/boost/core/no_exceptions_support.hpp:
+
+/usr/include/opencv4/opencv2/flann/config.h:
+
+/usr/include/c++/13/cxxabi.h:
+
+/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-header.hpp:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp:
+
+/usr/include/boost/mpl/not_equal_to.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
+
+/usr/include/boost/range/mutable_iterator.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
+
+/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
+
+/usr/include/boost/type_traits/is_array.hpp:
+
+/usr/include/c++/13/condition_variable:
+
+/opt/ros/jazzy/include/rcl/rcl/guard_condition.h:
+
+/usr/include/c++/13/bits/std_abs.h:
+
+/opt/ros/jazzy/include/rcl/rcl/init_options.h:
+
+/usr/include/c++/13/bits/locale_classes.h:
+
+/opt/ros/jazzy/include/rcutils/rcutils/shared_library.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/log_level.h:
+
+/usr/include/boost/preprocessor/enum_params.hpp:
+
+/usr/include/boost/preprocessor/facilities/expand.hpp:
+
+/usr/include/opencv4/opencv2/flann/allocator.h:
+
+/usr/include/c++/13/cwchar:
+
+/usr/include/boost/preprocessor/seq/enum.hpp:
+
+/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/api/dynamic_data.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
+
+/usr/include/boost/serialization/base_object.hpp:
+
+/opt/ros/jazzy/include/rmw/rmw/subscription_content_filter_options.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/so3.hpp:
+
+/opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:
+
+/usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/Atlas.h:
+
+/usr/include/boost/mpl/aux_/config/intel.hpp:
+
+/usr/include/c++/13/bits/memory_resource.h:
+
+/usr/include/boost/config/workaround.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessor/enum.hpp:
+
+/usr/include/opencv4/opencv2/imgcodecs.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/ring_buffer_implementation.hpp:
+
+/usr/include/boost/serialization/is_bitwise_serializable.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/network_flow_endpoints.h:
+
+/opt/ros/jazzy/include/rmw/rmw/events_statuses/liveliness_changed.h:
+
+/opt/ros/jazzy/include/rcl/rcl/publisher.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/service.h:
+
+/usr/include/boost/preprocessor/seq/transform.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/subscription.h:
+
+/usr/include/c++/13/bits/stl_heap.h:
+
+/opt/ros/jazzy/include/rcl/rcl/visibility_control.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/loaned_message.hpp:
+
+/usr/include/boost/mpl/aux_/config/workaround.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/wait.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
+
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/include/GeometricTools.h:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/list_parameters_result.hpp:
 
@@ -5822,6 +6170,20 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__type_support.hpp:
 
+/usr/include/c++/13/pstl/execution_defs.h:
+
+/usr/include/c++/13/bits/stl_algobase.h:
+
+/opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__type_support.hpp:
+
+/usr/include/opencv4/opencv2/video/tracking.hpp:
+
+/usr/include/eigen3/Eigen/Householder:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/generic_client.hpp:
+
+/usr/include/boost/concept/detail/has_constraints.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/message_memory_strategy.hpp:
 
 /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/TwoViewReconstruction.h:
@@ -5834,11 +6196,19 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
 
+/usr/include/boost/type_traits/make_void.hpp:
+
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/individual_type_description__struct.h:
+
+/opt/ros/jazzy/include/rmw/rmw/events_statuses/incompatible_qos.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_executor.hpp:
+
+/usr/include/boost/preprocessor/arithmetic/limits/dec_256.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_factory.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
-
-/usr/include/c++/13/bits/regex_executor.h:
 
 /usr/include/c++/13/cerrno:
 
@@ -5854,6 +6224,26 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp:
 
+/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
+
+/usr/include/boost/move/detail/addressof.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
+
+/usr/include/boost/mpl/quote.hpp:
+
+/usr/include/eigen3/Eigen/StdVector:
+
+/usr/include/boost/preprocessor/identity.hpp:
+
+/usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h:
+
+/usr/include/boost/mpl/arg.hpp:
+
+/usr/include/boost/range/rend.hpp:
+
 /usr/include/boost/algorithm/string.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
@@ -5866,13 +6256,13 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/preprocessor/control/detail/limits/while_256.hpp:
 
+/opt/ros/jazzy/include/std_srvs/std_srvs/srv/detail/trigger__traits.hpp:
+
 /usr/include/stdio.h:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
-
-/usr/include/c++/13/bits/regex_scanner.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp:
 
@@ -5882,29 +6272,11 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/version.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__traits.hpp:
-
-/usr/include/c++/13/random:
-
-/usr/include/boost/preprocessor/variadic/limits/elem_64.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
-
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp:
 
 /opt/ros/jazzy/include/rcutils/rcutils/macros.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp:
-
-/usr/include/c++/13/bits/enable_special_members.h:
-
-/usr/include/boost/preprocessor/repetition/enum_binary_params.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_client.hpp:
 
@@ -5915,6 +6287,10 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
+
+/usr/include/c++/13/bits/functexcept.h:
+
+/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/visibility_control.h:
 
 /opt/ros/jazzy/include/rcl/rcl/logging_rosout.h:
 
@@ -5938,39 +6314,15 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
-
-/usr/include/boost/mpl/aux_/has_type.hpp:
-
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field__struct.h:
-
-/usr/include/boost/type_traits/remove_const.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:
-
-/usr/include/c++/13/cctype:
-
-/opt/ros/jazzy/include/rcpputils/rcpputils/scope_exit.hpp:
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_hash.h:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
 
 /usr/include/boost/config/abi_suffix.hpp:
 
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
 
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/types.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
-
-/usr/include/boost/mpl/aux_/config/bcc.hpp:
-
-/usr/include/opencv4/opencv2/flann/flann_base.hpp:
-
-/opt/ros/jazzy/include/rcpputils/rcpputils/shared_library.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
-
-/usr/include/boost/config/detail/select_platform_config.hpp:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
 
@@ -5980,15 +6332,17 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rmw/rmw/qos_policy_kind.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h:
-
-/usr/include/boost/type_traits/is_signed.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp:
-
 /usr/include/eigen3/Eigen/src/Core/Reshaped.h:
 
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp:
+
 /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__builder.hpp:
+
+/usr/include/c++/13/bits/regex.tcc:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__traits.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:
 
@@ -5996,9 +6350,15 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message.hpp:
-
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_serialization_support.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/any_subscription_callback.hpp:
+
+/usr/local/include/pangolin/var/var.h:
+
+/usr/include/boost/preprocessor/arithmetic/detail/is_1_number.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdalign.h:
 
@@ -6022,7 +6382,7 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/not_equal_to.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/resolve_use_intra_process.hpp:
+/opt/ros/jazzy/include/tf2_ros/tf2_ros/qos.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp:
 
@@ -6034,9 +6394,9 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:
 
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/DBoW2/FClass.h:
+/usr/local/include/pangolin/utils/file_utils.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp:
 
 /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/Sophus/sophus/se3.hpp:
 
@@ -6044,65 +6404,103 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/add_guard_condition_to_rcl_wait_set.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
+/opt/ros/jazzy/include/std_srvs/std_srvs/srv/trigger.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface_traits.hpp:
+/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
+/opt/ros/jazzy/include/tf2_ros/tf2_ros/transform_broadcaster.h:
 
-/usr/include/c++/13/bits/postypes.h:
+/usr/include/boost/preprocessor/list/detail/limits/fold_left_256.hpp:
 
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
+/usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h:
 
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
+/opt/ros/jazzy/include/tf2_ros/tf2_ros/visibility_control.hpp:
 
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
+/opt/ros/jazzy/include/tracetools/tracetools/config.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
+/usr/include/boost/algorithm/string/find_format.hpp:
 
-/usr/include/boost/mpl/aux_/type_wrapper.hpp:
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/contexts/default_context.hpp:
+/opt/ros/jazzy/include/tracetools/tracetools/tracetools.h:
 
-/usr/include/boost/preprocessor/list/adt.hpp:
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field_type__struct.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/exceptions.hpp:
+/usr/include/boost/mpl/print.hpp:
 
-/usr/include/boost/core/no_exceptions_support.hpp:
+/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
 
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/individual_type_description__struct.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
 
-/usr/include/boost/type_traits/make_void.hpp:
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__type_support.h:
 
-/opt/ros/jazzy/include/rmw/rmw/events_statuses/incompatible_qos.h:
+/usr/include/c++/13/bits/stl_uninitialized.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_executor.hpp:
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/get_type_description.h:
 
-/usr/include/boost/preprocessor/arithmetic/limits/dec_256.hpp:
+/usr/include/boost/config/detail/posix_features.hpp:
 
-/usr/include/boost/range/range_fwd.hpp:
+/opt/ros/jazzy/include/rcpputils/rcpputils/time.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/create_generic_subscription.hpp:
+/usr/include/boost/preprocessor/arithmetic/add.hpp:
 
-/usr/include/c++/13/bits/nested_exception.h:
+/usr/include/eigen3/Eigen/Dense:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:
+/usr/include/asm-generic/errno.h:
 
-/usr/include/boost/mpl/aux_/value_wknd.hpp:
+/opt/ros/jazzy/include/rmw/rmw/names_and_types.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:
+/usr/include/boost/preprocessor/repetition/limits/repeat_256.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp:
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
+/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:
 
-/opt/ros/jazzy/include/rcl/rcl/network_flow_endpoints.h:
+/usr/include/boost/algorithm/string/classification.hpp:
 
-/usr/include/opencv4/opencv2/imgcodecs.hpp:
+/usr/include/boost/move/detail/meta_utils_core.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/ring_buffer_implementation.hpp:
+/usr/include/boost/algorithm/string/compare.hpp:
 
-/usr/include/boost/serialization/is_bitwise_serializable.hpp:
+/usr/include/boost/algorithm/string/config.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
+
+/usr/include/boost/algorithm/string/detail/case_conv.hpp:
+
+/usr/include/boost/algorithm/string/detail/find_format_all.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h:
+
+/usr/include/boost/algorithm/string/detail/finder.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/camera.hpp:
+
+/usr/include/boost/algorithm/string/detail/replace_storage.hpp:
+
+/usr/include/boost/archive/detail/auto_link_archive.hpp:
+
+/usr/include/boost/mpl/aux_/template_arity_fwd.hpp:
+
+/usr/include/boost/algorithm/string/detail/sequence.hpp:
+
+/usr/include/c++/13/bitset:
+
+/usr/include/boost/algorithm/string/detail/trim.hpp:
+
+/usr/include/boost/range/detail/implementation_help.hpp:
+
+/usr/include/boost/serialization/tracking.hpp:
+
+/usr/include/boost/algorithm/string/detail/util.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp:
+
+/opt/ros/jazzy/include/message_filters/message_filters/subscriber.h:
+
+/usr/include/boost/algorithm/string/formatter.hpp:
+
+/usr/include/boost/algorithm/string/replace.hpp:
 
 /usr/include/boost/algorithm/string/sequence_traits.hpp:
 
@@ -6114,9 +6512,9 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/local/include/pangolin/var/varvalue.h:
 
-/opt/ros/jazzy/include/rcl/rcl/domain_id.h:
-
 /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/stuff/macros.h:
+
+/opt/ros/jazzy/include/rcl/rcl/domain_id.h:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
 
@@ -6132,7 +6530,7 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/preprocessor/repetition/for.hpp:
 
-/usr/include/c++/13/bits/regex_constants.h:
+/usr/local/include/sophus/formatstring.hpp:
 
 /usr/include/boost/archive/detail/abi_prefix.hpp:
 
@@ -6163,14 +6561,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /opt/ros/jazzy/include/rmw/rmw/init_options.h:
 
 /usr/include/boost/concept/detail/general.hpp:
-
-/usr/include/opencv4/opencv2/video/tracking.hpp:
-
-/usr/include/eigen3/Eigen/Householder:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/generic_client.hpp:
-
-/usr/include/boost/concept/detail/has_constraints.hpp:
 
 /usr/include/boost/concept/usage.hpp:
 
@@ -6204,8 +6594,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/serialization/array_wrapper.hpp:
 
-/usr/include/c++/13/bits/istream.tcc:
-
 /usr/include/boost/config/detail/select_stdlib_config.hpp:
 
 /usr/local/include/pangolin/platform.h:
@@ -6213,10 +6601,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /usr/include/boost/mpl/equal_to.hpp:
 
 /usr/include/boost/config/detail/suffix.hpp:
-
-/usr/include/c++/13/tr1/hypergeometric.tcc:
-
-/usr/include/c++/13/bits/locale_facets.h:
 
 /usr/include/boost/config/no_tr1/memory.hpp:
 
@@ -6228,9 +6612,13 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/opencv4/opencv2/flann.hpp:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp:
+
 /usr/include/boost/mpl/void_fwd.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/error_handling.h:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp:
 
 /usr/include/boost/preprocessor/list/fold_left.hpp:
 
@@ -6244,6 +6632,8 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/core/demangle.hpp:
 
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp:
+
 /usr/include/boost/core/noncopyable.hpp:
 
 /usr/include/boost/core/nvp.hpp:
@@ -6251,6 +6641,8 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp:
+
+/usr/local/include/sophus/common.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
 
@@ -6292,6 +6684,10 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/type_traits/is_fundamental.hpp:
 
+/usr/include/c++/13/bits/list.tcc:
+
+/usr/include/boost/function_equal.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/type_adapter.hpp:
 
 /usr/include/boost/serialization/static_warning.hpp:
@@ -6320,6 +6716,8 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/iterator/detail/config_def.hpp:
 
+/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
 
 /usr/include/boost/iterator/detail/facade_iterator_category.hpp:
@@ -6342,6 +6740,8 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/mpl/aux_/arity.hpp:
 
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/int32__type_support.hpp:
+
 /usr/include/boost/preprocessor/arithmetic/limits/inc_256.hpp:
 
 /usr/include/boost/iterator/iterator_facade.hpp:
@@ -6355,10 +6755,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /usr/include/boost/move/core.hpp:
 
 /usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h:
-
-/usr/include/boost/move/detail/config_begin.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
@@ -6408,8 +6804,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/mpl/aux_/comparison_op.hpp:
 
-/usr/include/c++/13/bits/cxxabi_forced.h:
-
 /usr/include/boost/mpl/aux_/config/bind.hpp:
 
 /usr/include/c++/13/string_view:
@@ -6428,13 +6822,7 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/preprocessor/seq/size.hpp:
 
-/usr/include/boost/mpl/aux_/config/eti.hpp:
-
 /usr/include/boost/mpl/aux_/config/forwarding.hpp:
-
-/usr/include/c++/13/list:
-
-/usr/include/c++/13/bits/regex_compiler.h:
 
 /usr/include/opencv4/opencv2/core/affine.hpp:
 
@@ -6498,8 +6886,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/mpl/aux_/msvc_never_true.hpp:
 
-/usr/include/boost/mpl/aux_/na.hpp:
-
 /usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp:
 
 /usr/include/boost/mpl/aux_/na_assert.hpp:
@@ -6512,17 +6898,21 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/apply_wrap.hpp:
 
-/opt/ros/jazzy/include/rcutils/rcutils/shared_library.h:
-
-/usr/include/c++/13/bits/locale_classes.h:
-
 /opt/ros/jazzy/include/rcl/rcl/error_handling.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp:
 
+/usr/include/boost/serialization/version.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:
+
 /usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:
+
 /usr/include/boost/mpl/aux_/preprocessed/gcc/less_equal.hpp:
+
+/opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp:
 
@@ -6540,23 +6930,23 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/range/detail/extract_optional_type.hpp:
 
+/usr/include/opencv4/opencv2/stitching.hpp:
+
+/usr/include/c++/13/bits/deque.tcc:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessor/params.hpp:
+
 /usr/include/boost/mpl/aux_/template_arity.hpp:
 
 /usr/include/boost/mpl/identity.hpp:
 
 /usr/include/boost/mpl/bind.hpp:
 
-/usr/include/c++/13/iostream:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
-
-/usr/include/c++/13/bits/hash_bytes.h:
-
 /usr/include/boost/algorithm/string/std/list_traits.hpp:
 
 /usr/include/boost/mpl/bind_fwd.hpp:
-
-/usr/include/boost/mpl/bool.hpp:
 
 /usr/include/boost/mpl/eval_if.hpp:
 
@@ -6582,6 +6972,10 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/mpl/integral_c_fwd.hpp:
 
+/usr/include/c++/13/bits/random.h:
+
+/usr/include/boost/preprocessor/logical/bool.hpp:
+
 /usr/include/boost/range/as_literal.hpp:
 
 /usr/include/boost/mpl/lambda.hpp:
@@ -6599,8 +6993,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /usr/include/boost/cstdint.hpp:
 
 /usr/include/boost/preprocessor/stringize.hpp:
-
-/usr/include/c++/13/bits/exception_defines.h:
 
 /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/types/se3quat.h:
 
@@ -6704,8 +7096,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp:
 
-/usr/include/c++/13/bits/invoke.h:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:
 
 /usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp:
@@ -6720,8 +7110,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/preprocessor/iteration/detail/iter/limits/forward1_256.hpp:
 
-/usr/include/boost/preprocessor/list/detail/limits/fold_left_256.hpp:
-
 /usr/include/boost/preprocessor/list/reverse.hpp:
 
 /usr/include/eigen3/Eigen/src/Geometry/Translation.h:
@@ -6733,12 +7121,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h:
 
 /usr/include/boost/preprocessor/logical/and.hpp:
-
-/usr/include/boost/preprocessor/logical/bitand.hpp:
-
-/usr/include/c++/13/ctime:
-
-/usr/include/boost/type_traits/is_member_function_pointer.hpp:
 
 /home/peter-parker/orb-slam3-root/ORB-SLAM3/include/CameraModels/KannalaBrandt8.h:
 
@@ -6776,7 +7158,7 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/preprocessor/repetition/repeat_from_to.hpp:
 
-/usr/include/c++/13/bits/locale_facets.tcc:
+/opt/ros/jazzy/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp:
 
 /usr/include/boost/preprocessor/seq/cat.hpp:
 
@@ -6797,8 +7179,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /usr/include/boost/preprocessor/seq/limits/fold_left_256.hpp:
 
 /usr/include/boost/preprocessor/seq/limits/size_256.hpp:
-
-/usr/include/boost/preprocessor/seq/seq.hpp:
 
 /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h:
 
@@ -6836,9 +7216,9 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/range/concepts.hpp:
 
-/usr/include/stdc-predef.h:
+/usr/include/c++/13/bits/locale_facets_nonio.tcc:
 
-/usr/include/boost/range/detail/misc_concept.hpp:
+/usr/include/boost/range/detail/safe_bool.hpp:
 
 /usr/include/boost/range/detail/sfinae.hpp:
 
@@ -6864,6 +7244,14 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/range/iterator_range_core.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/c++/13/bits/stl_bvector.h:
+
+/usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/boost/range/iterator_range_io.hpp:
+
 /usr/include/boost/range/reverse_iterator.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/NestByValue.h:
@@ -6876,8 +7264,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/range/size_type.hpp:
 
-/usr/include/c++/13/bits/localefwd.h:
-
 /usr/include/boost/range/value_type.hpp:
 
 /usr/include/boost/serialization/array.hpp:
@@ -6889,6 +7275,10 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /usr/include/c++/13/cstdarg:
 
 /usr/include/c++/13/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/13/bits/fstream.tcc:
+
+/usr/include/boost/serialization/collection_traits.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
 
@@ -6950,10 +7340,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/serialization/utility.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:
-
-/usr/include/boost/serialization/version.hpp:
-
 /usr/include/boost/static_assert.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
@@ -6973,8 +7359,6 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /opt/ros/jazzy/include/rmw/rmw/rmw.h:
 
 /usr/include/boost/type_traits/integral_constant.hpp:
-
-/usr/include/c++/13/bits/charconv.h:
 
 /usr/include/c++/13/tuple:
 
@@ -7044,15 +7428,11 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/type_traits/is_copy_constructible.hpp:
 
-/usr/include/boost/type_traits/is_default_constructible.hpp:
-
 /usr/include/boost/type_traits/add_rvalue_reference.hpp:
 
 /usr/include/boost/type_traits/is_destructible.hpp:
 
 /usr/include/boost/type_traits/is_floating_point.hpp:
-
-/usr/include/c++/13/bits/codecvt.h:
 
 /usr/include/boost/type_traits/is_function.hpp:
 
@@ -7064,9 +7444,9 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/type_traits/is_member_pointer.hpp:
 
-/usr/include/boost/type_traits/is_pod.hpp:
-
 /usr/include/boost/type_traits/is_pointer.hpp:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/point_field.hpp:
 
 /usr/include/boost/serialization/collection_size_type.hpp:
 
@@ -7090,13 +7470,7 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/boost/type_traits/is_unsigned.hpp:
 
-/usr/include/boost/type_traits/is_void.hpp:
-
-/usr/include/c++/13/bits/align.h:
-
 /usr/include/boost/type_traits/is_volatile.hpp:
-
-/usr/include/c++/13/bits/concept_check.h:
 
 /usr/include/boost/type_traits/make_unsigned.hpp:
 
@@ -7128,6 +7502,8 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 
 /usr/include/eigen3/Eigen/src/Core/DenseBase.h:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
 
 /usr/include/c++/13/atomic:
@@ -7139,105 +7515,3 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_
 /usr/include/c++/13/bits/algorithmfwd.h:
 
 /usr/include/c++/13/bits/allocated_ptr.h:
-
-/usr/include/c++/13/bits/atomic_base.h:
-
-/usr/include/boost/function/detail/maybe_include.hpp:
-
-/usr/include/c++/13/bits/basic_string.h:
-
-/usr/include/c++/13/bits/cpp_type_traits.h:
-
-/usr/include/opencv4/opencv2/stitching.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessor/params.hpp:
-
-/usr/include/c++/13/bits/deque.tcc:
-
-/usr/include/c++/13/bits/exception.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h:
-
-/usr/include/c++/13/bits/specfun.h:
-
-/usr/include/c++/13/bits/exception_ptr.h:
-
-/usr/include/boost/serialization/collection_traits.hpp:
-
-/usr/include/c++/13/bits/fstream.tcc:
-
-/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/visibility_control.h:
-
-/usr/include/c++/13/bits/functexcept.h:
-
-/usr/include/c++/13/bits/functional_hash.h:
-
-/usr/include/c++/13/bits/hashtable.h:
-
-/usr/include/c++/13/bits/ios_base.h:
-
-/usr/include/boost/function_equal.hpp:
-
-/usr/include/c++/13/bits/list.tcc:
-
-/usr/include/c++/13/bits/locale_facets_nonio.h:
-
-/usr/include/boost/range/detail/safe_bool.hpp:
-
-/usr/include/c++/13/bits/locale_facets_nonio.tcc:
-
-/usr/local/include/pangolin/var/varinit.h:
-
-/usr/include/c++/13/bits/move.h:
-
-/usr/include/c++/13/bits/node_handle.h:
-
-/usr/include/c++/13/bits/ostream.tcc:
-
-/usr/include/boost/preprocessor/config/limits.hpp:
-
-/usr/include/c++/13/bits/ostream_insert.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/c++/13/bits/stl_bvector.h:
-
-/usr/include/boost/range/iterator_range_io.hpp:
-
-/usr/include/c++/13/bits/parse_numbers.h:
-
-/usr/include/c++/13/bits/ptr_traits.h:
-
-/usr/include/c++/13/csignal:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/qos_overriding_options.hpp:
-
-/usr/include/c++/13/bits/quoted_string.h:
-
-/usr/include/boost/preprocessor/logical/bool.hpp:
-
-/usr/include/c++/13/bits/random.h:
-
-/usr/include/c++/13/bits/random.tcc:
-
-/opt/ros/jazzy/include/rmw/rmw/qos_string_conversions.h:
-
-/usr/include/c++/13/bits/range_access.h:
-
-/home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/g2o/core/openmp_mutex.h:
-
-/usr/include/c++/13/bits/refwrap.h:
-
-/usr/include/c++/13/bits/regex.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
-
-/usr/include/c++/13/bits/regex.tcc:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
-
-/usr/include/c++/13/bits/regex_error.h:
-
-/usr/include/c++/13/bits/regex_executor.tcc:
