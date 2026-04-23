@@ -97,18 +97,47 @@ CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial-node.cpp.s: c
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial-node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/stereo-inertial/stereo-inertial-node.cpp -o CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial-node.cpp.s
 
+CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.o: CMakeFiles/stereo-inertial.dir/flags.make
+CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.cpp
+CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.o: CMakeFiles/stereo-inertial.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.o -MF CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.o.d -o CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.o -c /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.cpp
+
+CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.cpp > CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.i
+
+CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.cpp -o CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.s
+
 # Object files for target stereo-inertial
 stereo__inertial_OBJECTS = \
 "CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial.cpp.o" \
-"CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial-node.cpp.o"
+"CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial-node.cpp.o" \
+"CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.o"
 
 # External object files for target stereo-inertial
 stereo__inertial_EXTERNAL_OBJECTS =
 
 stereo-inertial: CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial.cpp.o
 stereo-inertial: CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial-node.cpp.o
+stereo-inertial: CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.o
 stereo-inertial: CMakeFiles/stereo-inertial.dir/build.make
 stereo-inertial: /opt/ros/jazzy/lib/libcv_bridge.so
+stereo-inertial: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libnav_msgs__rosidl_generator_py.so
+stereo-inertial: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_introspection_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libstd_srvs__rosidl_generator_py.so
+stereo-inertial: /opt/ros/jazzy/lib/libstatic_transform_broadcaster_node.so
 stereo-inertial: /home/peter-parker/orb-slam3-root/ORB-SLAM3/lib/libORB_SLAM3.so
 stereo-inertial: /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/lib/libDBoW2.so
 stereo-inertial: /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/lib/libg2o.so
@@ -153,27 +182,23 @@ stereo-inertial: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.6.0
 stereo-inertial: /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.6.0
 stereo-inertial: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.6.0
 stereo-inertial: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.6.0
+stereo-inertial: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_py.so
+stereo-inertial: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libnav_msgs__rosidl_generator_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libstd_srvs__rosidl_generator_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libtf2_ros.so
+stereo-inertial: /opt/ros/jazzy/lib/libmessage_filters.so
+stereo-inertial: /opt/ros/jazzy/lib/librclcpp_action.so
 stereo-inertial: /opt/ros/jazzy/lib/librclcpp.so
 stereo-inertial: /opt/ros/jazzy/lib/liblibstatistics_collector.so
-stereo-inertial: /opt/ros/jazzy/lib/librcl.so
-stereo-inertial: /opt/ros/jazzy/lib/librmw_implementation.so
-stereo-inertial: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_c.so
-stereo-inertial: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_introspection_c.so
-stereo-inertial: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_cpp.so
-stereo-inertial: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_introspection_cpp.so
-stereo-inertial: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_cpp.so
-stereo-inertial: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_py.so
-stereo-inertial: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_c.so
-stereo-inertial: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_c.so
-stereo-inertial: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
-stereo-inertial: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
-stereo-inertial: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
-stereo-inertial: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
-stereo-inertial: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_cpp.so
-stereo-inertial: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_py.so
-stereo-inertial: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_c.so
-stereo-inertial: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_c.so
-stereo-inertial: /opt/ros/jazzy/lib/librcl_yaml_param_parser.so
 stereo-inertial: /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so
 stereo-inertial: /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
 stereo-inertial: /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so
@@ -190,28 +215,71 @@ stereo-inertial: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_cpp.s
 stereo-inertial: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_py.so
 stereo-inertial: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_c.so
 stereo-inertial: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_c.so
+stereo-inertial: /opt/ros/jazzy/lib/librcl_action.so
+stereo-inertial: /opt/ros/jazzy/lib/librcl.so
+stereo-inertial: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
+stereo-inertial: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+stereo-inertial: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_py.so
+stereo-inertial: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_c.so
+stereo-inertial: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_c.so
+stereo-inertial: /opt/ros/jazzy/lib/librcl_yaml_param_parser.so
 stereo-inertial: /opt/ros/jazzy/lib/libtracetools.so
 stereo-inertial: /opt/ros/jazzy/lib/librcl_logging_interface.so
-stereo-inertial: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
-stereo-inertial: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
-stereo-inertial: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
-stereo-inertial: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
-stereo-inertial: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_py.so
-stereo-inertial: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_c.so
+stereo-inertial: /opt/ros/jazzy/lib/librmw_implementation.so
+stereo-inertial: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_introspection_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_introspection_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_py.so
+stereo-inertial: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libtf2.so
+stereo-inertial: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_fastrtps_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_introspection_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_generator_py.so
 stereo-inertial: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
-stereo-inertial: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so
-stereo-inertial: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
-stereo-inertial: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so
 stereo-inertial: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
-stereo-inertial: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 stereo-inertial: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
-stereo-inertial: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_py.so
 stereo-inertial: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 stereo-inertial: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 stereo-inertial: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-stereo-inertial: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_c.so
 stereo-inertial: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_generator_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_py.so
 stereo-inertial: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libaction_msgs__rosidl_generator_py.so
+stereo-inertial: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libaction_msgs__rosidl_generator_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
 stereo-inertial: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 stereo-inertial: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_c.so
 stereo-inertial: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
@@ -223,23 +291,18 @@ stereo-inertial: /opt/ros/jazzy/lib/libfastcdr.so.2.2.5
 stereo-inertial: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 stereo-inertial: /opt/ros/jazzy/lib/librosidl_typesupport_introspection_cpp.so
 stereo-inertial: /opt/ros/jazzy/lib/librosidl_typesupport_introspection_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
+stereo-inertial: /opt/ros/jazzy/lib/librosidl_typesupport_cpp.so
 stereo-inertial: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_py.so
 stereo-inertial: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_c.so
 stereo-inertial: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
-stereo-inertial: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
-stereo-inertial: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_c.so
-stereo-inertial: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
-stereo-inertial: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so
-stereo-inertial: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so
-stereo-inertial: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
-stereo-inertial: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_cpp.so
-stereo-inertial: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
-stereo-inertial: /opt/ros/jazzy/lib/librosidl_typesupport_cpp.so
 stereo-inertial: /opt/ros/jazzy/lib/libservice_msgs__rosidl_generator_c.so
 stereo-inertial: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so
+stereo-inertial: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 stereo-inertial: /opt/ros/jazzy/lib/librosidl_typesupport_c.so
-stereo-inertial: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 stereo-inertial: /opt/ros/jazzy/lib/librcpputils.so
+stereo-inertial: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_generator_c.so
+stereo-inertial: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 stereo-inertial: /opt/ros/jazzy/lib/librcutils.so
 stereo-inertial: /usr/local/lib/libpango_geometry.so.0.9.4
 stereo-inertial: /usr/local/lib/libtinyobj.so.0.9.4
@@ -274,7 +337,7 @@ stereo-inertial: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.6.0
 stereo-inertial: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.6.0
 stereo-inertial: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.6.0
 stereo-inertial: CMakeFiles/stereo-inertial.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable stereo-inertial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable stereo-inertial"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stereo-inertial.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

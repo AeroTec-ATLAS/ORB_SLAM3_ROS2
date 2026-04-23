@@ -1,18 +1,13 @@
 #ifndef __RGBD_SLAM_NODE_HPP__
 #define __RGBD_SLAM_NODE_HPP__
 
-#include <iostream>
-#include <algorithm>
-#include <fstream>
-#include <chrono>
+#include "../nodes/slam-node-base.hpp"
+#include "utility.hpp"
 
-#include "rclcpp/rclcpp.hpp"
-#include "sensor_msgs/msg/image.hpp"
-
-#include "message_filters/subscriber.h"
-#include "message_filters/synchronizer.h"
-#include "message_filters/sync_policies/approximate_time.h"
-
+#include <sensor_msgs/msg/image.hpp>
+#include <message_filters/subscriber.h>
+#include <message_filters/synchronizer.h>
+#include <message_filters/sync_policies/approximate_time.h>
 #include <cv_bridge/cv_bridge.hpp>
 
 #include "System.h"
@@ -20,30 +15,56 @@
 #include "Map.h"
 #include "Tracking.h"
 
-#include "utility.hpp"
-
-class RgbdSlamNode : public rclcpp::Node
+/**
+ * @brief Nó ROS 2 para ORB-SLAM3 em modo RGB-D.
+ *
+ * Herda toda a infra-estrutura ROS 2 partilhada de SlamNodeBase (publishers
+ * de pose, odometria, nuvem de pontos, TF, serviço de reset e diagnósticos)
+ * e acrescenta apenas a lógica específica deste modo: subscrições sincronizadas
+ * de imagem RGB e de profundidade e a invocação de TrackRGBD().
+ *
+ * A posse do ORB_SLAM3::System e a sua terminação são geridas exclusivamente
+ * por SlamNodeBase::~SlamNodeBase() — este destrutor é trivial.
+ */
+class RgbdSlamNode : public SlamNodeBase
 {
 public:
-    RgbdSlamNode(ORB_SLAM3::System* pSLAM);
+    /**
+     * @brief Constrói o nó e regista as subscrições sincronizadas RGB + Depth.
+     * @param pSLAM Pointer não-possuidor para o ORB_SLAM3::System já construído.
+     */
+    explicit RgbdSlamNode(ORB_SLAM3::System* pSLAM);
 
-    ~RgbdSlamNode();
+    /**
+     * @brief Destrutor trivial.
+     *
+     * Shutdown() e SaveKeyFrameTrajectoryTUM() são invocados por
+     * SlamNodeBase::~SlamNodeBase() — não são repetidos aqui.
+     */
+    ~RgbdSlamNode() override = default;
 
 private:
     using ImageMsg = sensor_msgs::msg::Image;
-    typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image, sensor_msgs::msg::Image> approximate_sync_policy;
+    using ApproximateSyncPolicy =
+        message_filters::sync_policies::ApproximateTime<ImageMsg, ImageMsg>;
 
-    void GrabRGBD(const sensor_msgs::msg::Image::SharedPtr msgRGB, const sensor_msgs::msg::Image::SharedPtr msgD);
+    /**
+     * @brief Callback sincronizado: recebe um par RGB + Depth alinhado no tempo,
+     *        invoca TrackRGBD() e publica pose, odometria, TF e nuvem de pontos.
+     *
+     * @param msgRGB   Imagem a cores (qualquer encoding — toCvShare trata da conversão).
+     * @param msgDepth Imagem de profundidade (tipicamente 16UC1 em mm ou 32FC1 em m).
+     */
+    void GrabRGBD(const ImageMsg::SharedPtr msgRGB,
+                  const ImageMsg::SharedPtr msgDepth);
 
-    ORB_SLAM3::System* m_SLAM;
+    // ------------------------------------------------------------------ //
+    //  Subscrições sincronizadas                                          //
+    // ------------------------------------------------------------------ //
 
-    cv_bridge::CvImageConstPtr cv_ptrRGB;
-    cv_bridge::CvImageConstPtr cv_ptrD;
-
-    std::shared_ptr<message_filters::Subscriber<sensor_msgs::msg::Image> > rgb_sub;
-    std::shared_ptr<message_filters::Subscriber<sensor_msgs::msg::Image> > depth_sub;
-
-    std::shared_ptr<message_filters::Synchronizer<approximate_sync_policy> > syncApproximate;
+    std::shared_ptr<message_filters::Subscriber<ImageMsg>>              rgb_sub_;
+    std::shared_ptr<message_filters::Subscriber<ImageMsg>>              depth_sub_;
+    std::shared_ptr<message_filters::Synchronizer<ApproximateSyncPolicy>> sync_;
 };
 
-#endif
+#endif // __RGBD_SLAM_NODE_HPP__

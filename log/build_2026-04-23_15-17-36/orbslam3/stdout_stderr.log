@@ -1,0 +1,42 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+-- Found message_filters: 4.11.9 (/opt/ros/jazzy/share/message_filters/cmake)
+-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+-- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+-- Found tf2_ros: 0.36.16 (/opt/ros/jazzy/share/tf2_ros/cmake)
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3
+[  6%] [32mBuilding CXX object CMakeFiles/stereo.dir/src/nodes/slam-node-base.cpp.o[0m
+[01m[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kslam-node-base.hpp: No such file or directory
+    1 | #include [01;31m[K"slam-node-base.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[ 26%] Built target mono
+gmake[2]: *** [CMakeFiles/stereo.dir/build.make:104: CMakeFiles/stereo.dir/src/nodes/slam-node-base.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/stereo.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 33%] [32mBuilding CXX object CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.o[0m
+[01m[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kslam-node-base.hpp: No such file or directory
+    1 | #include [01;31m[K"slam-node-base.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[01m[K/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kslam-node-base.hpp: No such file or directory
+    1 | #include [01;31m[K"slam-node-base.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rgbd.dir/build.make:104: CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/rgbd.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/stereo-inertial.dir/build.make:104: CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/stereo-inertial.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

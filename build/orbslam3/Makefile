@@ -297,6 +297,36 @@ src/monocular/monocular-slam-node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mono.dir/build.make CMakeFiles/mono.dir/src/monocular/monocular-slam-node.cpp.s
 .PHONY : src/monocular/monocular-slam-node.cpp.s
 
+src/nodes/slam-node-base.o: src/nodes/slam-node-base.cpp.o
+.PHONY : src/nodes/slam-node-base.o
+
+# target to build an object file
+src/nodes/slam-node-base.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd.dir/build.make CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo.dir/build.make CMakeFiles/stereo.dir/src/nodes/slam-node-base.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo-inertial.dir/build.make CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.o
+.PHONY : src/nodes/slam-node-base.cpp.o
+
+src/nodes/slam-node-base.i: src/nodes/slam-node-base.cpp.i
+.PHONY : src/nodes/slam-node-base.i
+
+# target to preprocess a source file
+src/nodes/slam-node-base.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd.dir/build.make CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo.dir/build.make CMakeFiles/stereo.dir/src/nodes/slam-node-base.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo-inertial.dir/build.make CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.i
+.PHONY : src/nodes/slam-node-base.cpp.i
+
+src/nodes/slam-node-base.s: src/nodes/slam-node-base.cpp.s
+.PHONY : src/nodes/slam-node-base.s
+
+# target to generate assembly for a file
+src/nodes/slam-node-base.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd.dir/build.make CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo.dir/build.make CMakeFiles/stereo.dir/src/nodes/slam-node-base.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo-inertial.dir/build.make CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.s
+.PHONY : src/nodes/slam-node-base.cpp.s
+
 src/rgbd/rgbd-slam-node.o: src/rgbd/rgbd-slam-node.cpp.o
 .PHONY : src/rgbd/rgbd-slam-node.o
 
@@ -466,6 +496,9 @@ help:
 	@echo "... src/monocular/monocular-slam-node.o"
 	@echo "... src/monocular/monocular-slam-node.i"
 	@echo "... src/monocular/monocular-slam-node.s"
+	@echo "... src/nodes/slam-node-base.o"
+	@echo "... src/nodes/slam-node-base.i"
+	@echo "... src/nodes/slam-node-base.s"
 	@echo "... src/rgbd/rgbd-slam-node.o"
 	@echo "... src/rgbd/rgbd-slam-node.i"
 	@echo "... src/rgbd/rgbd-slam-node.s"

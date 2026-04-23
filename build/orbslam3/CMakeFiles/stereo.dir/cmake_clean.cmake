@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/stereo.dir/src/nodes/slam-node-base.cpp.o"
+  "CMakeFiles/stereo.dir/src/nodes/slam-node-base.cpp.o.d"
   "CMakeFiles/stereo.dir/src/stereo/stereo-slam-node.cpp.o"
   "CMakeFiles/stereo.dir/src/stereo/stereo-slam-node.cpp.o.d"
   "CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o"

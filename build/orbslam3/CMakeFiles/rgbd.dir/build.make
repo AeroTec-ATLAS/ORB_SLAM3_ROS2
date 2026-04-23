@@ -97,19 +97,34 @@ CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/rgbd/rgbd-slam-node.cpp -o CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.s
 
+CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.o: CMakeFiles/rgbd.dir/flags.make
+CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.o: /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.cpp
+CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.o: CMakeFiles/rgbd.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.o -MF CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.o.d -o CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.o -c /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.cpp
+
+CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.cpp > CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.i
+
+CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/src/nodes/slam-node-base.cpp -o CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.s
+
 # Object files for target rgbd
 rgbd_OBJECTS = \
 "CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o" \
-"CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o"
+"CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o" \
+"CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.o"
 
 # External object files for target rgbd
 rgbd_EXTERNAL_OBJECTS =
 
 rgbd: CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o
 rgbd: CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o
+rgbd: CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.o
 rgbd: CMakeFiles/rgbd.dir/build.make
 rgbd: /opt/ros/jazzy/lib/libcv_bridge.so
-rgbd: /opt/ros/jazzy/lib/libmessage_filters.so
 rgbd: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
 rgbd: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so
 rgbd: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
@@ -122,6 +137,7 @@ rgbd: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
 rgbd: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so
 rgbd: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_cpp.so
 rgbd: /opt/ros/jazzy/lib/libstd_srvs__rosidl_generator_py.so
+rgbd: /opt/ros/jazzy/lib/libstatic_transform_broadcaster_node.so
 rgbd: /home/peter-parker/orb-slam3-root/ORB-SLAM3/lib/libORB_SLAM3.so
 rgbd: /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/DBoW2/lib/libDBoW2.so
 rgbd: /home/peter-parker/orb-slam3-root/ORB-SLAM3/Thirdparty/g2o/lib/libg2o.so
@@ -141,27 +157,15 @@ rgbd: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_c.so
 rgbd: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.6.0
 rgbd: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.6.0
 rgbd: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.6.0
+rgbd: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_c.so
+rgbd: /opt/ros/jazzy/lib/libnav_msgs__rosidl_generator_c.so
+rgbd: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_c.so
+rgbd: /opt/ros/jazzy/lib/libstd_srvs__rosidl_generator_c.so
+rgbd: /opt/ros/jazzy/lib/libtf2_ros.so
+rgbd: /opt/ros/jazzy/lib/libmessage_filters.so
+rgbd: /opt/ros/jazzy/lib/librclcpp_action.so
 rgbd: /opt/ros/jazzy/lib/librclcpp.so
 rgbd: /opt/ros/jazzy/lib/liblibstatistics_collector.so
-rgbd: /opt/ros/jazzy/lib/librcl.so
-rgbd: /opt/ros/jazzy/lib/librmw_implementation.so
-rgbd: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_c.so
-rgbd: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_introspection_c.so
-rgbd: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_cpp.so
-rgbd: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_introspection_cpp.so
-rgbd: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_cpp.so
-rgbd: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_py.so
-rgbd: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_c.so
-rgbd: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_c.so
-rgbd: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
-rgbd: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
-rgbd: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
-rgbd: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
-rgbd: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_cpp.so
-rgbd: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_py.so
-rgbd: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_c.so
-rgbd: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_c.so
-rgbd: /opt/ros/jazzy/lib/librcl_yaml_param_parser.so
 rgbd: /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so
 rgbd: /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
 rgbd: /opt/ros/jazzy/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so
@@ -178,32 +182,71 @@ rgbd: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
 rgbd: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_py.so
 rgbd: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_c.so
 rgbd: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_c.so
+rgbd: /opt/ros/jazzy/lib/librcl_action.so
+rgbd: /opt/ros/jazzy/lib/librcl.so
+rgbd: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
+rgbd: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+rgbd: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
+rgbd: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
+rgbd: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_cpp.so
+rgbd: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_py.so
+rgbd: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_c.so
+rgbd: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_c.so
+rgbd: /opt/ros/jazzy/lib/librcl_yaml_param_parser.so
 rgbd: /opt/ros/jazzy/lib/libtracetools.so
 rgbd: /opt/ros/jazzy/lib/librcl_logging_interface.so
-rgbd: /opt/ros/jazzy/lib/libnav_msgs__rosidl_typesupport_c.so
-rgbd: /opt/ros/jazzy/lib/libnav_msgs__rosidl_generator_c.so
+rgbd: /opt/ros/jazzy/lib/librmw_implementation.so
+rgbd: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_c.so
+rgbd: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_introspection_c.so
+rgbd: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_fastrtps_cpp.so
+rgbd: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_introspection_cpp.so
+rgbd: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_cpp.so
+rgbd: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_py.so
+rgbd: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_typesupport_c.so
+rgbd: /opt/ros/jazzy/lib/libtype_description_interfaces__rosidl_generator_c.so
+rgbd: /opt/ros/jazzy/lib/libtf2.so
+rgbd: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_fastrtps_c.so
+rgbd: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_introspection_c.so
+rgbd: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so
+rgbd: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
+rgbd: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_cpp.so
+rgbd: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_generator_py.so
 rgbd: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
-rgbd: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 rgbd: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+rgbd: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 rgbd: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 rgbd: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+rgbd: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_py.so
 rgbd: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 rgbd: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 rgbd: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-rgbd: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_c.so
-rgbd: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so
 rgbd: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 rgbd: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so
 rgbd: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_py.so
+rgbd: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_typesupport_c.so
+rgbd: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_c.so
 rgbd: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_c.so
+rgbd: /opt/ros/jazzy/lib/libtf2_msgs__rosidl_generator_c.so
+rgbd: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so
 rgbd: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
-rgbd: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_c.so
-rgbd: /opt/ros/jazzy/lib/libstd_srvs__rosidl_generator_c.so
+rgbd: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
+rgbd: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
+rgbd: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
+rgbd: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
+rgbd: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_cpp.so
+rgbd: /opt/ros/jazzy/lib/libaction_msgs__rosidl_generator_py.so
 rgbd: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so
 rgbd: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so
 rgbd: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_c.so
 rgbd: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_cpp.so
 rgbd: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_cpp.so
+rgbd: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_c.so
+rgbd: /opt/ros/jazzy/lib/libaction_msgs__rosidl_generator_c.so
+rgbd: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
+rgbd: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
+rgbd: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
+rgbd: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
+rgbd: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
 rgbd: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 rgbd: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_c.so
 rgbd: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
@@ -222,8 +265,10 @@ rgbd: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_c.so
 rgbd: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 rgbd: /opt/ros/jazzy/lib/libservice_msgs__rosidl_generator_c.so
 rgbd: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so
+rgbd: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 rgbd: /opt/ros/jazzy/lib/librosidl_typesupport_c.so
 rgbd: /opt/ros/jazzy/lib/librcpputils.so
+rgbd: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_generator_c.so
 rgbd: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 rgbd: /opt/ros/jazzy/lib/librcutils.so
 rgbd: /usr/local/lib/libpango_geometry.so.0.9.4
@@ -240,7 +285,7 @@ rgbd: /usr/local/lib/libpango_image.so.0.9.4
 rgbd: /usr/local/lib/libpango_packetstream.so.0.9.4
 rgbd: /usr/local/lib/libpango_core.so.0.9.4
 rgbd: CMakeFiles/rgbd.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable rgbd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/peter-parker/orb-slam3-root/ROS2_ORB_SLAM3/src/orbslam3_ros2/build/orbslam3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable rgbd"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rgbd.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

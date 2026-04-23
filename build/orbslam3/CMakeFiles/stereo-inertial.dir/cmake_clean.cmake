@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.o"
+  "CMakeFiles/stereo-inertial.dir/src/nodes/slam-node-base.cpp.o.d"
   "CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial-node.cpp.o"
   "CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial-node.cpp.o.d"
   "CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial.cpp.o"

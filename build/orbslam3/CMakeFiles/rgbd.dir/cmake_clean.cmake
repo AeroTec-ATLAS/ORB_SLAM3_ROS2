@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.o"
+  "CMakeFiles/rgbd.dir/src/nodes/slam-node-base.cpp.o.d"
   "CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o"
   "CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o.d"
   "CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o"
